@@ -57,8 +57,12 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #ff6a40;
-  color: #fff;
+  color: #04284d;
+  background: #b6dfff;
+}
+
+.flecha:has(.back-to-top:hover) .back-to-top i{
+  color: #04284d;
 }
 
 .back-to-top.active {
@@ -123,7 +127,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(21, 34, 43, 0.85);
+  background: rgba(4, 40, 77, 0.85);
   padding: 10px 0;
 }
 
@@ -135,14 +139,20 @@ h6 {
   font-weight: 700;
   letter-spacing: 2px;
 }
-
+ 
 #header .logo a {
   color: #fff;
 }
 
 #header .logo img {
   max-height: 80px;
+  transition: all 0.4s ease-in-out;
 }
+
+#header .logo img:hover {
+  transform: scale(1.07);  
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -200,7 +210,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #004f91;
+  background-color: #b6dfff;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -231,9 +241,9 @@ h6 {
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #fff;
-  background: #fd3800;
-  border-color: #004f91;
+  color: #04284d;
+  background: #b6dfff;
+  border-color: #0071d2;
 }
 
 .navbar>ul>li>.getstarted:before {
@@ -660,7 +670,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#004f91 50%, rgba(255, 74, 23, 0.4) 52%);
+  background: radial-gradient(#004f91 50%, rgba(0, 79, 145, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -696,10 +706,10 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(255, 74, 23, 0.7);
+  border: 5px solid rgba(4, 40, 77, 0.7);
   top: -15%;
   left: -15%;
-  background: rgba(198, 16, 0, 0);
+  background: rgba(4, 40, 77, 0);
 }
 
 .about .play-btn:hover::after {
@@ -1331,6 +1341,30 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Artigos
+--------------------------------------------------------------*/
+
+#artigosfundo{
+  padding: 0px;   
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.artigosmask{
+  background-color: rgba(0, 0, 0, 0.7); 
+  height: 100vh;
+  padding: 40px;
+}
+
+#newsletter{
+  background-color: #031e3b;
+}
+
+
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
@@ -1438,7 +1472,8 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ff5e31;
+  color: #04284d;
+  background: #b6dfff;
 }
 
 @keyframes animate-loading {
@@ -1507,15 +1542,15 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #121d24;
-  padding: 0 0 30px 0;
+  background: #031e3b;
+  padding: 0 0 20px 0;
   color: #fff;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #15222b;
-  border-bottom: 1px solid #1d303c;
+  background: #031e3b;
+  border-bottom: 2px solid #04284d;
   padding: 60px 0 30px 0;
 }
 
@@ -1531,11 +1566,14 @@ section {
   font-weight: 700;
 }
 
+#footer p{
+  margin-top: 5px;
+}
+
 #footer .footer-top .footer-info p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
   color: #fff;
 }
 
@@ -1580,7 +1618,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ff5e31;
+  color: #2dabff;
   font-size: 18px;
   line-height: 1;
 }
@@ -1603,7 +1641,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #004f91;
+  color: #b6dfff;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1629,14 +1667,15 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #004f91;
+  background: #004f91;  
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #ff5e31;
+  background: #b6dfff;
+  color: #04284d;  
 }
 
 #footer .copyright {
