@@ -1140,8 +1140,8 @@ section {
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
-  left: 15px;
-  right: 15px;
+  left: 12px;
+  right: 12px;
   bottom: -50px;
   z-index: 3;
   transition: all ease-in-out 0.3s;
