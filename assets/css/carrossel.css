@@ -9,15 +9,6 @@
 
 #carrossel {
   position: relative;
-  width: calc(min(90rem, 90%));
-  margin: 0 auto;
-  min-height: 100vh;
-  column-gap: 3rem;
-  padding-block: min(20vh, 3rem);
-}
-
-.artigos{
-  max-width:40%;  
 }
 
 
@@ -74,31 +65,33 @@
   line-height: 1.6;
 }
 
-#carrossel a {
+.verartigo {
   display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #717171;
-  font-weight: 500;
-  background: #fff;
-  border-radius: 3.125rem;
+  background: #004f91;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border: 2px solid #004f91;
+    border-radius: 4px;
   transition: 0.3s ease-in-out;
 }
 
-#carrossel > div > a {
-  border: 2px solid #c2c2c2;
-  margin-top: 2.188rem;
-  padding: 0.625rem 1.875rem;
+/* margin: 1.25rem 1.563rem 4.438rem 1.563rem; */
+
+.verartigo {  
+  margin-left: 24%;
+  margin-top: 24%;
+  padding: 0.438em 0.875rem;
+  font-size: 0.9rem;
 }
 
-#carrossel > div > a:hover {
-  border: 0.125rem solid #005baa;
-  color: #005baa;
+.verartigo:hover {
+  color: #04284d;
+  background: #b6dfff;
 }
 
 .swiper {
-  width: 100%;
-  padding-top: 3.125rem;
+  padding-top: 0px;
 }
 
 .swiper-pagination-bullet,
@@ -107,7 +100,7 @@
 }
 
 .swiper-pagination {
-  bottom: 1.25rem !important;
+  bottom: 7.25rem !important;
 }
 
 .swiper-slide {
@@ -115,25 +108,25 @@
   height: 28.125rem;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: self-start;
+  align-items: center;
+    justify-content: center;
 }
 
 .swiper-slide h2 {
-  color: #fff;
+  color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.4;
   margin-bottom: 0.625rem;
-  padding: 0 0 0 1.563rem;
+  padding: 0 0.8rem 0 1.563rem;
   text-transform: uppercase;
+  text-shadow: 5px 4px 4px rgba(3,30,59,0.64);
 }
 
 .swiper-slide p {
-  color: #dadada;
+  color: white;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
   padding: 0 1.563rem;
   line-height: 1.6;
   font-size: 0.75rem;
@@ -141,16 +134,8 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-.swiper-slide a {
-  margin: 1.25rem 1.563rem 3.438rem 1.563rem;
-  padding: 0.438em 1.875rem;
-  font-size: 0.9rem;
-}
-
-.swiper-slide a:hover {
-  color: #005baa;
+  text-shadow: 5px 4px 4px rgba(3,30,59,0.64);
+  margin-bottom: 0px;
 }
 
 .swiper-slide div {
@@ -165,32 +150,32 @@
 }
 
 .swiper-slide--one {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
     url("https://mastrodascia.com.br/Content/images/imagem-historia-catamaran.jpg")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--two {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
     url("https://mastrodascia.com.br/Content/images/imagem-diferenciais.jpg")
       no-repeat 30% 10% / cover;
 }
 
 .swiper-slide--three {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
     url("https://mastrodascia.com.br/Content/images/Media/catamaran-modelos-ancorados.jpg")
       no-repeat 60% 50% / cover;
 }
 
 .swiper-slide--four {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
     url("https://mastrodascia.com.br/Content/images/imagem-lanchas-de-pesca.jpg")
       no-repeat 25% 40% / cover;
 }
 
 .swiper-slide--five {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://mastrodascia.com.br/Content/images/estaleiro.jpg")
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
+    url("https://nautica.com.br/wp-content/uploads/2021/06/manutencao-barco-6.bx_.jpg")
       no-repeat 50% 50% / cover;
 }
 
@@ -202,7 +187,7 @@
 @media screen and (min-width: 48rem) {
   #carrossel {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
   .bg,
   .bg2 {
@@ -213,5 +198,6 @@
 @media screen and (min-width: 93.75rem) {
   .swiper {
     width: 85%;
+    padding-top: 10px;
   }
 }

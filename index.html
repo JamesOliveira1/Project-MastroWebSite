@@ -43,7 +43,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Sobre</a></li>
-          <li><a class="nav-link scrollto" href="#services">Modelos</a></li>       
+          <li><a class="nav-link scrollto" href="#portfolio">Modelos</a></li>       
           <li class="dropdown"><a href="#"><span>Artigos</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Infusão a Vácuo</a></li>
@@ -53,7 +53,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
-          <li><a class="getstarted scrollto" href="#about">Solicitar Orçamento</a></li>
+          <li><a class="getstarted" href="orcamento.html">Solicitar Orçamento</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -63,6 +63,9 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="assets/img/v1com.mp4" type="video/mp4">
+    </video>
     <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
       <h1>Mastro D'Ascia Náutica</h1>
       <h2>Catamarãs de alto rendimento</h2>
@@ -76,7 +79,7 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+      <div class="container" id="aboutcontainer" data-aos="fade-up">
 
         <div class="row justify-content-end">
           <div class="col-lg-11">
@@ -86,15 +89,23 @@
                 <div class="count-box">
                   <i class="bi bi-emoji-smile"></i>
                   <span data-purecounter-start="0" data-purecounter-end="125" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Happy Clients</p>
+                  <p>Clientes Felizes </p>
                 </div>
               </div>
 
               <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
                 <div class="count-box">
-                  <i class="bi bi-journal-richtext"></i>
+                  <i class="bi bi-globe-americas"></i>
                   <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Projects</p>
+                  <p>Paises atendidos ou X importações</p>
+                </div>
+              </div>
+              
+              <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                <div class="count-box">
+                  <i class="bi bi-bar-chart-fill"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Modelos de até x RPM, ou HP, Nós, Pés</p>
                 </div>
               </div>
 
@@ -102,17 +113,26 @@
                 <div class="count-box">
                   <i class="bi bi-clock"></i>
                   <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Years of experience</p>
+                  <p>Anos de Experiência</p>
                 </div>
               </div>
 
+              <!--               
               <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                <div class="count-box">
+                  <i class="bi bi-journal-richtext"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Projetos</p>
+                </div>
+              </div>
+
+                <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
                 <div class="count-box">
                   <i class="bi bi-award"></i>
                   <span data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Awards</p>
+                  <p>Prêmios</p>
                 </div>
-              </div>
+              </div> -->
 
             </div>
           </div>
@@ -407,7 +427,7 @@
         </div>
 
       </div>
-    </section>--><!-- End Services Section -->
+    </section>-->  <!-- End Services Section -->
 
     <!-- ======= Testimonials Section ======= 
 
@@ -616,31 +636,38 @@
               <p>Artigos em destaque</p>
             </div>
 
-            <div id="bordaartigo" class="row img-thumbnail">
+            <div id="bordaartigo" class="row">
             
-            <div id="artigosfundo" data-aos="fade-up" class="d-flex bg-image col-md-12" style="background-image: url('https://www.mastrodascia.com.br/Content/images/Media/marlin-branco-fishing.jpg'); height: 100vh;">
-            <div class="artigosmask">
-            <div class="text-white text-center justify-content-center align-items-center h-100">
-              <h3 class="mb-4">Nossa pagina é cheia de artigos e informações sobre o universo da navegação marítima.</h3>
-              <h5 class="mb-4">Sinta-se à vontade para curtir e compartilhar nossos posts e assine nossa newsletter por e-mail para ficar atualizado com as últimas novidades.</h4>
-              <a class="btn btn-outline-light btn-lg m-2" href="#">Ver Artigos <i class="bi bi-box-arrow-in-right"></i></a> 
+            <div id="artigosfundo" data-aos="fade-up" class="d-flex bg-image col-md-12" style="background-image: url('https://www.mastrodascia.com.br/Content/images/Media/marlin-branco-fishing.jpg')">
+            <div class="artigosmask"> 
 
 
-            <div class="row" data-aos="fade-up">
-            <div id="newsletter" class="col-md-12">
-            <h1>Newsletter</h1>
-            <h3>Receba nossas postagens e artigos relevantes diretamente no seu e-mail</h3>
-            <form action="" method="post">
-            <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>  
-            </div> 
-          </div>
+              <div data-aos="fade-up" id="artigostexto" class="col-md-6 mt-4 mt-md-0">
+                <div class="icon-box">
+                  <a href="#" id="icon-change"><i class="bi bi-book"></i></a>  
+                  <h4>Nossa página é cheia de artigos e informações sobre o universo da navegação marítima.</h4>
+                  <p><a class="cliqueaquiartigos" href="inner-page.html">Clique aqui</a> para acessar, e sinta-se a vontade para compartilhar!</p>
+                  </div>
+              </div>
+
+              <div data-aos="fade-up" id="newsletter" class="col-md-6 mt-4 mt-md-0">
+                <div class="icon-box">
+                  <a href="#" id="icon-change2"><i class="bi bi-mailbox"></i></a>  
+                  <h4>Receba as novas postagens e artigos relevantes diretamente no seu e-mail.</h4>
+                  <p>Assine nossa newsletter:</p>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Digite seu e-mail" aria-label="Digite seu e-mail" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button">Inscrever</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             </div>
             </div>
-            </div>
-              
-            </div>
+            </div>         
+            
           </div>     
         </section><!-- Artigos Section -->
 
@@ -649,41 +676,51 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Orçamento</h2>
-          <p>Solicitar cotação</p>
+          <h2>Conhecendo mais</h2>
+          <p>A Equipe e Fábrica</p>
         </div>
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Leonardo Sobrenome</h4>
-                <span>Diretor/CEO</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+          <div class="splitsection">
+           
+            <div class="screen member">
+              <div class="member-info content" id="navecard">
+                <h4>Olá Navegantes!</h4>
+                <span> "Com mais de 20 anos no mercado, temos vários modelos de barcos que criamos e adaptamos exclusivamente para atender a necessidade de cada cliente. Conte com nossa expertise e estrutura para transformar seu projeto em realidade."
+                </span>              
+                
               </div>
             </div>
+
+            <div class="screen member">
+              <div class="member-info content" id="dispocard">
+                <h4>À sua disposição,</h4>
+                <span> "Nosso compromisso em manter nossos produtos únicos é impulsionado pelas pessoas talentosas que os constroem e pela utilização de tecnologia de ponta. Graças a essa combinação, os barcos da Mastro D'Áscia Náutica não apenas destacam-se pela sua qualidade, mas também consolidam nossa reputação." </span>
+                     
+              </div>
+            </div>
+
+            <div class="screen member">            
+              <div class="content member-info" id="leonardocard">
+             <h4>Leonardo Back</h4>
+             <span>Diretor / Vendas</span>
+             <div class="social">
+               <a href=""><i class="bi bi-twitter-x"></i></a>
+               <a href=""><i class="bi bi-whatsapp"></i></a>
+               <a href=""><i class="bi bi-facebook"></i></a>
+               <a href=""><i class="bi bi-instagram"></i></a>
+               <a href=""><i class="bi bi-linkedin"></i></a>
+             </div>
+
+             <a id= "cardbtn" class="btn btn-primary btn-sm" href="#">Solicitar Orçamento</a> 
+           </div>           
+         </div>
+
           </div>
 
-          <div class="col-md-6">
-            <div class="jumbotron">
-              <h2>
-                Olá navegantes!
-              </h2>
-              <p>
-                "Temos vários modelos de barcos que projetamos e criamos com a visão de cada cliente em mente. Deixe-nos ajudar a personalizar o barco dos seus sonhos."</p>
-              
-                <a class="btn btn-primary btn-large" href="#">Solicitar Orçamento <i class="bi bi-box-arrow-in-right"></i></a>              
-            </div>
-          </div>   
-          
-          
+<!-- =======  ======= -->         
+                    
         </div>
 
       </div> 
@@ -706,22 +743,22 @@
             <div class="col-md-12">
               <div class="info-box">
                 <i class="bx bx-map"></i>
-                <h3>Our Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h3>Faça uma visita!</h3>
+                <p>R. Nome da Rua, Palhoça, SC 88052-605</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="info-box mt-4">
                 <i class="bx bx-envelope"></i>
-                <h3>Email Us</h3>
-                <p>info@example.com<br>contact@example.com</p>
+                <h3>Enviar Email</h3>
+                <p>contato@mastrodascia.com.br<br>compras@mastrodascia.com</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="info-box mt-4">
                 <i class="bx bx-phone-call"></i>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                <h3>Ligue pra gente!</h3>
+                <p>+55 (48) 9 9191-0000<br>+55 (48) 9 3939-3939</p>
               </div>
             </div>
           </div>
@@ -732,24 +769,24 @@
           <form action="forms/contact.php" method="post" role="form" class="php-email-form">
             <div class="row">
               <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required>
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" required>
               </div>
             </div>
             <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
             </div>
             <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              <textarea class="form-control" name="message" rows="5" placeholder="Mensagem" required></textarea>
             </div>
             <div class="my-3">
               <div class="loading">Loading</div>
               <div class="error-message"></div>
               <div class="sent-message">Sua mensagem foi enviada, obrigado!</div>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
           </form>
         </div>
 
@@ -767,44 +804,38 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
+          <div id="logoandlinks" class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Dewi</h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
+              <img class="footerlogo" src="assets/img/logo branco.png" alt="Mastro D'Áscia Náutica" ></a>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-youtube"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Menu</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Sobre</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Modelos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Artigos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Orçamento</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            <h4>Links Úteis</h4>
+            <ul>              
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Traduzir esta página</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Tábua de marés</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Dicas de manutenção</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Clima Tempo</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Revista Náutica</a></li>
             </ul>
           </div>
 

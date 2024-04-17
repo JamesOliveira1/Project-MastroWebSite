@@ -207,7 +207,8 @@
 
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
+        itemSelector: '.portfolio-item', 
+        filter: '.filter-new'
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);
@@ -315,3 +316,168 @@
     }
   }
 });
+
+/**
+   * Troca de icone
+   */
+
+document.addEventListener("DOMContentLoaded", function() {
+  const iconLink = document.getElementById("icon-change");
+  const icons = ["bi-book", "bi-book-half", "bi-book-fill"];
+  let currentIndex = 0;
+
+  iconLink.addEventListener("click", function(event) {
+      event.preventDefault(); // Impede que o link seja seguido
+
+      const icon = iconLink.querySelector("i");
+      
+      // Alterna para o próximo ícone no array e atualiza a classe do ícone
+      currentIndex = (currentIndex + 1) % icons.length;
+      icon.className = `bi ${icons[currentIndex]}`;
+  });
+
+  const iconLink2 = document.getElementById("icon-change2");
+  const iconClasses = ["bi bi-mailbox", "bi bi-mailbox-flag"];
+  let currentIndex2 = 0;
+
+  iconLink2.addEventListener("click", function(event) {
+      event.preventDefault(); // Impede que o link seja seguido
+
+      const icon = iconLink2.querySelector("i");
+      
+      // Alterna para o próximo ícone no array e atualiza a classe do ícone
+      currentIndex2 = (currentIndex2 + 1) % iconClasses.length;
+      icon.className = `bi ${iconClasses[currentIndex2]}`;
+  });
+});
+
+/**
+ * 
+Card swiper porfolio
+*/
+
+ 
+let currentIndex = 0;
+const divs = document.querySelectorAll('.trocatexto');
+const totalDivs = divs.length;
+const controlPrevDiv = document.querySelector('.control.prev');
+const controlNextDiv = document.querySelector('.control.next');
+
+function showDiv(index) {
+  if (index < 0 || index >= totalDivs) return;
+  divs.forEach((div, i) => {
+    if (i === index) {
+      div.classList.add('cardactive');
+    } else {
+      div.classList.remove('cardactive');
+    }
+  });
+  currentIndex = index;
+  updateButtonStates();
+}
+
+function next() {
+  showDiv((currentIndex + 1) % totalDivs);
+}
+
+function previous() {
+  showDiv((currentIndex - 1 + totalDivs) % totalDivs);
+}
+
+function updateButtonStates() {
+  if (currentIndex === 0) {
+    controlPrevDiv.classList.add('disabled');
+  } else {
+    controlPrevDiv.classList.remove('disabled');
+  }
+
+  if (currentIndex === totalDivs - 1) {
+    controlNextDiv.classList.add('disabled');
+  } else {
+    controlNextDiv.classList.remove('disabled');
+  }
+}
+
+// Swipe functionality
+let startX = 0;
+let endX = 0;
+
+document.getElementById('cardsswiper').addEventListener('touchstart', (event) => {
+  startX = event.touches[0].clientX;
+});
+
+document.getElementById('cardsswiper').addEventListener('touchend', (event) => {
+  endX = event.changedTouches[0].clientX;
+  if (endX < startX && currentIndex < totalDivs - 1) {
+    next();
+  } else if (endX > startX && currentIndex > 0) {
+    previous();
+  }
+});
+
+// Show the first div initially
+showDiv(0);
+
+// Adiciona eventos de clique para os botões de seta
+controlNextDiv.addEventListener('click', next);
+controlPrevDiv.addEventListener('click', previous);
+
+
+function showDiv(index) {
+  if (index < 0 || index >= totalDivs) return;
+  divs.forEach((div, i) => {
+    if (i === index) {
+      div.classList.add('cardactive');
+    } else {
+      div.classList.remove('cardactive');
+    }
+  });
+  currentIndex = index;
+  updateButtonStates();
+}
+
+// COLAPSE DIVS
+
+
+// Array contendo os IDs dos elementos collink
+var collinkIDs = ['collink', 'collink1', 'collink2', 'collink3', 'collink4'];
+
+// Array contendo os IDs dos elementos collapseExample
+var collapseExampleIDs = ['collapseExample', 'collapseExample1', 'collapseExample2', 'collapseExample3', 'collapseExample4'];
+
+// Função para adicionar ouvintes de evento aos elementos collink e collapseExample
+function addCollapseListeners(collinkID, collapseExampleID) {
+    var collink = document.getElementById(collinkID);
+    var collapseExample = document.getElementById(collapseExampleID);
+
+    collapseExample.addEventListener('show.bs.collapse', function () {
+        collink.classList.add('openedcollapse');
+    });
+
+    collapseExample.addEventListener('hide.bs.collapse', function () {
+        collink.classList.remove('openedcollapse');
+    });
+}
+
+// Adicionando ouvintes de evento para cada combinação de IDs
+collinkIDs.forEach(function(collinkID) {
+    collapseExampleIDs.forEach(function(collapseExampleID) {
+        addCollapseListeners(collinkID, collapseExampleID);
+    });
+});
+
+
+
+document.getElementById("phone").addEventListener("input", function(event) {
+  const input = event.target;
+  input.value = input.value.replace(/\D/g, "");
+});
+
+//////////////////////////
+/////////////////////////
+///////////////////////////////
+////     Artigos
+/////////////////////////////
+//////////////////////
+///////////////////////////
+    
