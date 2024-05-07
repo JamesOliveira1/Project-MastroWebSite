@@ -349,7 +349,26 @@ document.addEventListener("DOMContentLoaded", function() {
       currentIndex2 = (currentIndex2 + 1) % iconClasses.length;
       icon.className = `bi ${iconClasses[currentIndex2]}`;
   });
+
+  const iconLink3 = document.getElementById("icon-change3");
+  const iconClasses2 = ["bi bi-file-earmark-arrow-down", "bi bi-file-earmark-arrow-down-fill"];
+  let currentIndex3 = 0;
+
+  iconLink3.addEventListener("click", function(event) {
+      event.preventDefault(); // Impede que o link seja seguido
+
+      const icon = iconLink3.querySelector("i");
+      
+      // Alterna para o próximo ícone no array e atualiza a classe do ícone
+      currentIndex3 = (currentIndex3 + 1) % iconClasses2.length;
+      icon.className = `bi ${iconClasses2[currentIndex3]}`;
+  });
+
+  
 });
+
+
+
 
 /**
  * 
