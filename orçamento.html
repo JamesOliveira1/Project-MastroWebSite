@@ -91,12 +91,12 @@
           
                     <div class="trocatexto cardactive">
                     <div class="seriemodeloinfo flip-vertical-center info03 cardactive">
-                    <div class="flip-vertical-mask">
+                    <div class="mask-formorcamento">
                       
                     <h3 data-aos="fade-left" data-aos-delay="100">Formulário para cotação</h3>
                     
                     <div class="contact col-lg-12">
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form formorcamento">
+                      <form id="orcamento-form" action="forms/send_orcamento-form.php" method="post" role="form" class="php-email-form formorcamento">
                           <div class="row">
                               <div class="col">
                                   <input type="text" class="form-control" placeholder="Nome" required>
@@ -128,9 +128,18 @@
                             <div class="col">
                               <select id="modeloform" class="form-control">
                                 <option selected>Sobre qual modelo vamos tratar?</option>
+                                <option>7 CC</option>
+                                <option>7 XF</option>
+                                <option>8 CC</option>
+                                <option>8 XF</option>
+                                <option>8 XS</option>
+                                <option>8.5 CC</option>
+                                <option>8.5 XF</option>
+                                <option>8.5 XS</option>                                
+                                <option>Titan XF</option>
+                                <option>Titan CC</option>
+                                <option>Cabin</option>
                                 <option>Commuter</option>
-                                <option>Titan 8.5 XF</option>
-                                <option>Titan 8.5 CC</option>
                                 <option>Ainda não decidi...</option>
                               </select>
                         </div>
@@ -142,66 +151,55 @@
                           </div>
                   
                           <div class="row mt-3">
-                              <div class="col form-check-inline">
+                              <div class="col form-check-inline returntext">
                                   <label class="mr-3">Gostaria de retorno por:</label>
-                                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="poremail">
-                                  <label class="mr-3" for="inlineRadio1">E-mail</label>
-                                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="portelefone" checked>
-                                  <label for="inlineRadio2">Telefone</label>
+                                  <div class="form-check-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="portelefone">
+                                  <label class="mr-3" for="inlineRadio1">Telefone</label></div>
+                                  <div class="form-check-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="poremail" checked>
+                                  <label for="inlineRadio2">E-mail</label></div>
                               </div>
                           </div>
                   
                           <div class="col my-3">
-                              <div class="loading">Loading</div>
+                              <div class="loading">Enviando</div>
                               <div class="error-message"></div>
                               <div class="sent-message">Formulário enviado, entraremos em contato!</div>
                           </div>
                           <div class="text-center"><button type="submit">Enviar</button></div>
                       </form>
-                  </div>
-                  
+                  </div>             
                     
-                    
-
-                    
-                    
-
 
                     </div>
                     </div>  
                     </div>          
       
-                    
-
-
-          
 
         <div class="text-center portfolio-description" data-aos="fade-up" data-aos-delay="100">
-          <p>
+          <p class="SickHover" >
           <strong>Agradecemos</strong> sinceramente pelo seu interesse em nossos catamarãs. 
           </p>
-           <p> Estamos comprometidos em oferecer uma <strong>experiência excepcional</strong>, adaptada às suas necessidades específicas encontrando a solução sob medida para você.
+           <p class="SickHover" > Estamos comprometidos em oferecer uma <strong>experiência excepcional</strong>, adaptada às suas necessidades específicas encontrando a solução sob medida para você.
           </p>
-            <p>Após recebermos seu formulário entraremos em contato para oferecer um orçamento personalizado. <strong>Obrigado pela preferência.</strong></p>
+            <p class="SickHover" >Após recebermos seu formulário entraremos em contato para oferecer um orçamento personalizado. <strong>Obrigado pela preferência.</strong></p>
             
         </div>
 
-        <div class="row">
+        <div class="row formorcamentobox">
         <div class="contact col-md-6">
           <div class="info-box mt-4">
-            <a href="mailto:contato@mastrodascia.com.br"> <i class="bx bx-envelope"></i>
+            <a class="emailformorcamento" href="mailto:contato@mastrodascia.com.br"> <i class="bx bx-envelope"></i>
             <h3>Prefere enviar um Email?</h3>
             <p>contato@mastrodascia.com.br</p></a>
           </div>
         </div>
         <div class="pulse contact col-md-6">
-          <a href="https://api.whatsapp.com/send?phone=5548991466864&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento;" target="_blank"> <div class="info-box mt-4">
+          <div class="info-box mt-4">
+          <a href="https://api.whatsapp.com/send?phone=5548991466864&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento;" target="_blank"> 
             <i class="bi bi-whatsapp"></i>
             <h3>Orçamento via Whatsapp</h3>
-            <p>
-                <a href="https://api.whatsapp.com/send?phone=5548991466864&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento;" target="_blank">Clique aqui!</a>
-            </p>
-        </div></a>
+            <p> Clique aqui! </p></a>
+        </div>
         
         </div>
         </div>

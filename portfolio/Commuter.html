@@ -207,7 +207,7 @@
             <div class="gap-3">
               <button class="btn btn-primary btn-large botaoorçarmento" type="button"><a class="nav-link scrollto" href="../index.html#portfolio">Outros Modelos</a></button>
               <button class="btn btn-primary btn-large botaoorçarmento" type="button"><a class="nav-link" href="../orçamento.html">Solicitar Orçamento</a></button>
-              <button id="botaocompartilhar" class="btn btn-primary btn-large botaoorçarmento" type="button"><a class="nav-link" href="#">Compartilhar <i class="bi bi-share"></i></a></button>
+              <button id="sharecommuter" class="btn btn-primary btn-large botaoorçarmento botaocompartilhar" type="button">Compartilhar <i class="bi bi-share"></i></button>
             </div>
 
           </div>
@@ -279,7 +279,7 @@
 
                     <h3>Desempenho</h3>
                     <ul>
-                      li><strong>19,60 NÓS <br>
+                      <li><strong>19,60 NÓS <br>
                         Velocidade de Cruzeiro Econômico</strong></li>
                     <li><strong>445 MILHAS <br>
                         Autonomia em Cruzeiro Econômico</strong></li>
@@ -377,6 +377,28 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <script>
+    // Adicionando evento de clique ao botão de compartilhamento
+    document.getElementById("sharecommuter").addEventListener("click", function() {
+      // Verifica se o navegador suporta a API do Web Share
+      if (navigator.share) {
+        // Chama a API do Web Share
+        navigator.share({
+          title: "Mastro D'Ascia Náutica",
+          text: 'Conheça nosso catamarã Commuter',
+          url: 'https://mastrodascia.com.br/portfolio/commuter'
+        }).then(() => {
+          console.log('Conteúdo compartilhado com sucesso!');
+        }).catch((error) => {
+          console.error('Erro ao compartilhar:', error);
+        });
+      } else {
+        // Caso o navegador não suporte, mostra uma mensagem alternativa
+        alert("Desculpe, seu navegador não suporta o compartilhamento.");
+      }
+    });
+  </script>
 
 </body>
 

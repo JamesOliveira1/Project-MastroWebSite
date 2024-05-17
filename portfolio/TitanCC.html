@@ -148,7 +148,7 @@
             <div class="gap-3">
               <button class="btn btn-primary btn-large botaoorçarmento" type="button"><a class="nav-link scrollto" href="../index.html#portfolio">Outros Modelos</a></button>
               <button class="btn btn-primary btn-large botaoorçarmento" type="button"><a class="nav-link" href="../orçamento.html">Solicitar Orçamento</a></button>
-              <button id="botaocompartilhar" class="btn btn-primary btn-large botaoorçarmento" type="button"><a class="nav-link" href="#">Compartilhar <i class="bi bi-share"></i></a></button>
+              <button id="sharetitancc" class="btn btn-primary btn-large botaoorçarmento" type="button">Compartilhar <i class="bi bi-share"></i></button>
             </div>
 
           </div>
@@ -317,6 +317,28 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <script>
+    // Adicionando evento de clique ao botão de compartilhamento
+    document.getElementById("sharetitancc").addEventListener("click", function() {
+      // Verifica se o navegador suporta a API do Web Share
+      if (navigator.share) {
+        // Chama a API do Web Share
+        navigator.share({
+          title: "Mastro D'Ascia Náutica",
+          text: 'Conheça nosso catamarã Titan CC',
+          url: 'https://mastrodascia.com.br/portfolio/titancc'
+        }).then(() => {
+          console.log('Conteúdo compartilhado com sucesso!');
+        }).catch((error) => {
+          console.error('Erro ao compartilhar:', error);
+        });
+      } else {
+        // Caso o navegador não suporte, mostra uma mensagem alternativa
+        alert("Desculpe, seu navegador não suporta o compartilhamento.");
+      }
+    });
+  </script>
 
 </body>
 

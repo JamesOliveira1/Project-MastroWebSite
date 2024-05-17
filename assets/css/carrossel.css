@@ -63,6 +63,7 @@
 
 #carrossel > div p {
   line-height: 1.6;
+  font-size: 14px;
 }
 
 .verartigo {
@@ -79,8 +80,7 @@
 /* margin: 1.25rem 1.563rem 4.438rem 1.563rem; */
 
 .verartigo {  
-  margin-left: 24%;
-  margin-top: 24%;
+  margin-top:35px;
   padding: 0.438em 0.875rem;
   font-size: 0.9rem;
 }
@@ -91,16 +91,17 @@
 }
 
 .swiper {
-  padding-top: 0px;
+  padding-top: 15px;
 }
 
 .swiper-pagination-bullet,
 .swiper-pagination-bullet-active {
-  background: #fff;
+  background: #b6dfff;
 }
 
 .swiper-pagination {
-  bottom: 7.25rem !important;
+  position: relative;
+  bottom: 70px;
 }
 
 .swiper-slide {
@@ -116,10 +117,11 @@
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 20px;
   line-height: 1.4;
   margin-bottom: 0.625rem;
-  padding: 0 0.8rem 0 1.563rem;
+  padding-left: 10px;
+  padding-right: 10px;
   text-transform: uppercase;
   text-shadow: 5px 4px 4px rgba(3,30,59,0.64);
 }
@@ -129,7 +131,7 @@
   font-family: "Roboto", sans-serif;
   padding: 0 1.563rem;
   line-height: 1.6;
-  font-size: 0.75rem;
+  font-size: 12px;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -145,8 +147,14 @@
 }
 
 .swiper-slide-active div {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   opacity: 1;
+  text-align: center;
 }
 
 .swiper-slide--one {
@@ -198,6 +206,17 @@
 @media screen and (min-width: 93.75rem) {
   .swiper {
     width: 85%;
-    padding-top: 10px;
   }
+}
+
+@media (max-width: 767px) {
+  #carrossel {
+    flex-direction: column;
+  }
+
+  #carrossel > div p {
+    font-size: 12px;
+  }
+  
+
 }

@@ -486,17 +486,9 @@ collinkIDs.forEach(function(collinkID) {
 });
 
 
-
 document.getElementById("phone").addEventListener("input", function(event) {
   const input = event.target;
   input.value = input.value.replace(/\D/g, "");
 });
 
-//////////////////////////
-/////////////////////////
-///////////////////////////////
-////     Artigos
-/////////////////////////////
-//////////////////////
-///////////////////////////
-    
+
