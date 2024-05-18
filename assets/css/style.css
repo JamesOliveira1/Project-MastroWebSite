@@ -1218,7 +1218,7 @@ section {
 
 @media (max-width: 1400px) {
   #catalogdiv .icon-box {
-    min-height: 545.58px !important;
+    min-height: 591.58px !important;
   }
 }
 
@@ -1685,10 +1685,22 @@ section {
   padding: 26px;
 }
 
+.statusandsubmit .loading, .statusandsubmit .error-message, .statusandsubmit .sent-message{
+  margin-top: 12px;
+}
+
 @media (max-width: 768px) {
   .returntext {
     display: flex;
     flex-direction: column;
+  }
+
+  .statusandsubmit{      
+    flex-direction: column;
+  }
+
+  .statusandsubmit button{      
+    margin-left: 0px !important;
   }
 
   .mask-formorcamento {
@@ -2177,7 +2189,8 @@ SLIDERRRRRRRRRRRRRRRR
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 80% 100%;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   border: 15px solid #ffffff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -2230,7 +2243,6 @@ SLIDERRRRRRRRRRRRRRRR
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
-  margin-left: 6px;
   border: 2px solid #004f91;
   border-radius: 4px;
 }
@@ -2302,8 +2314,20 @@ SLIDERRRRRRRRRRRRRRRR
 }
 
 #catalogdiv .icon-box {
-  min-height: 487.98px;
-  max-height: 487.98px;
+  min-height: 534.98px;
+  max-height: 534.98px;
+}
+
+@media (max-height: 646px) {
+
+  #catalogdiv {
+    align-self: stretch;
+  }
+
+  #catalogdiv .icon-box{
+    height: 100%;
+    max-height: 100%;
+  }
 }
 
 #newsletter .icon-box i,
@@ -2347,11 +2371,22 @@ SLIDERRRRRRRRRRRRRRRR
   line-height: 24px;
   font-size: 18px;
   color: #263d4d;
+  margin-bottom: 10px;
 }
 
 #newsletter .form-control {
-  margin-left: 70px;
   border-radius: 6px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.statusnewsletter{  
+  border-top-right-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+}
+
+.input-group-newsletter{
+  margin-left: 70px;
 }
 
 /*--------------------------------------------------------------
@@ -2455,6 +2490,39 @@ SLIDERRRRRRRRRRRRRRRR
   margin-top: 25px;
 }
 
+.sent-message2{
+  display: none;
+  }
+
+  .error-message2{
+    display: none;
+  }
+
+  .standing2{
+    display: inline-block;
+  }
+
+  .sent-message2 i, .error-message2 i, .standing2 i{    
+  font-size: 24px !important;
+  color:#004f91 !important;
+  }
+
+.loading2 {
+  display: none;
+}
+
+.loading2:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 0px -7px 0;
+  border: 3px solid #004f91;
+  border-top-color: #eeeeee00;
+  animation: animate-loading 1s linear infinite;
+}
+
 .contact .php-email-form .loading {
   display: none;
   text-align: center;
@@ -2510,6 +2578,11 @@ SLIDERRRRRRRRRRRRRRRR
   transition: 0.4s;
   border: 2px solid #004f91;
   border-radius: 4px;
+}
+
+.statusandsubmit button{  
+  margin-left: 40px;
+  margin-top:12px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
@@ -2643,7 +2716,6 @@ SLIDERRRRRRRRRRRRRRRR
 
   #newsletter button {
     padding: 6px 12px;
-    margin-top: 12px;
   }
 
   #newsletter .icon-box {
@@ -2654,7 +2726,7 @@ SLIDERRRRRRRRRRRRRRRR
     padding: 25px 15px;
   }
 
-  .input-group {
+  .input-group-newsletter {
     flex-direction: column;
     align-content: space-around;
     align-items: end;
@@ -2662,6 +2734,10 @@ SLIDERRRRRRRRRRRRRRRR
     margin-bottom: 12px;
     justify-content: flex-end;
     margin-bottom: 0px !important;
+  }
+
+  #newsletter .input-group{
+    flex-wrap: nowrap;
   }
 
   #newsletter .form-control {
@@ -2893,8 +2969,11 @@ SLIDERRRRRRRRRRRRRRRR
 }
 
 .returntext {
-  padding-bottom: 15px;
   margin-left: 8px;
+}
+
+.statusandsubmit{
+  display: flex;
 }
 
 #inlineRadio1,
@@ -2917,6 +2996,7 @@ textarea {
 
 .formorcamento {
   padding-bottom: 20px !important;
+  margin-bottom: 20px;
 }
 
 .yellow1 {

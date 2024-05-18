@@ -10,13 +10,10 @@ require '../phpmailer/src/SMTP.php';
 $response = array('success' => false);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nome = $_POST['nome'];
-    $sobrenome = $_POST['sobrenome'];
+    $name = $_POST['name'];
     $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $modelo = $_POST['modelo'];
+    $subject = $_POST['subject'];
     $message = $_POST['message'];
-    $retorno = $_POST['retorno'];
 
     $mail = new PHPMailer(true);
 
@@ -33,16 +30,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->addAddress('contatomastrodascia@outlook.com', 'Contato Mastro DAscia'); // Envia para o próprio e-mail
 
         $mail->isHTML(true);
-        $mail->Subject = 'Oba! Novo contato pelo site';
+        $mail->Subject = 'Mensagem do site: ' . $subject;
         $mail->Body = "
-            <h1>Recebemos um Novo Pedido de Or&ccedil;amento!</h1>
-            <p><strong>Enviado de:</strong> Formul&aacute;rio de Or&ccedil;amento do site</p>
-            <p><strong>Nome:</strong> $nome $sobrenome</p>
+            <h2>Nova mensagem recebida pelo site!</h2>
+            <p><strong>Enviado de:</strong> Formul&aacute;rio de Contato na p&aacute;gina principal</p>
+            <p><strong>Nome:</strong> $name</p>
             <p><strong>E-mail:</strong> $email</p>
-            <p><strong>Telefone:</strong> $phone</p>
-            <p><strong>Modelo:</strong> $modelo</p>
+            <p><strong>Assunto:</strong> $subject</p>
             <p><strong>Mensagem:</strong> $message</p>
-            <p><strong>Prefere retorno:</strong> $retorno</p>
         ";
 
         // Simular um erro (descomente a linha abaixo para simular um erro)
