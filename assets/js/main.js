@@ -491,5 +491,11 @@ document.getElementById("phone").addEventListener("input", function(event) {
   input.value = input.value.replace(/\D/g, "");
 });
 
+//////// tooltip
+
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
 
 

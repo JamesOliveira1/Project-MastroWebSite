@@ -3129,3 +3129,33 @@ textarea {
 
     }
   }
+
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    10%, 30%, 50%, 70%, 90% { transform: rotate(-10deg); }
+    20%, 40%, 60%, 80% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.shake i {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.shake:hover i {
+    animation: shake 2s;
+}
+
+.tooltip-inner {
+  padding: 10px 15px; /* Espaçamento interno do tooltip */
+  background-color: #004f91; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+}
+
+.tooltip-arrow {
+  display: none !important;
+}
+
+.tooltip {
+  padding: 6px; /* Ajuste conforme necessário */
+}

@@ -27,6 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">  
+     
 </head>
 
 <body>
@@ -727,8 +728,12 @@
                           <span class="input-group-text statusnewsletter">
                             <div class="standing2"><i class="bi bi-envelope initial-icon"></i></div>
                               <div class="loading2"></div>
-                              <div class="error-message2"><i class="bi bi-ban"></i></div>
-                              <div class="sent-message2"><i class="bi bi-check"></i></div>
+                              <div class="error-message2">
+                                <i class="bi bi-ban" data-toggle="tooltip" data-placement="top" title="Algo deu errado, tente novamente mais tarde..."></i>
+                            </div>
+                            <div class="sent-message2">
+                                <i class="bi bi-check" data-toggle="tooltip" data-placement="top" title="Cadastro bem-sucedido!"></i>
+                            </div>
                           </span>
                       </div>
                       <div><button id="newsletter-submit" type="submit">Enviar</button></div>
@@ -826,26 +831,37 @@
 
           <div class="row">
             <div class="col-md-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="info-box">
+              <div class="info-box shake">
                 <i class="bx bx-map"></i>
                 <h3>Faça uma visita!</h3>
-                <p>R. Nome da Rua, Palhoça, SC 88052-605</p>
+                <p>
+                  <a href="https://www.google.com/maps/place/Mastro+D'Ascia/@-27.6679087,-48.6912182,17z/data=!4m15!1m8!3m7!1s0x952734fac99fae27:0x33d0c6814339d379!2sR.+Pedro+Thiesen+J%C3%BAnior,+1001+-+Aririu,+Palho%C3%A7a+-+SC!3b1!8m2!3d-27.6684979!4d-48.6886218!16s%2Fg%2F11tg18mlk9!3m5!1s0x952734effa9008e7:0x57ac1623317ca3ef!8m2!3d-27.6690132!4d-48.6892097!16s%2Fg%2F11csrq_yjk?entry=ttu" target="_blank">
+                      Rua Pedro Thiesen Junior, 1001, Aririu, Palhoça, CEP 88135-420 – SC
+                  </a>
+              </p>
               </div>
             </div>
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="info-box mt-4">
-                <i class="bx bx-envelope"></i>
-                <h3>Enviar Email</h3>
-                <p>contato@mastrodascia.com.br<br>compras@mastrodascia.com</p>
+              <div class="info-box mt-4 shake">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Enviar Email</h3>
+                  <p>
+                      <a href="mailto:contato@mastrodascia.com.br">contato@mastrodascia.com.br</a><br>
+                      <a href="mailto:compras@mastrodascia.com">compras@mastrodascia.com</a>
+                  </p>
               </div>
-            </div>
+          </div>
+          
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="info-box mt-4">
-                <i class="bx bx-phone-call"></i>
-                <h3>Ligue pra gente!</h3>
-                <p>+55 (48) 9 9191-0000<br>+55 (48) 9 3939-3939</p>
+              <div class="info-box mt-4 shake">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Ligue pra gente!</h3>
+                  <p>
+                      <a href="tel:+554891910000">+55 (48) 9 9191-0000</a><br>
+                      <a href="tel:+554893393939">+55 (48) 9 3939-3939</a>
+                  </p>
               </div>
-            </div>
+          </div>
           </div>
 
         </div>
@@ -971,13 +987,12 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-
-  <!-- Inclua seus arquivos JS aqui -->
+  <!-- JS aqui -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
+
 <script>document.getElementById('contact-fast-form').addEventListener('submit', function(event) {
   event.preventDefault();
 
@@ -1059,6 +1074,12 @@
   });
 });
 
+</script>
+
+<script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+  });
 </script>
 
 </body>
