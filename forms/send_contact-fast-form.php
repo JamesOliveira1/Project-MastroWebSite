@@ -40,9 +40,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <p><strong>Mensagem:</strong> $message</p>
         ";
 
-        // Simular um erro (descomente a linha abaixo para simular um erro)
-        // throw new Exception("Este é um erro simulado");
-
         $mail->send();
         $response['success'] = true;
     } catch (Exception $e) {

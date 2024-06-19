@@ -31,10 +31,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->Body = "
         <h2>Um visitante deixou seu e-mail para enviarmos material:</h2>
         <p><strong>Enviado de:</strong> Input de assinatura da newsletter</p>       
-        <p><strong>E-mail:</strong> $email</p>";
+        <p><strong>E-mail:</strong> $email</p>
+        <p>Ele gostaria de receber novidades e promo&ccedil;&otilde;es!</p>";
 
         // Simular um erro (descomente a linha abaixo para simular um erro)
-        throw new Exception("Este é um erro simulado");
+        //throw new Exception("Este é um erro simulado");
 
         $mail->send();
         $response['success'] = true;

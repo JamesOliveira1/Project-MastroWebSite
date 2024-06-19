@@ -3159,3 +3159,44 @@ textarea {
 .tooltip {
   padding: 6px; /* Ajuste conforme necessário */
 }
+
+.hidden {
+  display: none;
+}
+.boat-option {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+.boat-option img {
+  width: 100px;
+  height: 100px;
+}
+.options-section, .email-section, .details-section {
+  margin-top: 20px;
+}
+.color-option {
+  display: inline-block;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+#selectedColors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+#powerLabels {
+  display: flex;
+  justify-content: space-between;
+}
+#powerLabels span {
+  flex: 1;
+  text-align: center;
+}
+
+#powerRange{
+  padding:  12px 0px;
+}
