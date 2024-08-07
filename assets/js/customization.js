@@ -40,7 +40,16 @@ document.querySelectorAll('.boat-option').forEach(option => {
 
         document.getElementById('selectedImage').src = `./assets/img/produtos/${type}/fotoprincipal.jpg`;
         document.getElementById('selectedDescription').textContent = selectedBoat.description;
-        document.getElementById('selectedItens').textContent = selectedBoat.itens;
+
+        // Limpar e preencher a lista de itens de série
+        const ul = document.getElementById('selectedItens');
+        ul.innerHTML = '';
+        const itensArray = selectedBoat.itens.split(", ");
+        itensArray.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item;
+            ul.appendChild(li);
+        });
 
         const optionsContainer = document.getElementById('options');
         optionsContainer.innerHTML = '';
@@ -50,8 +59,18 @@ document.querySelectorAll('.boat-option').forEach(option => {
             optionInput.type = 'checkbox';
             optionInput.name = 'option';
             optionInput.value = option;
+            const optionLink = document.createElement('a');
+            optionLink.href = "#";
+            optionLink.textContent = option;
+            optionLink.className = 'option-link';
+            optionLink.onclick = function(event) {
+                event.preventDefault();
+                const selectedOptionalImage = document.getElementById('selectedOptionalImage');
+                selectedOptionalImage.src = `path/to/images/${option}.jpg`;
+                selectedOptionalImage.classList.remove('hidden');
+            };
             optionDiv.appendChild(optionInput);
-            optionDiv.appendChild(document.createTextNode(option));
+            optionDiv.appendChild(optionLink);
             optionsContainer.appendChild(optionDiv);
         });
 
@@ -76,11 +95,16 @@ document.querySelectorAll('.boat-option').forEach(option => {
         document.getElementById('selectedBoat').classList.remove('hidden');
         document.getElementById('optionsSection').classList.remove('hidden');
         document.getElementById('detailsSection').classList.remove('hidden');
-        document.getElementById('emailSection').classList.remove('hidden');
         document.getElementById('statusandsubmit').classList.remove('hidden');
+
+        document.querySelector('.bluecustomization').style.display = 'block';
 
         document.querySelector('.boat-option.selected')?.classList.remove('selected');
         this.classList.add('selected');
+
+        // Esconder a imagem de opcional selecionado quando um novo barco é selecionado
+        document.getElementById('selectedOptionalImage').classList.add('hidden');
+        document.getElementById('selectedOptionalImage').src = '';
     });
 });
 

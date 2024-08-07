@@ -302,14 +302,21 @@
     clickable: true
   },
   breakpoints: {
-    640: {
+    
+    350: {
       slidesPerView: 2
     },
+    450:{
+      slidesPerView: 3
+    },
     768: {
-      slidesPerView: 1
+      slidesPerView: 2
     },
     1024: {
       slidesPerView: 2
+    },
+    1200: {
+      slidesPerView: 3
     },
     1560: {
       slidesPerView: 3
@@ -459,10 +466,10 @@ function showDiv(index) {
 
 
 // Array contendo os IDs dos elementos collink
-var collinkIDs = ['collink', 'collink1', 'collink2', 'collink3', 'collink4'];
+var collinkIDs = ['collink', 'collink1', 'collink2', 'collink3', 'collink4', 'collink11'];
 
 // Array contendo os IDs dos elementos collapseExample
-var collapseExampleIDs = ['collapseExample', 'collapseExample1', 'collapseExample2', 'collapseExample3', 'collapseExample4'];
+var collapseExampleIDs = ['collapseExample', 'collapseExample1', 'collapseExample2', 'collapseExample3', 'collapseExample4', 'collapseExample11'];
 
 // Função para adicionar ouvintes de evento aos elementos collink e collapseExample
 function addCollapseListeners(collinkID, collapseExampleID) {

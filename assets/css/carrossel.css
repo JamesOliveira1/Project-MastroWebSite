@@ -91,7 +91,7 @@
 }
 
 .swiper {
-  padding-top: 15px;
+  padding-top: 40px;
 }
 
 .swiper-pagination-bullet,
@@ -187,6 +187,12 @@
       no-repeat 50% 50% / cover;
 }
 
+.swiper-slide--six {
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
+    url("https://images.boats.com/resize/1/69/71/7606971_20210305033629473_1_XLARGE.jpg")
+      no-repeat 50% 50% / cover;
+}
+
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
   background-image: none;
@@ -212,6 +218,10 @@
 @media (max-width: 767px) {
   #carrossel {
     flex-direction: column;
+  }
+
+  .swiper {
+    padding-top: 10px;
   }
 
   #carrossel > div p {
