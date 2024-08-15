@@ -193,6 +193,14 @@
       no-repeat 50% 50% / cover;
 }
 
+.swiper-slide--eight {
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
+    url("https://cdn.prod.website-files.com/5f7dda4770392876b985cdb7/61bc8b8e40f0c52239955fb2_life%20ring%20on%20a%20boat.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+
+
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
   background-image: none;

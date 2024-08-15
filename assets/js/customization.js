@@ -140,3 +140,4 @@ function renderSelectedColors() {
         selectedColorsContainer.appendChild(colorDiv);
     });
 }
+
