@@ -16,15 +16,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     try {
         $mail->isSMTP();
-        $mail->Host = 'smtp.office365.com';
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'contatomastrodascia@outlook.com';
-        $mail->Password = 'pswdhfltjqoiimhr';
+        $mail->Username = 'contatomastrodascia@gmail.com';
+        $mail->Password = 'wxux ddgm hwvn kica';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('contatomastrodascia@outlook.com', 'Contato Mastro DAscia');
-        $mail->addAddress('contatomastrodascia@outlook.com', 'Contato Mastro DAscia'); // Envia para o próprio e-mail
+        $mail->setFrom('contatomastrodascia@gmail.com', 'Contato Mastro DAscia');
+        $mail->addAddress('contatomastrodascia@gmail.com', 'Contato Mastro DAscia'); // Envia para o próprio e-mail
 
         $mail->isHTML(true);
         $mail->Subject = 'Novo Inscrito no Site da Mastro';
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->send();
         $response['success'] = true;
     } catch (Exception $e) {
-        $response['error'] = 'Erro ao enviar e-mail.';
+        $response['error'] = "Erro ao enviar: " . $mail->ErrorInfo;
     }
 } else {
     $response['error'] = 'Método de requisição inválido';

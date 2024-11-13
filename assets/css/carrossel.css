@@ -159,47 +159,45 @@
 
 .swiper-slide--one {
   background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
-    url("https://mastrodascia.com.br/Content/images/imagem-historia-catamaran.jpg")
+    url(".././img/artigos/imagem-historia.jpg")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--two {
   background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
-    url("https://mastrodascia.com.br/Content/images/imagem-diferenciais.jpg")
+    url(".././img/artigos/imagem-diferenciais.jpg")
       no-repeat 30% 10% / cover;
 }
 
 .swiper-slide--three {
   background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
-    url("https://mastrodascia.com.br/Content/images/Media/catamaran-modelos-ancorados.jpg")
+    url(".././img/artigos/imagem-modelos-ancorados.jpg")
       no-repeat 60% 50% / cover;
 }
 
 .swiper-slide--four {
   background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
-    url("https://mastrodascia.com.br/Content/images/imagem-lanchas-de-pesca.jpg")
+    url(".././img/artigos/imagem-lanchas-de-pesca.jpg")
       no-repeat 25% 40% / cover;
 }
 
 .swiper-slide--five {
   background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
-    url("https://nautica.com.br/wp-content/uploads/2021/06/manutencao-barco-6.bx_.jpg")
+    url(".././img/artigos/imagem-manutencao.jpg")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--six {
   background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
-    url("https://images.boats.com/resize/1/69/71/7606971_20210305033629473_1_XLARGE.jpg")
+    url(".././img/artigos/imagem-hidrofoils.jpg")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--eight {
   background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
-    url("https://cdn.prod.website-files.com/5f7dda4770392876b985cdb7/61bc8b8e40f0c52239955fb2_life%20ring%20on%20a%20boat.jpg")
+    url(".././img/artigos/imagem-seguranca.jpg")
       no-repeat 50% 50% / cover;
 }
-
-
 
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {

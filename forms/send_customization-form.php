@@ -52,15 +52,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // throw new Exception("Este é um erro simulado");
 
         $mail->isSMTP();
-        $mail->Host = 'smtp.office365.com';
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'contatomastrodascia@outlook.com';
-        $mail->Password = 'pswdhfltjqoiimhr';
+        $mail->Username = 'contatomastrodascia@gmail.com';
+        $mail->Password = 'wxux ddgm hwvn kica';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('contatomastrodascia@outlook.com', 'Contato Mastro DAscia');
-        $mail->addAddress('contatomastrodascia@outlook.com', 'Contato Mastro DAscia'); // Envia para o próprio e-mail
+        $mail->setFrom('contatomastrodascia@gmail.com', 'Contato Mastro DAscia');
+        $mail->addAddress('contatomastrodascia@gmail.com', 'Contato Mastro DAscia'); // Envia para o próprio e-mail
 
         $mail->isHTML(true);
         $mail->Subject = $subject;

@@ -141,3 +141,61 @@ function renderSelectedColors() {
     });
 }
 
+
+////////////////////////////////////////////////
+
+
+document.getElementById('boatForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const loadingElement = form.querySelector('.loading');
+    const errorMessageElement = form.querySelector('.error-message');
+    const sentMessageElement = form.querySelector('.sent-message');
+
+    loadingElement.style.display = 'block'; // Mostra a mensagem de loading
+
+    const formData = new FormData(form);
+
+    // Adiciona o tipo de barco selecionado
+    const selectedBoat = form.querySelector('.boat-option.selected');
+    if (selectedBoat) {
+      formData.append('boatType', selectedBoat.dataset.type);
+    }
+
+    // Adiciona os opcionais marcados
+    const optionsChecked = form.querySelectorAll('input[name="option"]:checked');
+    const optionsArray = Array.from(optionsChecked).map(option => option.value);
+    formData.append('options', JSON.stringify(optionsArray));
+
+    // Captura o valor do input range e adiciona o texto correspondente ao FormData
+    const powerRangeValue = document.getElementById('powerRange').value;
+    const selectedBoatType = selectedBoat.dataset.type;
+    const powerText = boatOptions[selectedBoatType].powers[powerRangeValue - 1]; // Os índices começam em 0
+    formData.append('power', powerText);
+
+    // Adiciona apenas as duas últimas cores escolhidas para o casco
+    const selectedColors = form.querySelectorAll('.color-option');
+    const colorsArray = Array.from(selectedColors).slice(-2).map(color => color.style.backgroundColor);
+    formData.append('colors', JSON.stringify(colorsArray));
+
+    fetch(form.action, {
+      method: 'POST',
+      body: formData
+    })
+      .then(response => response.json())
+      .then(data => {
+        loadingElement.style.display = 'none'; // Esconde a mensagem de loading
+        if (data.success) {
+          sentMessageElement.style.display = 'block'; // Mostra a mensagem de sucesso
+        } else {
+          errorMessageElement.innerHTML = data.error || 'Algo deu errado... Tente novamente mais tarde ou entre em contato pelo <a href="https://api.whatsapp.com/send?phone=5548991466864&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento;" target="_blank">Whatsapp.</a>';
+          errorMessageElement.style.display = 'block'; // Mostra a mensagem de erro
+        }
+      })
+      .catch(error => {
+        loadingElement.style.display = 'none'; // Esconde a mensagem de loading
+        errorMessageElement.innerHTML = 'Algo deu errado... Tente novamente mais tarde ou entre em contato pelo <a href="https://api.whatsapp.com/send?phone=5548991466864&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento;" target="_blank">Whatsapp.</a>';
+        errorMessageElement.style.display = 'block'; // Mostra a mensagem de erro
+      });
+  });
