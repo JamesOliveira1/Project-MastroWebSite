@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- Páginas principais -->
+
+<url>
+  <loc>https://mastrodascia.com.br/</loc>
+  <lastmod>2024-11-14T17:59:20+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/index.html</loc>
+  <lastmod>2024-11-14T17:59:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/artigos.html</loc>
+  <lastmod>2024-11-08T00:28:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/orcamento.html</loc>
+  <lastmod>2024-11-08T00:28:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/custom</loc>
+  <lastmod>2024-11-08T00:28:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- Páginas de produto -->
+
+<url>
+  <loc>https://mastrodascia.com.br/portfolio/7CC.html</loc>
+  <lastmod>2024-11-08T03:05:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/portfolio/7XF.html</loc>
+  <lastmod>2024-11-08T03:05:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/portfolio/8CC.html</loc>
+  <lastmod>2024-11-08T03:05:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/portfolio/8XF.html</loc>
+  <lastmod>2024-11-08T03:05:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/portfolio/85CC.html</loc>
+  <lastmod>2024-11-08T03:05:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/portfolio/85XF.html</loc>
+  <lastmod>2024-11-08T03:05:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/portfolio/Cabin.html</loc>
+  <lastmod>2024-11-08T03:05:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/portfolio/Commuter.html</loc>
+  <lastmod>2024-11-08T03:05:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/portfolio/Cuddy.html</loc>
+  <lastmod>2024-11-08T03:05:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/portfolio/TitanCC.html</loc>
+  <lastmod>2024-11-08T03:05:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/portfolio/7XS.html</loc>
+  <lastmod>2024-11-08T03:05:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/portfolio/8XS.html</loc>
+  <lastmod>2024-11-08T03:05:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mastrodascia.com.br/portfolio/85XS.html</loc>
+  <lastmod>2024-11-08T03:05:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+</urlset>
