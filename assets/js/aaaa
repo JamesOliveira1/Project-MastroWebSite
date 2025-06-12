@@ -1,0 +1,67 @@
+nome
+
+Cabin - Catamarã com console central e cabine.
+
+itens
+6 Bombas de porão com automático
+Escada de popa em aço inox
+Estofamento em courvin anti-mofo
+Fiação elétrica estanhada e codificada
+Luzes de navegação
+WC elétrico
+ 3 Baterias Náuticas de 105 Amp 
+ Direção hidráulica 
+
+options com preço
+
+Capa de Proteção (R$ 5.280,00)
+Corrimão de popa (R$ 1.800,00)
+Geladeira Elétrica (R$ 2.950,00)
+Guincho elétrico (R$ 6.933,65)
+Kit de lavagem de deck (R$ 1.100,00)
+Kit painel solar (R$ 6.979,47)
+Luz de proa (R$ 2.220,00)
+Luz subaquática (par) (R$ 1.028,00)
+Mesa de cabine (R$ 6.920,00)
+Mesa de proa (R$ 11.475,00)
+Monitor multifuncional GO 12 (R$ 25.219,16)
+Monitor NSS EVO3S 12 (R$ 43.306,07)
+Monitor NSS EVO3S 16 (R$ 59.713,31)
+Monitor S2009 (R$ 11.140,52)
+Motores montados em cavaletes (R$ 48.600,00)
+Piloto automático (R$ 19.302,00)
+Pintura de costado (R$ 18.000,00)
+Piso sintético em EVA (R$ 13.745,30)
+Radar Halo20 (R$ 22.604,40)
+Radio VHF RS20 (R$ 4.606,00)
+Radio VHF RS40 (R$ 11.422,00)
+Radio VHF RS40B (R$ 14.208,52)
+Salvatagem completa (R$ 3.680,00)
+Sensor Structure Scan (R$ 4.618,00)
+Sistema de som (R$ 16.310,00)
+Tenda de proa (R$ 3.570,00)
+Transducer Airmar 1kW Thru-Hull (R$ 17.164,00)
+Viveiros de popa (R$ 6.322,72)
+
+
+powers
+ 2 MERCURY 300 VERADO   (R$ 397.289,00) 
+ 2 MERCURY 400 V10 VERADO JOY   (R$ 658.581,00) 
+ 2 MERCURY 450 RACING   (R$ 881.267,00) 
+ 2 SUZUKI 300hp   (R$ 396.185,85) 
+ 2 SUZUKI 325hp   (R$ 520.330,50) 
+ 2 YAMAHA 300hp   (R$ 289.863,00) 
+ 2 YAMAHA 450hp   (R$ 675.560,00)
+
+base price
+
+2.400,00 +  12.000,00 + 1634719,34
+
+<!-- Remove .php das paginas-->
+        <rule name="Remove PHP Extension" stopProcessing="true">
+  <match url="^(.*)\.php$" />
+  <conditions>
+    <add input="{REQUEST_METHOD}" pattern="^GET$" />
+  </conditions>
+  <action type="Redirect" redirectType="Permanent" url="{R:1}" />
+</rule>

@@ -1,3 +1,4 @@
+
 /**
  * 
 Card swiper porfolio
@@ -87,10 +88,10 @@ function showDiv(index) {
 // COLAPSE DIVS
 
 // Array contendo os IDs dos elementos collink
-var collinkIDs = ['collink', 'collink1', 'collink2', 'collink3', 'collink4', 'collink11', 'collink12'];
+var collinkIDs = ['collink'];
 
 // Array contendo os IDs dos elementos collapseExample
-var collapseExampleIDs = ['collapseExample', 'collapseExample1', 'collapseExample2', 'collapseExample3', 'collapseExample4', 'collapseExample11', 'collapseExample12'];
+var collapseExampleIDs = ['collapseExample'];
 
 // Função para adicionar ouvintes de evento aos elementos collink e collapseExample
 function addCollapseListeners(collinkID, collapseExampleID) {
