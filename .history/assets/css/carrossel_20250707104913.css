@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+#carrossel {
+  position: relative;
+}
+
+
+.bg {
+  position: fixed;
+  top: -4rem;
+  left: -12rem;
+  z-index: -1;
+  opacity: 0;
+}
+
+.bg2 {
+  position: fixed;
+  bottom: -2rem;
+  right: -3rem;
+  z-index: -1;
+  width: 9.375rem;
+  opacity: 0;
+}
+
+#carrossel > div span {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  color: #717171;
+}
+
+#carrossel > div h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
+  background-color: #005baa;
+  background-image: linear-gradient(45deg, #005baa, #000000);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+#carrossel > div hr {
+  display: block;
+  background: #005baa;
+  height: 0.25rem;
+  width: 6.25rem;
+  border: none;
+  margin: 1.125rem 0 1.875rem 0;
+}
+
+#carrossel > div p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.verartigo {
+  display: inline-block;
+  background: #004f91;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border: 2px solid #004f91;
+    border-radius: 4px;
+  transition: 0.3s ease-in-out;
+}
+
+/* margin: 1.25rem 1.563rem 4.438rem 1.563rem; */
+
+.verartigo {  
+  margin-top:35px;
+  padding: 0.438em 0.875rem;
+  font-size: 0.9rem;
+}
+
+.verartigo:hover {
+  color: #04284d;
+  background: #b6dfff;
+}
+
+.swiper {
+  padding-top: 40px;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #b6dfff;
+}
+
+.swiper-pagination {
+  position: relative;
+  bottom: 70px;
+}
+
+.swiper-slide {
+  width: 18.75rem;
+  height: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  text-shadow: 5px 4px 4px rgba(3,30,59,0.64);
+}
+
+.swiper-slide p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 0 1.563rem;
+  line-height: 1.6;
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-shadow: 5px 4px 4px rgba(3,30,59,0.64);
+  margin-bottom: 0px;
+}
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 0.625rem;
+}
+
+.swiper-slide-active div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  text-align: center;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
+    url(".././img/artigos/imagem-historia.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
+    url(".././img/artigos/imagem-diferenciais.jpg")
+      no-repeat 30% 10% / cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
+    url(".././img/artigos/imagem-modelos-ancorados.jpg")
+      no-repeat 60% 50% / cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
+    url(".././img/artigos/imagem-lanchas-de-pesca.jpg")
+      no-repeat 25% 40% / cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
+    url(".././img/artigos/imagem-manutencao.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--six {
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
+    url(".././img/artigos/imagem-hidrofoils.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--eight {
+  background: linear-gradient(0deg, rgba(3,30,59,0.8) 30%, rgba(45,171,255,0.0) 100%),
+    url(".././img/artigos/imagem-seguranca.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+.boat-option.selected {
+  border: 3px solid #007bff;
+  box-shadow: 0 0 12px rgba(0,123,255,0.3);
+  transform: scale(1.06);
+  transition: border 0.2s, box-shadow 0.2s, transform 0.2s;
+  z-index: 2;
+}
+
+.boat-option.selected img {
+  filter: brightness(1.08) saturate(1.2);
+  transition: filter 0.2s;
+}
+
+@media screen and (min-width: 48rem) {
+  #carrossel {
+    display: flex;
+    align-items: flex-start;
+  }
+  .bg,
+  .bg2 {
+    opacity: 0.1;
+  }
+}
+
+@media screen and (min-width: 93.75rem) {
+  .swiper {
+    width: 85%;
+  }
+}
+
+@media (max-width: 767px) {
+  #carrossel {
+    flex-direction: column;
+  }
+
+  .swiper {
+    padding-top: 10px;
+  }
+
+  #carrossel > div p {
+    font-size: 12px;
+  }
+  
+
+}
