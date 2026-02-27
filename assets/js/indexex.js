@@ -18,15 +18,13 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
     let currentIndex = 0;
 
-    iconLink.addEventListener("click", function(event) {
-        event.preventDefault(); // Impede que o link seja seguido
-
-        // Atualiza o índice atual primeiro
-        currentIndex = (currentIndex + 1) % icons.length;
-
-        // Altera o conteúdo do SVG
-        iconLink.innerHTML = icons[currentIndex];
-    });
+    if (iconLink) {
+        iconLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            currentIndex = (currentIndex + 1) % icons.length;
+            iconLink.innerHTML = icons[currentIndex];
+        });
+    }
   
     const iconLink2 = document.getElementById("icon-change2");
 const iconSet2 = [
@@ -41,17 +39,14 @@ const iconSet2 = [
 ];
 
 let currentIndex2 = 0;
-
-// Inicializa o ícone com o primeiro SVG
-iconLink2.innerHTML = iconSet2[currentIndex2];
-
-iconLink2.addEventListener("click", function(event) {
-    event.preventDefault(); // Impede que o link seja seguido
-
-    // Altera o conteúdo do SVG
-    currentIndex2 = (currentIndex2 + 1) % iconSet2.length;
+if (iconLink2) {
     iconLink2.innerHTML = iconSet2[currentIndex2];
-});
+    iconLink2.addEventListener("click", function(event) {
+        event.preventDefault();
+        currentIndex2 = (currentIndex2 + 1) % iconSet2.length;
+        iconLink2.innerHTML = iconSet2[currentIndex2];
+    });
+}
 
   
     const iconLink3 = document.getElementById("icon-change3");
@@ -65,17 +60,14 @@ iconLink2.addEventListener("click", function(event) {
 </svg>`
     ];
     let currentIndex3 = 0;
-
-// Inicializa o ícone com o primeiro SVG
-iconLink3.innerHTML = iconSet3[currentIndex3];
-
-iconLink3.addEventListener("click", function(event) {
-    event.preventDefault(); // Impede que o link seja seguido
-
-    // Altera o conteúdo do SVG
-    currentIndex3 = (currentIndex3 + 1) % iconSet3.length;
-    iconLink3.innerHTML = iconSet3[currentIndex3];
-});
+    if (iconLink3) {
+        iconLink3.innerHTML = iconSet3[currentIndex3];
+        iconLink3.addEventListener("click", function(event) {
+            event.preventDefault();
+            currentIndex3 = (currentIndex3 + 1) % iconSet3.length;
+            iconLink3.innerHTML = iconSet3[currentIndex3];
+        });
+    }
     
 
   
@@ -85,118 +77,123 @@ iconLink3.addEventListener("click", function(event) {
   
   //////// tooltip
   
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
+        if (window.jQuery) {
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        }
 
         // ENVIO DO NEWSLETTER FORM ///////
 
         // Callback chamado pelo reCAPTCHA
         function onSubmit() {
           const form = document.getElementById("newsletter-form");
-          
-          // Verificar se os campos são válidos
+          if (!form) return;
           const emailInput = document.getElementById('newsletter-email');
           const nameInput = document.getElementById('newsletter-name');
-          const phoneInput = document.getElementById('newsletter-phone'); // Adicionado telefone
-
+          const phoneInput = document.getElementById('newsletter-phone');
+          if (!emailInput || !nameInput || !phoneInput) return;
           if (!emailInput.checkValidity() || !nameInput.checkValidity() || !phoneInput.checkValidity()) {
             emailInput.reportValidity();
             nameInput.reportValidity();
             phoneInput.reportValidity();
             return;
           }
-          
-          // Exibir ícone de carregamento
           const initialIcon = document.querySelector('.standing2');
           const loadingElement = document.querySelector('.loading2');
           const errorMessageElement = document.querySelector('.error-message2');
           const sentMessageElement = document.querySelector('.sent-message2');
-          initialIcon.style.display = 'none';
-          loadingElement.style.display = 'inline-block';
-          errorMessageElement.style.display = 'none';
-          sentMessageElement.style.display = 'none';
-          
-          // Solicitar o token do reCAPTCHA v3
-  grecaptcha.ready(function() {
-    grecaptcha.execute('6LfEIoYqAAAAAH-P0jb0mVzWDm4bkbmgXHpk7jsL', { action: 'submit' }).then(function(token) {
-    // Criar dados do formulário
-    const formData = new FormData(form);
-    formData.append('g-recaptcha-response', token); // Adiciona o token do reCAPTCHA
-  
-    // Enviar via Fetch
-    fetch('forms/send_newsletter-form.php', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      loadingElement.style.display = 'none';
-      if (data.success) {
-      sentMessageElement.style.display = 'inline-block';
-      emailInput.value = ''; // Limpa o campo após sucesso
-      phoneInput.value = ''; // Limpa o campo após sucesso
-      nameInput.value = ''; // Limpa o campo após sucesso
-      } else {
-      errorMessageElement.style.display = 'inline-block';
-      }
-    })
-    .catch(error => {
-      loadingElement.style.display = 'none';
-      errorMessageElement.style.display = 'inline-block';
-    });
-    });
-  });
-  } 
+          if (initialIcon) initialIcon.style.display = 'none';
+          if (loadingElement) loadingElement.style.display = 'inline-block';
+          if (errorMessageElement) errorMessageElement.style.display = 'none';
+          if (sentMessageElement) sentMessageElement.style.display = 'none';
+          if (!(window.grecaptcha && grecaptcha.ready)) {
+            if (loadingElement) loadingElement.style.display = 'none';
+            if (errorMessageElement) errorMessageElement.style.display = 'inline-block';
+            return;
+          }
+          grecaptcha.ready(function() {
+            grecaptcha.execute('6LfEIoYqAAAAAH-P0jb0mVzWDm4bkbmgXHpk7jsL', { action: 'submit' }).then(function(token) {
+              const formData = new FormData(form);
+              formData.append('g-recaptcha-response', token);
+              fetch('forms/send_newsletter-form.php', {
+                method: 'POST',
+                body: formData
+              })
+              .then(response => response.json())
+              .then(data => {
+                if (loadingElement) loadingElement.style.display = 'none';
+                if (data.success) {
+                  if (sentMessageElement) sentMessageElement.style.display = 'inline-block';
+                  emailInput.value = '';
+                  phoneInput.value = '';
+                  nameInput.value = '';
+                } else {
+                  if (errorMessageElement) errorMessageElement.style.display = 'inline-block';
+                }
+              })
+              .catch(error => {
+                if (loadingElement) loadingElement.style.display = 'none';
+                if (errorMessageElement) errorMessageElement.style.display = 'inline-block';
+              });
+            });
+          });
+        } 
   
 // ENVIO DO FAST FORM ////
 
-document.getElementById('contact-fast-form').addEventListener('submit', function (event) {
-  event.preventDefault();
-
-  const form = event.target;
-  const loadingElement = form.querySelector('.loading');
-  const errorMessageElement = form.querySelector('.error-message');
-  const sentMessageElement = form.querySelector('.sent-message');
-
-  loadingElement.style.display = 'block';
-  errorMessageElement.style.display = 'none';
-  sentMessageElement.style.display = 'none';
-
-  // Aciona o reCAPTCHA v3 antes do envio
-  grecaptcha.ready(function () {
+(function() {
+  var fastForm = document.getElementById('contact-fast-form');
+  if (!fastForm) return;
+  fastForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const form = event.target;
+    const loadingElement = form.querySelector('.loading');
+    const errorMessageElement = form.querySelector('.error-message');
+    const sentMessageElement = form.querySelector('.sent-message');
+    if (loadingElement) loadingElement.style.display = 'block';
+    if (errorMessageElement) errorMessageElement.style.display = 'none';
+    if (sentMessageElement) sentMessageElement.style.display = 'none';
+    if (!(window.grecaptcha && grecaptcha.ready)) {
+      if (loadingElement) loadingElement.style.display = 'none';
+      if (errorMessageElement) {
+        errorMessageElement.innerHTML = 'reCAPTCHA indisponível. Tente novamente mais tarde.';
+        errorMessageElement.style.display = 'block';
+      }
+      return;
+    }
+    grecaptcha.ready(function () {
       grecaptcha.execute('6LfEIoYqAAAAAH-P0jb0mVzWDm4bkbmgXHpk7jsL', { action: 'contact_fast' }).then(function (token) {
-          const formData = new FormData(form);
-
-          // Adiciona o token gerado ao formulário
-          formData.append('g-recaptcha-response', token);
-
-          fetch(form.action, {
-              method: 'POST',
-              body: formData
-          })
-              .then(response => response.json())
-              .then(data => {
-                  loadingElement.style.display = 'none';
-                  if (data.success) {
-                      sentMessageElement.style.display = 'block';
-                      form.reset(); // Limpa o formulário após o envio bem-sucedido
-                  } else {
-                      errorMessageElement.innerHTML =
-                          data.error ||
-                          'Algo deu errado... Tente novamente mais tarde ou entre em contato pelo <a href="https://api.whatsapp.com/send?phone=5548991466864&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento;" target="_blank">Whatsapp.</a>';
-                      errorMessageElement.style.display = 'block';
-                  }
-              })
-              .catch(error => {
-                  loadingElement.style.display = 'none';
-                  errorMessageElement.innerHTML =
-                      'Algo deu errado... Tente novamente mais tarde ou entre em contato pelo <a href="https://api.whatsapp.com/send?phone=5548991466864&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento;" target="_blank">Whatsapp.</a>';
-                  errorMessageElement.style.display = 'block';
-              });
+        const formData = new FormData(form);
+        formData.append('g-recaptcha-response', token);
+        fetch(form.action, {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (loadingElement) loadingElement.style.display = 'none';
+          if (data.success) {
+            if (sentMessageElement) sentMessageElement.style.display = 'block';
+            form.reset();
+          } else {
+            if (errorMessageElement) {
+              errorMessageElement.innerHTML = data.error || 'Algo deu errado... Tente novamente mais tarde ou entre em contato pelo <a href="https://api.whatsapp.com/send?phone=5548991466864&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento;" target="_blank">Whatsapp.</a>';
+              errorMessageElement.style.display = 'block';
+            }
+          }
+        })
+        .catch(error => {
+          if (loadingElement) loadingElement.style.display = 'none';
+          if (errorMessageElement) {
+            errorMessageElement.innerHTML = 'Algo deu errado... Tente novamente mais tarde ou entre em contato pelo <a href="https://api.whatsapp.com/send?phone=5548991466864&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento;" target="_blank">Whatsapp.</a>';
+            errorMessageElement.style.display = 'block';
+          }
+        });
       });
+    });
   });
-});
+})();
 
 
 // Para cada produto, ele detecta o título (.clickable) e o link da lupa (.preview-link) e gera a galeria.

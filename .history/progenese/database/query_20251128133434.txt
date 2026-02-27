@@ -1,0 +1,34 @@
+SELECT
+    r.COD_PRODUTO AS "codigo produto",
+    u.DSC_EXTENCAO_UNIDADE AS "unidade medida",
+    r.DSC_PRODUTO AS "item",
+    -- Soma das quantidades de estoque
+    COALESCE(SUM(e.NUM_QUANTIDADE), 0) AS "quantidade estoque",
+    -- Descrição da Categoria (ligada ao produto)
+    c.DSC_CAT_PRODUTO AS "categoria",
+    -- Descrição da Super-Categoria (Categoria Pai)
+    s.DSC_CAT_PRODUTO AS "sub-categoria de"
+FROM
+    PRODUTO r
+-- Joins de Categorias e Unidade
+LEFT JOIN
+    CATEGORIA_PRODUTO c ON c.SEQ_CAT_PRODUTO = r.SEQ_CAT_PRODUTO
+LEFT JOIN
+    CATEGORIA_PRODUTO s ON s.SEQ_CAT_PRODUTO = c.SEQ_SUPERCAT_PRODUTO
+LEFT JOIN
+    UNIDADE u ON u.COD_UNIDADE = r.COD_UNIDADE
+-- LEFT JOIN para a tabela ESTOQUE
+LEFT JOIN
+    ESTOQUE e ON e.COD_PRODUTO = r.COD_PRODUTO
+-- Agrupamento de todas as colunas não agregadas
+GROUP BY
+    r.COD_PRODUTO,
+    u.DSC_EXTENCAO_UNIDADE,
+    r.DSC_PRODUTO,
+    c.DSC_CAT_PRODUTO,
+    s.DSC_CAT_PRODUTO
+ORDER BY
+    r.COD_PRODUTO DESC;
+
+
+    

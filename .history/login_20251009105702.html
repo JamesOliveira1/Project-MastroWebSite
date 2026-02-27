@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acesso área interna | sistema de apoio ao estaleiro</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="icon" href="img/favicon.png">
+  <style>
+    body {
+      background: #f4f8fb url('img/estaleiro.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .login-container {
+      background: rgba(255,255,255,0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      padding: 2.5rem 2rem 2rem 2rem;
+      max-width: 350px;
+      width: 100%;
+      margin: 40px 0;
+    }
+    .login-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #003366;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    .login-subtitle {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .form-check-label {
+      font-size: 0.95rem;
+    }
+    .btn-login {
+      width: 100%;
+      background: #003366;
+      color: #fff;
+      font-weight: 500;
+      border: none;
+      margin-top: 0.5rem;
+    }
+    .btn-login:hover {
+      background: #00509e;
+    }
+    .forgot-link {
+      display: block;
+      text-align: right;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+      color: #00509e;
+      text-decoration: none;
+    }
+    .forgot-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="text-center mb-3">
+      <img src="img/logo.png" alt="Logo" style="max-width: 120px; height: auto;">
+    </div>
+    <div class="login-title">Acesso área interna</div>
+    <div class="login-subtitle">sistema de apoio ao estaleiro</div>
+    <form>
+      <div class="mb-3">
+        <label for="login-usuario" class="form-label">Usuário</label>
+        <input type="text" class="form-control" id="login-usuario" placeholder="Digite seu usuário">
+      </div>
+      <div class="mb-3">
+        <label for="login-senha" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="login-senha" placeholder="Digite sua senha">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="login-lembrar">
+        <label class="form-check-label" for="login-lembrar">Manter-se logado</label>
+      </div>
+      <button type="submit" class="btn btn-login">Entrar</button>
+      <a href="#" class="forgot-link">Recuperar senha</a>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "models": "Models",
+    "models_xs": "XS Models (Service)",
+    "all_models": "All Models",
+    "media_articles": "Media & Articles",
+    "community_posts": "Community Posts",
+    "video_gallery": "Video Gallery",
+    "vacuum_infusion": "Vacuum Infusion",
+    "hull_types": "Hull Types",
+    "maintenance_routine": "Maintenance Routine",
+    "technical_manuals": "Technical Manuals",
+    "all_articles": "All Articles",
+    "contact": "Contact",
+    "quote": "Quote"
+  },
+  "footer": {
+    "pages": "Pages",
+    "home": "Home",
+    "models": "Models",
+    "articles": "Articles",
+    "quote": "Quote",
+    "rep_area": "Representative Area",
+    "useful_links": "Useful Links",
+    "translate": "Translate this page",
+    "tide_table": "Tide Table",
+    "maintenance_tips": "Maintenance Tips",
+    "rights": "All Rights Reserved.",
+    "protected": "This site is protected by",
+    "subject_to": "and is subject to the",
+    "privacy_policy": "Privacy Policy",
+    "and": "and",
+    "terms": "Terms of Service",
+    "google": "of Google.",
+    "support_center": "Support Center",
+    "send_whatsapp": "Send WhatsApp",
+    "email_contact": "Email Contact",
+    "quote_form": "Quote Form",
+    "cookie_text": "This site uses cookies to function properly and improve your experience. See our",
+    "cookie_more_info": "for more information.",
+    "allow": "Allow",
+    "deny": "Deny"
+  },
+  "404": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist or has been removed. Please check the address or use the menu.",
+    "back_home": "Click here to return to the home page."
+  },
+  "videos": {
+    "title": "Video Gallery",
+    "breadcrumb": "Videos",
+    "back": "Back",
+    "request_quote": "Request Quote",
+    "share": "Share"
+  }
+}

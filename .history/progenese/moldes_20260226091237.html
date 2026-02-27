@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="Content-Language" content="pt-BR">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Mastro D'Ascia Náutica">
+  <link href="../assets/img/favicon.png" rel="icon" type="image/png">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <title>Moldes - Mastro D'Ascia</title>
+  <meta name="description" content="Gerenciamento de Moldes do Estaleiro.">
+  <meta property="og:title" content="Mastro D'Ascia Náutica - Moldes">
+  <meta property="og:description" content="Gerenciamento de Moldes do Estaleiro.">
+  <meta property="og:type" content="website">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Versionamento do arquivo CSS para controle de cache -->
+<script src="../assets/css/cssversion.js"></script>
+
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/carrossel.css" rel="stylesheet">
+  <link href="./page/estaleiro.css" rel="stylesheet">
+</head>
+<body>
+  <progenese-header></progenese-header>
+
+  <main id="main" style="background-color: #f0f0f0;">
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Moldes do Estaleiro</h2>
+          <ol>
+            <li><a href="inicio.html">Início</a></li>
+            <li>Moldes</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="updates" class="shipyard-management" style="padding-top: 40px;">
+      <div class="container" style="min-height: 500px;" data-aos="fade-up">
+        <div class="section-title titleconsulta moldestitle">
+          <div class="page-title-standard d-flex justify-content-between align-items-start">
+            <div class="title-block text-start">
+              <h2>Moldes</h2>
+              <p class="pmenos">Gerenciamento de moldes para construção de barcos</p>
+              <div class="text-center text-md-start">
+                <p id="status-text"></p>
+              </div>
+            </div>
+            <div class="decoration1">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon1">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon2">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon3">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon4">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-8">
+            <p class="mb-0 text-muted">Atribua valores e consulte os moldes cadastrados.</p>
+          </div>
+          <div class="col-md-4 d-flex justify-content-end mt-3 mt-md-0">
+            <button class="btn btn-primary btn_estaleiro" id="btnNovoMolde" data-bs-toggle="modal" data-bs-target="#modalMolde">
+              <i class="bi bi-plus-lg me-2"></i> Cadastrar Molde
+            </button>
+          </div>
+        </div>
+
+        <!-- Container Flex para os cards (adaptado para o tamanho fixo dos cards) -->
+        <div class="d-flex flex-wrap justify-content-center justify-content-md-start" id="moldesContainer">
+          <!-- Cards serão inseridos aqui via JS -->
+          <div class="col-12 text-center py-5 w-100">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Carregando...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Cadastro/Edição de Molde -->
+        <div class="modal fade" id="modalMolde" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Cadastrar Molde</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="formMolde">
+                  <input type="hidden" id="moldeId" name="id">
+                  
+                  <div class="mb-3">
+                    <label for="moldeNome" class="form-label">Nome do Molde</label>
+                    <input type="text" class="form-control" id="moldeNome" name="nome" required>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="moldeCodigo" class="form-label">Código do Produto</label>
+                    <input type="text" class="form-control" id="moldeCodigo" name="codigo" required>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-6 mb-3">
+                        <label for="moldeValor" class="form-label">Valor Atribuído (R$)</label>
+                        <input type="text" class="form-control" id="moldeValor" name="valor" required>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <label for="moldeData" class="form-label">Data de Atribuição</label>
+                        <input type="date" class="form-control" id="moldeData" name="data_atribuicao" required>
+                      </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="moldeImagemInput" class="form-label">Foto do Molde</label>
+                    <div class="input-group">
+                        <input type="file" class="form-control" id="moldeImagemInput" name="imagem" accept="image/*">
+                        <button class="btn btn-outline-danger" type="button" id="btnRemoverFoto" title="Remover foto atual">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <input type="hidden" id="removerImagemFlag" name="remover_imagem" value="0">
+                    <div class="mt-2 text-center">
+                        <img id="previewImagem" src="" style="max-height: 150px; display: none;" class="img-fluid rounded">
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="moldeObservacao" class="form-label">Observação</label>
+                    <textarea class="form-control" id="moldeObservacao" name="observacao" rows="3"></textarea>
+                  </div>
+
+                </form>
+              </div>
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-danger" id="btnExcluirMolde" style="display: none;">Excluir</button>
+                <div class="d-flex gap-2">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn_estaleirosave" id="btnSalvarMolde">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <progenese-footer></progenese-footer>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="./page/progenese-layout.js"></script>
+  <!-- Script de Autenticação -->
+  <script src="./javascript/login.js" defer></script>
+  <!-- Script específico da página -->
+  <script src="./javascript/manutencao.js" defer></script>
+  
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

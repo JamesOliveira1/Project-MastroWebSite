@@ -1,0 +1,622 @@
+
+.shipyard-management {
+      padding: 60px 0;
+      background: #f8f9fa;
+    }
+
+    /* Page Title and Instructions */
+    .page-title {
+      color: #004f91;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .page-subtitle {
+      color: #6c757d;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .instructions-box {
+      background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+      border: 1px solid #004f91;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+   /* Action bar below instructions */
+   .instructions-actions {
+     max-width: 800px;
+     margin-left: auto;
+     margin-right: auto;
+   }
+   .instructions-actions .btn {
+     min-width: 110px;
+   }
+   
+    .instructions-text {
+      color: #004f91;
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* Warehouse Containers */
+    .warehouse-container {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .warehouse-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #e9ecef;
+    }
+
+    .warehouse-title {
+      color: #004f91;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .warehouse-counter {
+      background: #004f91;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    /* Horizontal Grid Layout */
+    .warehouse-grid.horizontal {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+      min-height: 150px;
+    }
+
+    /* Boat Slots */
+    .boat-slot {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border: 2px dashed #dee2e6;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      min-height: 120px;
+    }
+
+    .boat-slot:hover {
+      border-color: #004f91;
+      background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,79,145,0.2);
+    }
+
+    .boat-slot.occupied {
+      background: linear-gradient(135deg, #004f91 0%, #0066cc 100%);
+      border: 2px solid #003d73;
+      color: white;
+    }
+
+    .boat-slot.occupied:hover {
+      background: linear-gradient(135deg, #0066cc 0%, #004f91 100%);
+      border-color: #002952;
+    }
+
+    .boat-slot.selected {
+      border: 3px solid #ffc107;
+      box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
+    }
+
+    /* Slot Overlay - aparece quando a vaga está selecionada */
+    .slot-overlay {
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      display: none;
+      padding: 10px;
+      /* brilho translúcido com gradientes suaves nas laterais */
+      background:
+        radial-gradient(circle at 15% 50%, rgba(40, 167, 69, 0.28), rgba(40, 167, 69, 0) 48%),
+        radial-gradient(circle at 85% 50%, rgba(255, 193, 7, 0.28), rgba(255, 193, 7, 0) 48%);
+      backdrop-filter: blur(2px);
+      pointer-events: none; /* o conteúdo interno gerencia eventos */
+    }
+
+    .boat-slot.selected .slot-overlay {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay-grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 8px;
+      pointer-events: none; /* os ícones reativam pointer-events */
+    }
+
+    .overlay-title {
+      color: #fff;
+      font-weight: 700;
+      text-align: center;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+      font-size: 0.95rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .overlay-icon {
+      font-size: 1.6rem;
+      color: rgba(255,255,255,0.92);
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.35));
+      pointer-events: auto; /* permitir clique nos ícones */
+    }
+
+    .overlay-icon:hover {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+
+    .slot-number {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #6c757d;
+      margin-bottom: 10px;
+    }
+
+    .boat-slot.occupied .slot-number {
+      color: rgba(255,255,255,0.9);
+    }
+
+    .slot-content {
+      text-align: center;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .add-icon {
+      font-size: 1.5rem;
+      color: #6c757d;
+    }
+
+    .boat-slot:hover .add-icon {
+      color: #004f91;
+    }
+
+    /* Move icon for occupied slots (same style/size as add icon) */
+    .move-icon {
+      font-size: 1.5rem;
+      color: #6c757d;
+    }
+    .boat-slot.occupied .move-icon {
+      color: rgba(255,255,255,0.9);
+    }
+
+    /* Anchor icon uses unified style */
+    .boat-anchor {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    /* Overlay grid already has three columns; spacer fills middle to push icons left/right */
+    .overlay-grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 8px;
+      pointer-events: none;
+    }
+    .overlay-spacer { pointer-events: none; }
+    .overlay-title {
+      color: #fff;
+      font-weight: 700;
+      text-align: center;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+      font-size: 0.95rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .overlay-icon {
+      font-size: 1.6rem;
+      color: rgba(255,255,255,0.92);
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.35));
+      pointer-events: auto; /* permitir clique nos ícones */
+    }
+
+    .overlay-icon:hover {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+
+    .slot-number {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #6c757d;
+      margin-bottom: 10px;
+    }
+
+    .boat-slot.occupied .slot-number {
+      color: rgba(255,255,255,0.9);
+    }
+
+    .slot-content {
+      text-align: center;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .add-icon {
+      font-size: 1.5rem;
+      color: #6c757d;
+    }
+
+    .boat-slot:hover .add-icon {
+      color: #004f91;
+    }
+
+    /* Boat Information in Slots */
+    .boat-info {
+      text-align: center;
+      width: 100%;
+    }
+
+    .boat-anchor {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .boat-model {
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .boat-code {
+      font-size: 0.8rem;
+      opacity: 0.9;
+      margin-bottom: 4px;
+    }
+
+    .boat-progress-display {
+      font-size: 0.7rem;
+      opacity: 0.8;
+      background: rgba(255,255,255,0.2);
+      padding: 2px 6px;
+      border-radius: 10px;
+    }
+
+    /* Boat Selection Panel */
+    .boat-selection-panel {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      padding: 15px;
+      z-index: 1000;
+      min-width: 250px;
+    }
+
+    .selection-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .boat-info-display h6 {
+      margin: 0;
+      color: #004f91;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .boat-info-display p {
+      margin: 0;
+      color: #6c757d;
+      font-size: 0.8rem;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 8px;
+    }
+
+    /* Progress Container in Modal */
+    .progress-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    .progress-info {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      min-width: 100px;
+    }
+
+    #progressValue {
+      font-weight: bold;
+      color: #004f91;
+    }
+
+    .progress-label {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+
+    /* Completed Projects */
+    .completed-projects {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .section-title {
+      color: #28a745;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #e9ecef;
+      padding-bottom: 15px;
+    }
+
+    .completed-boats-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      min-height: 100px;
+    }
+
+    .completed-boat {
+      background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+      color: white;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .completed-boat:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(40,167,69,0.3);
+    }
+
+    .completed-boat.selected {
+      border: 3px solid #ffc107;
+      box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
+    }
+
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      color: #6c757d;
+      padding: 40px;
+    }
+
+    .empty-state i {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      opacity: 0.5;
+    }
+
+    /* Drag and Drop States */
+    .boat-slot.drag-over {
+      border-color: #28a745;
+      background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    }
+
+    .boat-slot.dragging {
+      opacity: 0.5;
+      transform: rotate(5deg);
+    }
+
+    .completed-boats-container.drag-over {
+      background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+      border: 2px dashed #28a745;
+      border-radius: 10px;
+    }
+
+    /* Pre-Projects */
+    .pre-projects {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .pre-boats-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      min-height: 100px;
+    }
+
+    .pre-boats-container.drag-over {
+      background: linear-gradient(135deg, #fff3cd 0%, #ffeeba 100%);
+      border: 2px dashed #ffc107;
+      border-radius: 10px;
+    }
+
+    .pre-boat {
+      background: linear-gradient(135deg, #ffc107 0%, #ffdf7e 100%);
+      color: #343a40;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .pre-boat:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255,193,7,0.3);
+    }
+
+    .pre-boat.selected {
+      border: 3px solid #007bff;
+      box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+      .warehouse-grid.horizontal {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .warehouse-grid.horizontal {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .warehouse-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+      
+      .page-title {
+        font-size: 2rem;
+      }
+      
+      .boat-selection-panel {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .warehouse-grid.horizontal {
+        grid-template-columns: 1fr;
+      }
+      
+      .page-title {
+        font-size: 1.8rem;
+      }
+    }
+  
+
+    #inventario-table tbody tr.inventario-row {
+      transition: background-color .15s ease, transform .12s ease, box-shadow .12s ease;
+    }
+    #inventario-table tbody tr.inventario-row:hover {
+      background-color: rgba(0,0,0,0.03);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    /* Opcionais - retÃ¢ngulos estilo vagas do estaleiro */
+    .optional-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+    }
+    @media (max-width: 1200px) { .optional-grid { grid-template-columns: repeat(4, 1fr); } }
+    @media (max-width: 992px) { .optional-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 768px) { .optional-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 576px) { .optional-grid { grid-template-columns: 1fr; } }
+
+    .optional-card {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border: 2px dashed #dee2e6;
+      border-radius: 10px;
+      padding: 15px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .optional-card:hover {
+      border-color: #004f91;
+      background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,79,145,0.2);
+    }
+    .optional-installed-icon { display: none; margin-left: 8px; font-size: 1.1rem; color: #198754; }
+    .optional-card.installed .optional-installed-icon { display: inline-block; }
+    .optional-card.installed { border: 2px solid #198754; background: linear-gradient(135deg, #eafaf1 0%, #d1f2e8 100%); }
+    .optional-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #004f91;
+    }
+    .optional-card.installed .optional-header { color: #198754; }
+    .optional-card.installed:hover { border-color: #157347; background: linear-gradient(135deg, #dff3ea 0%, #c8eadf 100%); box-shadow: 0 5px 15px rgba(25,135,84,0.2); }
+    .optional-desc { color: #495057; font-size: 0.95rem; }
+  
+
+.table-container { box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+  
+    .welcome-card {
+      background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+      border: 1px solid #004f91;
+      border-radius: 10px;
+    }
+    .welcome-card h3 {
+      color: #004f91;
+      margin: 0;
+      font-weight: 700;
+    }
+    .notes-card .section-title h2,
+    .activity-card .section-title h2 {
+      color: #004f91;
+    }
+    .notes-card .list-group-item {
+      border-radius: 8px;
+    }
+    .notes-actions .btn { min-width: 36px; padding: 6px 10px; }
+    .main-inicio .table-container { background: #fff; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); padding: 15px; }
+  

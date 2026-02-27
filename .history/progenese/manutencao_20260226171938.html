@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="Content-Language" content="pt-BR">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Mastro D'Ascia Náutica">
+  <link href="../assets/img/favicon.png" rel="icon" type="image/png">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <title>Manutenção - Mastro D'Ascia</title>
+  <meta name="description" content="Controle de manutenção de equipamentos e maquinário.">
+  <meta property="og:title" content="Mastro D'Ascia Náutica - Manutenção">
+  <meta property="og:description" content="Controle de manutenção de equipamentos e maquinário.">
+  <meta property="og:type" content="website">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Versionamento do arquivo CSS para controle de cache -->
+  <script src="../assets/css/cssversion.js"></script>
+
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/carrossel.css" rel="stylesheet">
+  <link href="./page/estaleiro.css" rel="stylesheet">
+</head>
+<body>
+  <progenese-header></progenese-header>
+
+  <main id="main" style="background-color: #f0f0f0;">
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Controle de Manutenção</h2>
+          <ol>
+            <li><a href="inicio.html">Início</a></li>
+            <li>Manutenção</li>
+          </ol>
+        </div>
+        <!-- Modal Histórico de Manutenção -->
+        <div class="modal fade" id="modalHistorico" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Registrar Manutenção</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="formHistorico">
+                  <input type="hidden" id="histId" name="id">
+                  <input type="hidden" id="histEquipId" name="equipamento_id">
+                  
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <label for="histDataIni" class="form-label">Data Inicial</label>
+                      <input type="date" class="form-control" id="histDataIni" name="data_inicial" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="histDataRet" class="form-label">Data Retorno</label>
+                      <input type="date" class="form-control" id="histDataRet" name="data_retorno">
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <label for="histTipo" class="form-label">Tipo de Manutenção</label>
+                      <select class="form-select" id="histTipo" name="tipo">
+                        <option value="Preventiva">Preventiva</option>
+                        <option value="Corretiva">Corretiva</option>
+                        <option value="Preditiva">Preditiva</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="histResponsavel" class="form-label">Responsável</label>
+                      <input type="text" class="form-control" id="histResponsavel" name="responsavel">
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="histObservacao" class="form-label">Observação / Serviço Realizado</label>
+                    <textarea class="form-control" id="histObservacao" name="observacao" rows="3"></textarea>
+                  </div>
+
+                  <div class="row mb-3 align-items-center">
+                    <div class="col-md-6">
+                        <label for="histOS" class="form-label">Anexar Ordem de Serviço (PDF)</label>
+                        <div class="input-group">
+                            <input type="file" class="form-control" id="histOS" name="os_file" accept=".pdf">
+                            <button class="btn btn-outline-danger" type="button" id="btnRemoverOS" title="Remover OS atual" disabled>
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                        </div>
+                        <input type="hidden" id="removerOSFlag" name="remover_os" value="0">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check mt-4">
+                            <input class="form-check-input" type="checkbox" id="histConcluida" name="is_concluida" value="1">
+                            <label class="form-check-label" for="histConcluida">
+                                Marcar como Concluída
+                            </label>
+                        </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-danger" id="btnExcluirHistorico" style="display: none;">Excluir</button>
+                <div class="d-flex gap-2 ms-auto">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn_estaleirosave" id="btnSalvarHistorico">Salvar Edição</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="manutencao" class="shipyard-management" style="padding-top: 40px;">
+      <div class="container" style="min-height: 500px;" data-aos="fade-up">
+        <div class="section-title titleconsulta moldestitle">
+          <div class="page-title-standard d-flex justify-content-between align-items-start">
+            <div class="title-block text-start">
+              <h2>Equipamentos</h2>
+              <p class="pmenos">Controle de manutenção de equipamentos</p>
+              <div class="text-center text-md-start">
+                <p id="status-text"></p>
+              </div>
+            </div>
+            <div class="decoration1">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon1">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon2">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon3">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon4">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-8">
+            <p class="mb-0 text-muted">Gerencie rotinas de manutenções e veja o histório dos equipamentos.</p>
+          </div>
+          <div class="col-md-4 d-flex justify-content-end mt-3 mt-md-0 gap-2">
+            <button class="btn btn-outline-secondary" id="btnOrdenarEquipamentos" title="Ordenar">
+                <i class="bi bi-list-ol"></i> Ordenar
+            </button>
+            <button class="btn btn-primary btn_estaleiro" id="btnNovoEquipamento" data-bs-toggle="modal" data-bs-target="#modalEquipamento">
+              <i class="bi bi-plus-lg me-2"></i> Cadastrar Equipamento
+            </button>
+          </div>
+        </div>
+
+        <!-- Container Flex para a lista de equipamentos -->
+        <div id="equipamentosContainer" class="equipment-list">
+          <!-- Items inseridos via JS -->
+          <div class="col-12 text-center py-5 w-100">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Carregando...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Cadastro/Edição de Equipamento -->
+        <div class="modal fade" id="modalEquipamento" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Cadastrar Equipamento</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="formEquipamento">
+                  <input type="hidden" id="equipamentoId" name="id">
+                  
+                  <div class="row mb-3">
+                    <div class="col-md-7">
+                      <label for="equipNome" class="form-label">Nome do Equipamento</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" id="equipNome" name="nome" required>
+                        <button class="btn btn-outline-primary" type="button" id="btnBuscaEquipNome" title="Pesquisar">
+                          <i class="bi bi-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <label for="equipCodigo" class="form-label">Código do Produto</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" id="equipCodigo" name="codigo">
+                        <button class="btn btn-outline-primary" type="button" id="btnBuscaEquipCodigo" title="Pesquisar">
+                          <i class="bi bi-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Linha de Resultados da Busca -->
+                  <div id="buscaEquipResultsContainer" class="mb-3">
+                    <div class="table-responsive" style="max-height: 200px; border: 1px solid #dee2e6; border-radius: 4px;">
+                      <table class="table table-sm table-hover align-middle mb-0" style="font-size: 0.85rem;">
+                        <thead class="table-light">
+                          <tr>
+                            <th>Código</th>
+                            <th>Item</th>
+                            <th class="text-end">Ação</th>
+                          </tr>
+                        </thead>
+                        <tbody id="buscaEquipResultsBody">
+                          <!-- Resultados via JS -->
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="d-flex justify-content-end gap-2 mt-2">
+                      <button type="button" class="btn btn-outline-secondary btn-sm" id="btnBuscaEquipPrev"><i class="bi bi-chevron-left"></i></button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm" id="btnBuscaEquipNext"><i class="bi bi-chevron-right"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-md-4">
+                      <label for="equipFabricante" class="form-label">Fabricante</label>
+                      <input type="text" class="form-control" id="equipFabricante" name="fabricante">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="equipModelo" class="form-label">Modelo</label>
+                      <input type="text" class="form-control" id="equipModelo" name="modelo">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="equipStatus" class="form-label">Status Atual</label>
+                      <select class="form-select" id="equipStatus" name="status">
+                        <option value="Em uso">Em uso</option>
+                        <option value="Em manutenção">Em manutenção</option>
+                        <option value="Fora de serviço">Fora de serviço</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-md-4">
+                      <label for="equipSerie" class="form-label">Nº de Série</label>
+                      <input type="text" class="form-control" id="equipSerie" name="serie">
+                    </div>
+                     <div class="col-md-4">
+                      <label for="equipData" class="form-label">Data de Aquisição</label>
+                      <input type="date" class="form-control" id="equipData" name="data_aquisicao">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="equipNotaFiscal" class="form-label">Nº Nota Fiscal</label>
+                      <input type="text" class="form-control" id="equipNotaFiscal" name="nota_fiscal">
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="equipImagemInput" class="form-label">Foto do Equipamento</label>
+                    <div class="input-group">
+                        <input type="file" class="form-control" id="equipImagemInput" name="imagem" accept="image/png, image/jpeg, image/jpg, image/webp">
+                        <button class="btn btn-outline-danger" type="button" id="btnRemoverFotoEquip" title="Remover foto atual" disabled>
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <div id="equipImagemFeedback" class="form-text mt-1 text-primary" style="display: none;">
+                        <i class="bi bi-image"></i> <span id="equipImagemNome"></span>
+                    </div>
+                    <div id="equipImagemAvisoRemocao" class="form-text mt-1 text-danger" style="display: none;">
+                        <i class="bi bi-exclamation-triangle"></i> A foto será removida ao salvar.
+                    </div>
+                    <input type="hidden" id="removerImagemEquipFlag" name="remover_imagem" value="0">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="equipDescricao" class="form-label">Descrição</label>
+                    <textarea class="form-control" id="equipDescricao" name="descricao" rows="2"></textarea>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="equipObservacao" class="form-label">Observação</label>
+                    <textarea class="form-control" id="equipObservacao" name="observacao" rows="3"></textarea>
+                  </div>
+
+                </form>
+              </div>
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-danger" id="btnExcluirEquipamento" style="display: none;">Excluir</button>
+                <div class="d-flex gap-2 ms-auto">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn_estaleirosave" id="btnSalvarEquipamento">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <progenese-footer></progenese-footer>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="./page/progenese-layout.js"></script>
+  <!-- Script de Autenticação -->
+  <script src="./javascript/login.js" defer></script>
+  <!-- Script específico da página -->
+  <script src="./javascript/manutencao.js" defer></script>
+  
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

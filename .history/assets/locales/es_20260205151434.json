@@ -1,0 +1,853 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "models": "Modelos",
+    "models_xs": "Modelos XS (Servicios)",
+    "all_models": "Todos los Modelos",
+    "media_articles": "Medios y Artículos",
+    "community_posts": "Publicaciones de la Comunidad",
+    "video_gallery": "Galería de Videos",
+    "vacuum_infusion": "Infusión al Vacío",
+    "hull_types": "Tipos de Cascos",
+    "maintenance_routine": "Rutina de Mantenimiento",
+    "technical_manuals": "Manuales Técnicos",
+    "all_articles": "Todos los Artículos",
+    "contact": "Contacto",
+    "quote": "Presupuesto"
+  },
+  "footer": {
+    "pages": "Páginas",
+    "home": "Inicio",
+    "models": "Modelos",
+    "articles": "Artículos",
+    "quote": "Presupuesto",
+    "rep_area": "Área del Representante",
+    "useful_links": "Enlaces Útiles",
+    "translate": "Traducir esta página",
+    "tide_table": "Tabla de mareas",
+    "maintenance_tips": "Consejos de mantenimiento",
+    "weather": "Pronóstico del Tiempo",
+    "bombarco": "Bombarco",
+    "rights": "All Rights Reserved.",
+    "protected": "Este sitio está protegido por",
+    "subject_to": "y está sujeto a la",
+    "privacy_policy": "Política de Privacidad",
+    "and": "y a los",
+    "terms": "Términos de Servicio",
+    "google": "de Google.",
+    "support_center": "Centro de soporte",
+    "send_whatsapp": "Enviar WhatsApp",
+    "email_contact": "Contacto por correo",
+    "quote_form": "Formulario de presupuesto",
+    "cookie_text": "Este sitio utiliza cookies para funcionar correctamente y mejorar su experiencia. Consulte nuestra",
+    "cookie_more_info": "para más información.",
+    "allow": "Permitir",
+    "deny": "Rechazar"
+  },
+  "404": {
+    "title": "Página no encontrada",
+    "description": "Lo sentimos, la página que está buscando no existe o ha sido eliminada. Verifique la dirección o use el menú.",
+    "back_home": "Haga clic aquí para volver a la página principal."
+  },
+  "videos": {
+    "title": "Galería de Videos",
+    "breadcrumb": "Videos",
+    "back": "Volver",
+    "request_quote": "Solicitar Presupuesto",
+    "share": "Compartir"
+  },
+  "budget": {
+    "title": "Presupuesto",
+    "breadcrumb": "Presupuesto",
+    "form_title": "Formulario de cotización",
+    "placeholders": {
+      "name": "Nombre",
+      "surname": "Apellido",
+      "email": "Su E-mail",
+      "phone": "Su Teléfono (Solo números)",
+      "message": "Mensaje (Opcional)"
+    },
+    "select": {
+      "default": "¿Sobre qué modelo vamos a tratar?",
+      "undecided": "Aún no he decidido..."
+    },
+    "return_contact": "Me gustaría recibir respuesta por:",
+    "phone": "Teléfono",
+    "email": "E-mail",
+    "status": {
+      "sending": "Enviando...",
+      "recaptcha": " Estamos verificando la seguridad con <strong class=\"recaptchasending\">reCAPTCHA</strong>, lo que puede llevar unos segundos. Gracias por su paciencia.",
+      "success": "¡Formulario enviado, ahora solo espere nuestro contacto!",
+      "submit": "Enviar"
+    },
+    "description": {
+      "thanks": "<strong>Agradecemos</strong> sinceramente su interés en nuestros catamaranes.",
+      "commitment": "Estamos comprometidos en ofrecer una <strong>experiencia excepcional</strong>, adaptada a sus necesidades específicas encontrando la solución a medida para usted.",
+      "contact": "Después de recibir su formulario, nos pondremos en contacto para ofrecerle un <strong>presupuesto personalizado.</strong>"
+    },
+    "cards": {
+      "custom_budget": "Presupuesto con personalización",
+      "choose_options": "¡Elija los opcionales y configure su barco!",
+      "whatsapp_budget": "Presupuesto vía WhatsApp",
+      "click_here": "¡Clic aquí!"
+    }
+  },
+  "customization": {
+    "title": "Personalización",
+    "breadcrumb": "Personalización",
+    "form_title": "Personalice su Catamarán",
+    "selected_model": "Modelo Seleccionado",
+    "standard_items": "Artículos de Serie:",
+    "choose_engine": "Elija la potencia y tipo de motor",
+    "choose_options": "Elija los opcionales",
+    "item_price": "Precio del artículo: ",
+    "boat_assembly": "Barco y Montaje: ",
+    "motorization": "Motorización: ",
+    "options_total": "Total de Opcionales: ",
+    "total_value": "Valor Total: ",
+    "fill_form": "Complete y envíe el formulario",
+    "placeholders": {
+      "name": "Su nombre",
+      "email": "Su email",
+      "phone": "Teléfono de contacto",
+      "boat_name": "Nombre de su barco o proyecto",
+      "rep_name": "Nombre del Representante (Si lo hay)",
+      "notes": "Observaciones y pedidos adicionales"
+    },
+    "titles": {
+      "phone": "Ingrese el teléfono en el formato (99) 99999-9999"
+    },
+    "status": {
+      "sending": "Enviando modelo personalizado",
+      "success": "Formulario enviado, espere la respuesta de nuestro representante.",
+      "submit": "Enviar"
+    },
+    "description": {
+      "p1": "Aquí, puede seleccionar los opcionales deseados para cada modelo, ver los motores disponibles y <strong>enviar esta selección a uno de nuestros representantes comerciales</strong>, que dará continuidad a la atención.",
+      "p2": "Después del envío, nos pondremos en contacto para presentar todos los detalles y dar secuencia a la negociación del proyecto.",
+      "p3": "Si tiene alguna duda, <strong>puede recibir una atención más rápida </strong>por aquí:"
+    },
+    "info_box": {
+      "budget_title": "Presupuesto sin personalización",
+      "budget_desc": "Haga clic aquí para una versión más simple de este formulario...",
+      "whatsapp_title": "Atención vía Whatsapp",
+      "whatsapp_desc": "¡Haga clic aquí!"
+    }
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Catamaranes de alto rendimiento",
+      "models_btn": "Modelos"
+    },
+    "about": {
+      "counts": {
+        "wood_usage": "Uso de madera",
+        "vacuum_infusion": "Infusión al Vacío",
+        "experience_years": "Años de Experiencia",
+        "models_production": "Modelos en producción"
+      },
+      "title_estaleiro": "Astillero",
+      "p1": "Nuestra misión es ofrecer al mercado una línea de <strong>catamaranes</strong> que se destacan por su <strong>eficiencia en la navegación</strong>. Nos empeñamos para que la producción de cada embarcación sea única y no solo atienda, sino que supere las expectativas del cliente.",
+      "p2": "Nuestro enfoque moderno de construcción, aliado a proveedores de primera línea y al constante entrenamiento de nuestros profesionales, nos proporciona la confianza de que estamos produciendo embarcaciones de altísima calidad, <strong>garantizando que mantengan sus atributos por muchos años</strong>.",
+      "p3": "Seguiremos desarrollando catamaranes que son referencia en el mercado, atendiendo a los consumidores más exigentes, aquellos que esperan una <strong>experiencia incomparable</strong> que los lleve más allá de simplemente navegar."
+    },
+    "clients": {
+      "quote": "\"Mirando hacia la proa de este catamarán, la sensación era de estar volando sobre las olas, apoyados en un colchón de aire. Las ganas eran de acelerar más, hipnotizados como estábamos con el suave cabeceo del 8XF, totalmente estable en su elemento natural (léase mar agitado)...\"",
+      "author": "(Marcio Dottori, Revista Náutica)"
+    },
+    "about_boxes": {
+      "quality": {
+        "title": "Calidad",
+        "text": "Nuestro compromiso con la calidad nos lleva a utilizar los materiales y métodos constructivos más avanzados, resultando en modelos que garantizan una navegación superior y memorable. Los premios, artículos en revistas y la retroalimentación de los clientes nos motivan a mantener nuestros productos únicos."
+      },
+      "efficiency": {
+        "title": "Eficiencia",
+        "text": "Los catamaranes que producimos pasan por el proceso de infusión al vacío, garantizando propiedades superiores a los cascos de laminación manual y eliminando el uso de madera en nuestra producción. Al ser más ligero y de alta resistencia, navegar con este tipo de casco garantiza un ahorro de motor y combustible incluso a velocidades elevadas."
+      },
+      "innovation": {
+        "title": "Innovación",
+        "text": "Nuestro equipo de desarrollo está constantemente probando nuevas tecnologías para mejorar nuestros catamaranes, buscando siempre superar las expectativas del cliente y poder ofrecer lo más nuevo en el segmento."
+      }
+    },
+    "portfolio": {
+      "title": "Modelos",
+      "subtitle": "Explore nuestros modelos",
+      "filters": {
+        "new": "Lanzamientos",
+        "cc": "Modelos Center Console",
+        "xf": "Modelos con Cabina",
+        "xs": "Modelos de Servicio"
+      },
+      "view_details": "Ver detalles y especificaciones"
+    },
+    "features": {
+      "tabs": {
+        "tab1": "Lanzamiento Nomad 8CC",
+        "tab2": "¡Suscríbase a nuestro boletín!",
+        "tab3": "Artículos y Videos",
+        "tab4": "Catálogo Completo"
+      },
+      "tab1": {
+        "title": "¡El nuevo 8CC ha llegado!",
+        "li1": "Descubra el Nomad 8CC ahora.",
+        "li2": "La evolución de la línea Nomad, con el confort y rendimiento que estaba esperando."
+      },
+      "tab2": {
+        "title": "Regístrese y reciba novedades y contenidos exclusivos de primera mano.",
+        "subtitle": "Suscríbase a nuestro boletín:",
+        "form": {
+          "name_placeholder": "Escriba su nombre",
+          "phone_placeholder": "Su teléfono",
+          "email_placeholder": "Su e-mail",
+          "submit": "Enviar"
+        },
+        "li1": "Reciba nuestras promociones y condiciones exclusivas.",
+        "li2": "Sin spam. Solo contenido relevante sobre barcos y novedades del astillero."
+      },
+      "tab3": {
+        "title": "Consulte nuestra sección de artículos y videos",
+        "p1": "Nuestra página está llena de contenido sobre el universo de la navegación marítima.",
+        "p2": "¡Haga clic y comparta!",
+        "links": {
+          "community": "Publicaciones de la comunidad",
+          "safety": "Consejos de seguridad",
+          "manuals": "Manuales técnicos"
+        },
+        "btn": {
+          "videos": "Galería de Videos",
+          "articles": "Artículos y Publicaciones"
+        }
+      },
+      "tab4": {
+        "title": "Consulte nuestro catálogo completo",
+        "li1": "Descargue gratis y visualice todos los modelos y configuraciones disponibles.",
+        "li2": "Todo lo que necesita saber para elegir su próximo catamarán está aquí: modelos, medidas, motorización y diferenciales de cada embarcación."
+      }
+    },
+    "team": {
+      "title": "Conociendo más",
+      "subtitle": "El Equipo y Fábrica",
+      "card1": {
+        "title": "¡Hola Navegantes!",
+        "text": "\"Desde 2011 en el mercado, tenemos varios modelos de barcos que creamos y adaptamos exclusivamente para satisfacer la necesidad de cada cliente. Cuente con nuestra experiencia y estructura para convertir su proyecto en realidad.\""
+      },
+      "card2": {
+        "title": "A su disposición,",
+        "text": "\"Nuestro compromiso de mantener nuestros productos únicos es impulsado por las personas talentosas que los construyen y por la utilización de tecnología de punta. Gracias a esta combinación, los barcos de Mastro D'Áscia Náutica no solo destacan por su calidad, sino que también consolidan nuestra reputación.\""
+      },
+      "card3": {
+        "role": "Director / Ventas"
+      },
+      "btn_quote": "Solicitar Presupuesto"
+    },
+    "contact": {
+      "title": "Contacto",
+      "subtitle": "Póngase en contacto",
+      "visit_title": "¡Haga una visita!",
+      "email_title": "Enviar Correo",
+      "call_title": "¡Llámenos!",
+      "form": {
+        "name": "Nombre Completo",
+        "phone": "Su Teléfono",
+        "subject": "Asunto",
+        "email": "Su E-mail",
+        "message": "Mensaje",
+        "sending": "Enviando...",
+        "recaptcha": " Estamos verificando la seguridad con <strong class=\"recaptchasending\">reCAPTCHA</strong>, lo que puede llevar unos segundos. Gracias por su paciencia.",
+        "error": "Algo salió mal... Inténtelo de nuevo más tarde o póngase en contacto por <a href=\"https://api.whatsapp.com/send?phone=5548991466864&text=Hola%2C%20vengo%20del%20sitio%20y%20me%20gustar%C3%ADa%20un%20presupuesto;\" target=\"_blank\">Whatsapp.</a>",
+        "success": "¡Su mensaje ha sido enviado, gracias!",
+        "submit": "Enviar Mensaje"
+      }
+    },
+    "modal": {
+      "title": "Contenido no disponible en este momento",
+      "body": "Nuestro nuevo catálogo estará disponible pronto.<br>¡Suscríbase a nuestro <strong>Boletín </strong>y recíbalo tan pronto como esté listo!",
+      "ok": "Ok"
+    }
+  },
+  "articles": {
+    "title": "Medios y Artículos",
+    "breadcrumb": "Artículos",
+    "welcome": {
+      "p1": "¡Bienvenido a nuestro espacio de conocimiento! Aquí encontrará una amplia variedad de artículos y textos cuidadosamente elaborados para satisfacer su curiosidad y ampliar sus horizontes.",
+      "p2": "El conocimiento está a su alcance. ¡Exploremos juntos!"
+    },
+    "instagram": {
+      "title": "Publicaciones destacadas",
+      "subtitle": "Inspírese en los registros de quienes navegan con nosotros",
+      "click_to_view": "Haga clic para ver en"
+    },
+    "manuals": {
+      "title": "Manuales Técnicos",
+      "description": "\"A continuación, proporcionamos los manuales técnicos suministrados por terceros, con información detallada sobre los principales equipos utilizados en el montaje de su catamarán NOMAD. Con esta información, podrá comprender y operar cada componente con precisión, asegurando la durabilidad y el rendimiento de los equipos instalados.\"",
+      "electronic_btn": "Manuales Electrónicos",
+      "hydraulic_btn": "Hidráulica",
+      "engines_btn": "Motores",
+      "winches_btn": "Cabrestantes",
+      "categories": {
+        "displays": "Pantallas Multifunción",
+        "vhf": "Radios VHF",
+        "sonar": "Módulos de Sonda",
+        "autopilot": "Piloto Automático",
+        "radar": "Radar",
+        "transducers": "Transductores",
+        "sound": "Sistema de Sonido",
+        "wireless": "Red Inalámbrica",
+        "fuel": "Gestión de Combustible"
+      },
+      "items": {
+        "lowrance_hds_gen2": "Monitor LOWRANCE HDS Gen2",
+        "lowrance_hds_gen3": "Monitor LOWRANCE HDS Gen3",
+        "simrad_go_xse": "Monitor SIMRAD GO XSE",
+        "simrad_nss": "Monitor SIMRAD NSS",
+        "simrad_nss_evo2": "Monitor SIMRAD NSS evo2",
+        "simrad_nss_evo3": "Monitor SIMRAD NSS evo3",
+        "simrad_nso_evo2": "Monitor SIMRAD NSO evo2",
+        "simrad_s2009": "Monitor S2009",
+        "simrad_rs12": "Radio VHF SIMRAD RS12",
+        "simrad_rs35": "Radio VHF SIMRAD RS35",
+        "simrad_rs40": "Radio VHF SIMRAD RS40",
+        "lowranced_lvr880": "Radio VHF LOWRANCE LVR 880",
+        "ais_camino108": "AIS Clase B CAMINO-108",
+        "structurescan_3d_manual": "Structurescan 3D SIMRAD- Manual",
+        "structurescan_lowrance_hd": "Structurescan LOWRANCE HD",
+        "simrad_ac12_install": "CPU Piloto Automático SIMRAD AC12 - Instalación",
+        "simrad_ap44": "Monitor de Piloto Automático SIMRAD AP44",
+        "lowrance_autopilot_install": "Piloto Automático LOWRANCE - Instalación",
+        "radar_broadband": "Radar - BroadBand",
+        "radar_halo": "Radar - Halo",
+        "structurescan_3d_install": "Structurescan 3D SIMRAD- Instalación",
+        "totalscan_install": "Totalscan SIMRAD- Instalación",
+        "transducer_p66": "Transductor AIRMAR P66",
+        "transducer_tm260": "Transductor AIRMAR TM260",
+        "sonichub": "SonicHub LOWRANCE",
+        "gofree": "GOFREE",
+        "tipintel": "TipIntel",
+        "rule_bilge_pumps": "Bombas de Sentina RULE",
+        "jabsco_pressurizers": "Presurizadores JABSCO",
+        "jabsco_toilet": "Inodoro JABSCO",
+        "yanmar_manual": "Manual de Operación YANMAR 6LY2A-STP",
+        "mercury_sc1000": "Monitor MERCURY SmartCraft SC1000",
+        "mercury_tach_speed": "Monitor MERCURY SmartCraft TACHOMETER - SPEEDOMETER",
+        "tie_bar_evinrude": "Montaje de Barra de Acoplamiento - EVINRUDE ETEC 200 a 300hp",
+        "tie_bar_hydraulic": "Montaje de Barra de Acoplamiento Hidráulica",
+        "evinrude_install": "Motor EVINRUDE ETEC 200 a 300hp - Instalación",
+        "evinrude_manual": "Motor EVINRUDE ETEC 200 a 300hp",
+        "mercury_115": "Motor MERCURY 115hp 4T",
+        "mercury_150": "Motor MERCURY 150hp 4T",
+        "mercury_v6_v8": "Motor MERCURY V6 (175-225) V8 (200-300) CMS DTS",
+        "yamaha_115": "Motor YAMAHA 115 4T",
+        "yamaha_150": "Motor YAMAHA 150 4T",
+        "lewmar_cpx0": "Molinete LEWMAR CPX0 500W",
+        "lewmar_cpx1": "Molinete LEWMAR CPX1 700W",
+        "fish_700": "Molinete Fish 700"
+      }
+    },
+    "history": {
+      "title": "Historia del catamarán",
+      "p1": "<strong>Cómo surgió el catamarán:</strong> Los catamaranes surgieron en Micronesia y Polinesia por la necesidad de mejorar la estabilidad y la velocidad, como alternativa a los monocascos. Fue a través de estas embarcaciones que este pueblo ocupó las islas del Pacífico (incluyendo la colonización de Hawái). Los primeros occidentales en tener contacto con estas embarcaciones fueron los españoles, quienes quedaron muy impresionados con la velocidad de este tipo de barco.",
+      "p2": "<strong>Cómo se desarrolló:</strong> En la década de 1950 en Inglaterra se desarrollaron los primeros catamaranes modernos a vela para competición. Surgió la primera generación de diseñadores y constructores de multicascos modernos con una creciente variedad de embarcaciones a vela y a motor para deporte y ocio. Desde entonces, con el desarrollo de materiales y técnicas de construcción, los catamaranes se han convertido en una opción para diversas áreas de la ingeniería naval, con sus más variadas formas, ya sean cascos convencionales, simétricos o asimétricos.",
+      "p3": "<strong>El catamarán hoy en día:</strong> Con el desarrollo de materiales y conocimientos estructurales, cada día los catamaranes van ganando más espacio en los medios de navegación, ya sea para el transporte de pasajeros o carga, como en el caso de los transbordadores, o para el ocio, como veleros, lanchas de competición y de crucero. En el área de transporte, el catamarán ha demostrado ser una excelente solución para líneas cortas de hasta 1000 km (540 millas), con velocidades superiores a 30 nudos, convirtiéndose en un competidor efectivo de los ya saturados medios de transporte de los grandes centros de producción. El catamarán será siempre una opción cuando la economía, el confort y la estabilidad sean requisitos del proyecto."
+    },
+    "infusion": {
+      "title": "Proceso constructivo: Infusión al Vacío",
+      "p1": "<strong>Qué es:</strong> El proceso de infusión al vacío es uno de los procesos más innovadores en la industria náutica. Es un método que a menudo resulta ser más eficiente y práctico que el de laminación manual, por ejemplo. Cada caso es diferente; los barcos requieren procesos y métodos de construcción específicos dependiendo de su tamaño y uso.",
+      "p2": "<strong>Dónde se aplica:</strong> El método de infusión es el proceso utilizado para la construcción de barcos de alto rendimiento y calidad, pudiendo verse en la fabricación de barcos por grandes astilleros en todo el mundo. Es un método de escala industrial y, por lo tanto, requiere estructura y experiencia para realizarse.",
+      "p3": "<strong>Cómo funciona:</strong> En el proceso de infusión al vacío, todo el material, espumas de PVC y tejidos se colocan secos en el molde ya listo, y así envueltos por una bolsa de vacío. Al accionar la bomba de vacío, el aire saldrá del plástico y la resina será transferida, a través de mangueras conectadas a un recipiente de resina, hacia el interior de las capas de fibra por la acción diferencial de presión interna y externa.",
+      "p4": "<strong>Características mecánicas:</strong> Los laminados fabricados por el proceso de infusión son más resistentes que los laminados convencionales fabricados manualmente, ya que su impregnación entre las fibras llega al 60%, mientras que en la laminación manual alcanza solo del 20 al 30% de contenido de fibra. Con el método de infusión, dejamos de lado problemas ambientales y de insalubridad, ya que no hay desperdicio de material y no hay contacto directo entre el constructor y las resinas.",
+      "p5": "<strong>Ventajas de la Infusión:</strong> Las construcciones de barcos mediante infusión al vacío utilizan invariablemente el sistema sándwich, lo que significa que presentarán un mayor aislamiento térmico, resultando económico al considerar el uso de aire acondicionado en el barco y la energía producida por el sistema de generadores para alimentarlos. Otra economía a observar es la de resina y fibras. Como no se toca la resina durante la laminación, solo durante la infusión hacia el interior del laminado, se evita el desperdicio. En el caso de las fibras, el hecho es que durante la laminación manual muchas fibras terminan cayendo al suelo, o quedan parcialmente impregnadas, sin poder ser reutilizadas; en el método de infusión, como la laminación se hace en seco, la fibra puede ser precortada y ajustada en el lugar con precisión.",
+      "p6": "<strong>Consideraciones:</strong> Los catamaranes de alto rendimiento exigen un proceso constructivo que garantice mucha resistencia y bajo peso. Entre los procesos constructivos empleados en la industria náutica, el proceso de infusión al vacío mostró ser la mejor opción para garantizar los más altos estándares de calidad."
+    },
+    "hulls": {
+      "title": "Tipos de cascos en catamaranes",
+      "intro": "Actualmente existe una infinidad de formas de cascos de catamarán. Requisitos de proyecto como velocidad, comportamiento esperado, motorización y costos definirán qué tipo de casco es el más adecuado. Los catamaranes generalmente se clasifican en tres tipos principales enumerados a continuación:",
+      "semi": "<strong>Cascos de semidesplazamiento:</strong> Este tipo de casco posee un diseño de fondo más redondeado, generando un perfil más adecuado para la absorción de impacto con las olas. Estos tipos de casco presentan un rango de velocidad óptima de régimen bien definido, pero es menos eficiente para altas velocidades.",
+      "sym": "<strong>Cascos de planeo simétricos:</strong> Los catamaranes con casco de planeo son aquellos que presentan secciones de casco predominantemente planas. Geometría que promueve mayor sustentación y facilita el régimen de planeo. Siendo más indicado para los casos en que la velocidad y el bajo consumo de combustible sean requisitos del proyecto.",
+      "asym": "<strong>Cascos de planeo asimétricos:</strong> Este tipo de casco está dedicado a embarcaciones que navegarán a altas velocidades. Aunque necesite, por regla general, de motorización más potente, este tipo de casco gana eficiencia a altas velocidades."
+    },
+    "fishing": {
+      "title": "Catamarán de pesca, cómo elegir...",
+      "intro": "Además de técnicas y equipos apropiados, el pescador de mar abierto necesita una embarcación capaz de llevarlo de la mejor, más rápida y cómoda forma hasta su lugar de pesca preferido. Para ello es necesario el uso de modelos que cumplan con requisitos de economía, navegabilidad, seguridad y autonomía mínimos. La elección correcta garantiza mucho más placer para el pescador y aumenta las posibilidades de peces en la línea. Mastro D'Ascia desarrolla catamaranes homologados para la navegación en mar abierto que ofrecen lo máximo en economía y navegabilidad.",
+      "bottom": "<strong>Pesca de fondo:</strong> Como su propio nombre indica, esta modalidad de pesca se realiza en lugares profundos. Consiste en la colocación del cebo, preferiblemente natural, en el fondo. La embarcación utilizada necesita tener espacio de circulación y trabajo con el pescado. Modelo indicado: NOMAD 7CC, TITAN CC.",
+      "offshore": "<strong>Pesca en alta mar u oceánica:</strong> Para esta modalidad se indican barcos con motores potentes para recorrer grandes distancias en pescas de larga duración. Modelos indicados: NOMAD 7XF, NOMAD 8XF y TITAN CC.",
+      "spear": "<strong>Pesca submarina:</strong> En esta modalidad, el pescador usa armas especiales para abatir los peces bajo el agua. Generalmente se recorren grandes distancias y se necesita mucho espacio para guardar todo el equipo. Modelos indicados: NOMAD 7CC y NOMAD 7XF."
+    },
+    "maintenance": {
+      "title": "Rutina de mantenimiento",
+      "intro": "Su embarcación necesita algunos cuidados para estar siempre como nueva. Establezca una rutina de verificación de algunos elementos fundamentales. A continuación sugerimos un estándar:",
+      "weekly": {
+        "btn": "Cada Semana",
+        "l1": "Lave toda la embarcación.",
+        "l2": "Retire la cubierta de protección para que circule el aire y tome sol.",
+        "l3": "Al volver del mar, endulce el motor fuera de borda (endulzar es funcionar con agua dulce para poder eliminar residuos de sal y evitar su acumulación en el interior del motor).",
+        "l4": "Jamás guarde la embarcación mojada y cubierta con la lona. Seque bien los compartimentos. Así evitará que tenga mal olor y moho en su interior.",
+        "l5": "Retire la cubierta de protección para que circule el aire y tome sol."
+      },
+      "monthly": {
+        "btn": "Una vez al mes",
+        "l1": "Encere el casco y herrajes de acero inoxidable.",
+        "l2": "Lave la caja (pañol) de ancla y los cabos, para evitar mal olor.",
+        "l3": "Limpie la nevera y siempre deje la puerta abierta para evitar que tenga moho."
+      },
+      "six_months": {
+        "btn": "Cada 6 meses",
+        "l1": "Limpiar los desagües y sifones del baño.",
+        "l2": "Lavar toda la sentina.",
+        "l3": "Lubrique bisagras y cerraduras.",
+        "l4": "Lubrique con Silicona la cremallera de la capota para evitar que se trabe.",
+        "l5": "Aplique Vaselina Sólida sobre el borne/terminal de la batería para evitar la oxidación del cobre.",
+        "l6": "Lave el tanque de aguas grises.",
+        "l7": "Lubrique la llave general.",
+        "l8": "Engrase el eje de la hélice con Grasa Náutica Azul."
+      },
+      "yearly": {
+        "btn": "Una vez al año",
+        "l1": "Lubrique los rodamientos y las ruedas del remolque. Esto evitará corrosión y atascamiento.",
+        "l2": "Actualice la carta náutica ante la Capitanía de Puertos.",
+        "l3": "Lubrique bisagras y cerraduras.",
+        "l4": "Cambie el extintor de incendios.",
+        "l5": "Verifique la validez de las bengalas (pirotécnicos). Para los catamaranes NOMAD se usan: 2 bengalas de mano estrella roja con paracaídas, 2 botes de humo flotantes naranja y 2 bengalas de mano luz roja.",
+        "l6": "Verifique los ánodos de sacrificio ubicados en la cola del motor fuera de borda."
+      }
+    },
+    "hydrofoils": {
+      "title": "La Revolución de los Hidrofoils",
+      "subtitle": "Primeras Pruebas en los Catamaranes del Astillero Mastro D’Ascia",
+      "p1": "<strong>Innovación y Tecnología en el Mundo Náutico:</strong> En el escenario náutico actual, la innovación y la tecnología son elementos cruciales para avanzar y mejorar el rendimiento de las embarcaciones. El Astillero Mastro D’Ascia, conocido por su tradición y calidad, dio un paso significativo al iniciar las primeras pruebas con el uso de hidrofoils en sus catamaranes. Esta tecnología, ya utilizada en embarcaciones de regata y yates de alto rendimiento, promete revolucionar el mercado de embarcaciones de recreo, aportando beneficios considerables en términos de velocidad, eficiencia de combustible y estabilidad.",
+      "p2": "<strong>¿Qué Son los Hidrofoils?</strong> Los hidrofoils son estructuras similares a alas sumergidas que, cuando se instalan en el casco de una embarcación... Cuando la unidad alcanza cierta velocidad, estas alas crean sustentación, elevando el casco y reduciendo significativamente la resistencia al desplazamiento. Esta tecnología reduce drásticamente la fricción con el agua, aumentando la eficiencia y permitiendo alcanzar mayores velocidades con menor consumo de combustible. Además, la utilización de hidrofoils proporciona una navegación más suave, reduciendo el impacto de las olas y ofreciendo mayor confort a los ocupantes.",
+      "p3": "<strong>Primeras Pruebas y Resultados:</strong> Las primeras pruebas realizadas por el Astillero Mastro D'Ascia con sus catamaranes equipados con hidrofoils fueron extremadamente prometedoras. Los datos recogidos revelan:<br><strong>1. Aumento de Eficiencia y Reducción de Combustible hasta un 26%:</strong> La reducción de la fricción con el agua permitió un ahorro de combustible de hasta un 26%, haciendo las embarcaciones más ecológicas y económicas.<br><strong>2. Aumento de la Velocidad Final en 3 Nudos:</strong> Las unidades equipadas con hidrofoils alcanzaron una velocidad final 3 nudos por encima de las versiones convencionales, destacándose en términos de rendimiento.<br><strong>3. Mayor Estabilidad y Confort:</strong> La navegación se volvió más estable y cómoda, incluso en aguas agitadas, proporcionando una experiencia superior para los ocupantes.",
+      "p4": "<strong>El Futuro de los Catamaranes:</strong> El éxito de las primeras pruebas abre el camino para una nueva era en los catamaranes del Astillero Mastro D’Ascia. La introducción de hidrofoils no solo mejora el rendimiento y la eficiencia de las embarcaciones, sino que también redefine el estándar de confort y sostenibilidad en el segmento náutico. Con esta innovación, el astillero reafirma su compromiso con la excelencia y la vanguardia tecnológica, consolidando su posición siempre alineada con las más nuevas tecnologías del mercado.",
+      "p5": "<strong>Conclusión:</strong> La implementación de hidrofoils en los catamaranes representa una gran evolución en el medio náutico. Las primeras pruebas muestran un futuro prometedor, donde velocidad, eficiencia y confort caminan lado a lado, elevando la experiencia de navegación a nuevos niveles. Estamos solo al comienzo de una jornada que promete transformar el modo en que vivimos el mar, y el Astillero Mastro D’Ascia está a la vanguardia de esta transformación."
+    },
+    "safety": {
+      "title": "Consejos de seguridad",
+      "intro": "Antes de salir a navegar, asegúrese de que se hayan tomado todos los procedimientos y cuidados en relación con la seguridad y el buen funcionamiento del barco. Consulte algunos consejos:",
+      "normam": {
+        "btn": "Conozca las Normas de la Autoridad Marítima",
+        "content": "Lea y conozca el RIPA (Reglamento Internacional para Prevenir Abordajes) y las Normas de la Autoridad Marítima que establecen los requisitos mínimos de seguridad para las embarcaciones, especialmente las <a class=\"downloadmarinha\" target=\"_blank\" href=\"https://www.marinha.mil.br/dpc/sites/www.marinha.mil.br.dpc/files/normam01_0.pdf\"><strong>NORMAM 01</strong></a>, <a class=\"downloadmarinha\" target=\"_blank\" href=\"https://www.marinha.mil.br/dpc/sites/www.marinha.mil.br.dpc/files/normam-02_dpc_mod18.pdf\"><strong>NORMAM 02</strong></a>, <a class=\"downloadmarinha\" target=\"_blank\" href=\"https://www.marinha.mil.br/cpap/sites/www.marinha.mil.br.cpap/files/normam03.pdf\"><strong>NORMAM 03</strong></a> y <a class=\"downloadmarinha\" target=\"_blank\" href=\"https://www.marinha.mil.br/dpc/sites/www.marinha.mil.br.dpc/files/normam05.pdf\"><strong>NORMAM 05</strong></a>."
+      },
+      "periodic": {
+        "btn": "Realice el mantenimiento periódico",
+        "content": "Efectúe un mantenimiento periódico de la embarcación, sin improvisaciones. Cualquier descuido podría comprometer la seguridad de los embarcados."
+      },
+      "salvage": {
+        "btn": "Verifique el salvamento",
+        "content": "Realice una inspección rigurosa de los equipos y utensilios de salvamento. Preste especial atención a los chalecos, que deberán ser en número suficiente para todos los que van a embarcar. Los chalecos utilizados en los catamaranes NOMAD son los CLASE II."
+      },
+      "fire": {
+        "btn": "Verifique extintores de incendio",
+        "content": "Inspeccione el material de combate contra incendios, preste especial atención al plazo de validez y estado de conservación de los extintores. Los extintores indicados son los de polvo ABC."
+      },
+      "inspect": {
+        "btn": "Inspeccione todo el barco",
+        "content": "Realice una inspección del casco, verifique el funcionamiento de las bombas de achique, de las luces de navegación, del equipo de radio VHF y la condición de carga de las baterías, además del nivel de aceite del cárter del motor para motores de 4 tiempos y nivel del depósito de aceite en los motores de 2 tiempos. Verifique también la integridad del nivel de combustible, y si no hay fugas en el compartimento de los motores."
+      },
+      "docs": {
+        "btn": "Verifique la documentación del conductor",
+        "content": "Tenga a bordo documentos que comprueben su habilitación, registro de la embarcación y seguro obligatorio dentro del plazo de validez."
+      },
+      "charts": {
+        "btn": "Tenga las cartas náuticas de la región",
+        "content": "Verifique si las cartas náuticas existentes a bordo son compatibles con la región donde pretende navegar, preste atención a los faros y la señalización náutica."
+      },
+      "docking": {
+        "btn": "Verifique el material de atraque",
+        "content": "Verifique si el ancla tiene suficiente cabo para un fondeo seguro. Recuerde que la longitud de cabo indicada para un anclaje seguro es de cinco a siete veces la profundidad del lugar donde se pretende fondear."
+      },
+      "weather": {
+        "btn": "Verifique el pronóstico del tiempo",
+        "content": "Infórmese sobre el pronóstico del tiempo divulgado por la autoridad marítima y otros órganos, y manténgase atento a la previsión de cambios para el período. Si todo está bien, haga la planificación de su travesía."
+      },
+      "plan": {
+        "btn": "Haga el plan de navegación",
+        "content": "Entregue el plan de navegación o aviso de salida a la marina o club responsable de la guarda de la embarcación; si no está en club o marina, deje a alguien en tierra enterado de a dónde planea ir con la embarcación y a qué hora pretende regresar."
+      }
+    },
+    "sidebar": {
+      "featured_posts": "Publicaciones Destacadas",
+      "all_articles": "Todos los Artículos",
+      "maintenance": "Rutina de Mantenimiento",
+      "fishing": "Eligiendo el Catamarán Ideal",
+      "hulls": "Tipos de Cascos",
+      "infusion": "Infusión al Vacío",
+      "history": "Historia del Catamarán",
+      "hydrofoils": "La Revolución de los Hidrofoils",
+      "safety": "Consejos de Seguridad",
+      "manuals": "Manuales de Terceros",
+      "models": "Conozca nuestros Modelos",
+      "share": "Compartir",
+      "back": "Volver"
+    },
+    "slider": {
+      "btn_view": "Ver Artículo",
+      "history": {
+        "title": "Historia del Catamarán",
+        "desc": "Cómo surgió el catamarán y su desarrollo con el tiempo."
+      },
+      "infusion": {
+        "title": "Infusión al Vacío",
+        "desc": "Sepa más sobre el proceso constructivo de los catamaranes."
+      },
+      "hulls": {
+        "title": "Tipos de Cascos",
+        "desc": "Cómo se clasifican las lanchas catamarán."
+      },
+      "fishing": {
+        "title": "Eligiendo la Lancha Ideal",
+        "desc": "Elección correcta = <br> + peces en la línea."
+      },
+      "maintenance": {
+        "title": "Rutina de Mantenimiento",
+        "desc": "Conozca los cuidados necesarios para evitar problemas."
+      },
+      "hydrofoils": {
+        "title": "La Revolución de los Hidrofoils",
+        "desc": "Primeras Pruebas en las Lanchas Catamarán del Astillero Mastro D’Ascia."
+      },
+      "safety": {
+        "title": "Consejos de Seguridad",
+        "desc": "Consulte y recuerde algunos consejos antes de partir."
+      }
+    }
+  },
+  "portfolio_pages": {
+    "alerts": {
+      "link_copied": "¡Enlace copiado al portapapeles!",
+      "share_unsupported": "Lo sentimos, su navegador no admite compartir."
+    },
+    "breadcrumbs": {
+      "home": "Inicio"
+    },
+    "labels": {
+      "model_info": "Información del Modelo",
+      "category": "Categoría",
+      "length": "Eslora",
+      "width": "Manga",
+      "draft": "Calado",
+      "weight": "Peso",
+      "water": "Agua",
+      "fuel": "Combustible",
+      "engine": "Motorización",
+      "passengers": "Pasajeros",
+      "standard_items": "Artículos de Serie",
+      "performance": "Rendimiento",
+      "links_videos": "Enlaces y Videos",
+      "cruise_speed": "Velocidad de Crucero Económico",
+      "cruise_range": "Autonomía en Crucero Económico",
+      "max_speed": "Velocidad Máxima",
+      "tour_360": "¡Realice un Tour 360º!",
+      "overnight": "Pernocta",
+      "performance_asterisk": "Rendimiento*",
+      "estimated_numbers": "* Números estimados con modelo similar construído"
+    },
+    "buttons": {
+      "customize": "Personalizar Modelo",
+      "quote": "Solicitar Presupuesto",
+      "share": "Compartir"
+    },
+    "models": {
+      "7cc": {
+        "title": "Nomad 7 CC",
+        "category_value": "Catamarán Center Console",
+        "description": {
+          "p1": "Explore las aguas con confianza a bordo del <strong>catamarán NOMAD 7CC</strong>, el compañero perfecto para sus jornadas en el mar.",
+          "p2": "Como el miembro más ligero y compacto de la familia Nomad, su navegación suave y estable proporciona <strong>una sensación de seguridad incomparable</strong>, incluso a altas velocidades.",
+          "p3": "Elegido unánimemente como la mejor opción en términos de costo-beneficio entre los modelos de la marca, el NOMAD 7CC es la elección ideal para pescadores que valoran la <strong>economía</strong>. Solicite presupuesto y prepárese para explorar los mares con confort y eficiencia."
+        },
+        "items": {
+          "ladder": "Escalera de popa en acero inoxidable",
+          "wash_kit": "Kit de lavado de cubierta",
+          "wiring": "Cableado eléctrico estañado y codificado",
+          "upholstery": "Tapicería en courvin antimoho",
+          "nav_lights": "Luces de navegación",
+          "rod_holder": "Portacañas en el costado",
+          "bilge_pumps": "4 Bombas de sentina automáticas"
+        },
+        "videos": {
+          "presentation": "Presentación Nomad 7 CC",
+          "tests": "NOMAD 7CC y NOMAD 7FX - Pruebas de Modelos"
+        },
+        "share_text": "Conozca nuestro catamarán 7 CC"
+      },
+      "7xf": {
+        "title": "Nomad 7 XF",
+        "category_value": "Catamarán Nomad XF",
+        "magazine_title": "¡Vea lo que dijeron sobre el 7 XF!",
+        "description": {
+          "p1": "El Nomad 7XF destaca por ofrecer <strong>artículos de confort</strong> que generalmente se encuentran en barcos de mayor tamaño. Entre los artículos de serie, tapicería en courvin antimoho, dirección hidráulica, inodoro eléctrico y un guardamancebo en acero inoxidable 316L. Además, tiene capacidad para 8 pasajeros y pernocte para 2 personas, haciéndolo ideal tanto para paseos diurnos como nocturnos.",
+          "p2": "Los opcionales incluyen desde una nevera eléctrica y cabrestante eléctrico hasta un solárium de proa y luces subacuáticas, permitiendo personalizaciones que elevan aún más el nivel de confort a bordo. <strong>El resultado es un catamarán que ofrece una experiencia de navegación cómoda</strong>, adecuada para quienes buscan el mejor rendimiento aliado al lujo.",
+          "p3": "Estas características hacen del Nomad 7XF una elección excepcional para quien desea un barco versátil, compacto y eficiente."
+        },
+        "items": {
+          "bilge_pumps": "4 Bombas de sentina automáticas",
+          "wash_kit": "Kit de lavado de cubierta",
+          "ladder": "Escalera de popa en acero inoxidable",
+          "upholstery": "Tapicería en courvin antimoho",
+          "wiring": "Cableado eléctrico estañado y codificado",
+          "nav_lights": "Luces de navegación",
+          "wc": "Inodoro eléctrico",
+          "rail": "Guardamancebo en acero inoxidable 316L",
+          "rod_holder": "Portacañas en el costado",
+          "targa": "Targa en acero inoxidable 316L",
+          "hatch": "Escotilla de 19 pulgadas"
+        },
+        "videos": {
+          "launch": "Lanzamiento 7 XF",
+          "tests": "NOMAD 7CC y NOMAD 7FX - Pruebas de Modelos"
+        },
+        "share_text": "Conozca nuestro catamarán 7 XF"
+      },
+      "7xs": {
+        "title": "Nomad 7 XS",
+        "category_value": "Catamarán Nomad XS",
+        "description": {
+          "p1": "El Nomad 7XS es el modelo más pequeño del astillero Mastro D'Ascia, desarrollado con especificaciones únicas para cumplir con las exigencias de la NORMAN 12 como <strong>barco de apoyo de práctico</strong>. Con dimensiones compactas, el Nomad 7XS ofrece la maniobrabilidad y agilidad necesarias para operaciones de apoyo y navegación en condiciones variadas.",
+          "p2": "Construido con la misma calidad y atención a los detalles que los modelos más grandes, el Nomad 7XS utiliza técnicas avanzadas de construcción, como la infusión al vacío, garantizando un <strong>casco resistente y ligero, sin el uso de madera, lo que aumenta la durabilidad y facilita el mantenimiento</strong>. Este modelo también está equipado con varios artículos de serie que garantizan confort y seguridad, como tapicería antimoho, dirección hidráulica y opciones de personalización que permiten adaptarlo a las necesidades específicas de la operación.",
+          "p3": "Además de su robustez, el Nomad 7XS fue diseñado para ser <strong>económico y eficiente</strong>, características esenciales para un barco de apoyo de práctico, que exige fiabilidad y rendimiento continuos. Este modelo es la <strong>solución ideal para operaciones de apoyo</strong> donde el espacio y la maniobrabilidad son cruciales, manteniendo la calidad y el rendimiento que son marcas registradas del astillero Mastro D'Ascia."
+        },
+        "items": {
+          "bilge_pumps": "4 Bombas de sentina automáticas",
+          "wash_kit": "Kit de lavado de cubierta",
+          "ladder": "Escalera de popa en acero inoxidable",
+          "upholstery": "Tapicería en courvin antimoho",
+          "wiring": "Cableado eléctrico estañado y codificado",
+          "nav_lights": "Luces de navegación",
+          "wc": "Inodoro eléctrico",
+          "rail": "Guardamancebo en acero inoxidable 316L",
+          "rod_holder": "Portacañas en el costado",
+          "targa": "Targa en acero inoxidable 316L",
+          "hatch": "Escotilla de 19 pulgadas"
+        },
+        "videos": {
+          "launch": "Lanzamiento NOMAD Clase 7",
+          "tests": "NOMAD 7CC y NOMAD 7FX - Pruebas de Modelos"
+        },
+        "share_text": "Conozca nuestro catamarán 7 XS"
+      },
+      "8cc": {
+        "title": "Nomad 8 CC",
+        "category_value": "Catamarán Center Console",
+        "description": {
+          "p1": "El Nomad 8CC es un modelo de catamarán desarrollado para ser una <strong>solución de alto rendimiento</strong>, especialmente en actividades de pesca deportiva que demandan agilidad y eficiencia.",
+          "p2": "Este modelo está construido utilizando la tecnología de infusión al vacío, que no solo reduce el peso de la embarcación, sino que también aumenta su resistencia y durabilidad. El casco del Nomad 8CC está optimizado para proporcionar un <strong>planeo rápido y una navegación suave, incluso en condiciones adversas</strong>, características que son cruciales para quienes necesitan cubrir grandes distancias en el mar.",
+          "p3": "El Nomad 8CC combina todas estas características con un diseño robusto y funcional, convirtiéndolo en una opción ideal para pescadores que exigen una <strong>embarcación fiable, económica y de alto rendimiento</strong>, capaz de enfrentar los desafíos del mar con agilidad y bajo costo operativo."
+        },
+        "items": {
+          "bilge_pumps": "6 Bombas de sentina automáticas",
+          "wash_kit": "Kit de lavado de cubierta",
+          "ladder": "Escalera de popa en acero inoxidable",
+          "upholstery": "Tapicería en courvin antimoho",
+          "wiring": "Cableado eléctrico estañado y codificado",
+          "nav_lights": "Luces de navegación",
+          "rod_holder": "Portacañas en el costado"
+        },
+        "videos": {
+          "launch": "Lanzamiento del Nomad 8CC",
+          "infusion": "Proceso de Infusión al Vacío"
+        },
+        "share_text": "Conozca nuestro catamarán 8 CC"
+      },
+      "8xf": {
+        "title": "Nomad 8 XF",
+        "category_value": "Catamarán Nomad XF",
+        "description": {
+          "p1": "Con una cabina espaciosa y bien equipada, este modelo ofrece el <strong>máximo en comodidad y seguridad para sus aventuras en el mar</strong>. Disfrute de una experiencia de navegación sin igual, protegido de los elementos mientras explora nuevos horizontes.",
+          "p2": "El NOMAD 8XF cuenta con varios <strong>artículos de serie que mejoran la navegación</strong>, garantizando un rendimiento excepcional y un viaje tranquilo. Desde sistemas de navegación avanzados hasta recursos de confort, cada detalle ha sido cuidadosamente diseñado para proporcionar una experiencia inigualable en el mar.",
+          "p3": "Además de su alto rendimiento, el NOMAD 8XF también destaca por su estilo incomparable, con líneas elegantes y un diseño moderno. Prepárese para navegar con estilo y dejar su huella en cada viaje a bordo del NOMAD 8XF."
+        },
+        "items": {
+          "bilge_pumps": "6 Bombas de sentina automáticas",
+          "wash_kit": "Kit de lavado de cubierta",
+          "ladder": "Escalera de popa en acero inoxidable",
+          "upholstery": "Tapicería en courvin antimoho",
+          "wiring": "Cableado eléctrico estañado y codificado",
+          "nav_lights": "Luces de navegación",
+          "wc": "Inodoro eléctrico",
+          "rail": "Guardamancebo en acero inoxidable 316L",
+          "rod_holder": "Portacañas en el costado",
+          "targa": "Targa en acero inoxidable 316L",
+          "hatch": "Escotilla de 19 pulgadas"
+        },
+        "videos": {
+          "performance": "Rendimiento en Navegación 8 XF",
+          "model": "Nomad 8 XF",
+          "fishing": "Pesca Oceánica 8 XF",
+          "dolphins": "Navegando con Delfines 8 XF"
+        },
+        "share_text": "Conozca nuestro catamarán 8 XF"
+      },
+      "8xs": {
+        "title": "Nomad 8 XS",
+        "category_value": "Catamarán de servicios práctico XS",
+        "description": {
+          "p1": "El NOMAD 8 XS es un barco de práctico o servicios. Diseñado para ser versátil y adecuado para cualquier entrenamiento y aprendizaje de maniobras y conducción.",
+          "p2": "Equipado con una variedad de <strong>artículos de seguridad y equipos modernos</strong>, ofrece una plataforma segura y confiable para que los principiantes mejoren sus habilidades de navegación.",
+          "p3": "Su <strong>excelente navegabilidad</strong> hace que las lecciones de entrenamiento sean más efectivas, mientras que <strong>su construcción robusta garantiza durabilidad</strong> y confianza en todas las sesiones de práctica y servicios en el mar."
+        },
+        "items": {
+          "bilge_pumps": "6 Bombas de sentina automáticas",
+          "ladder": "Escalera de popa en acero inoxidable",
+          "wiring": "Cableado eléctrico estañado y codificado",
+          "hatch": "Escotilla de 19 pulgadas",
+          "nav_lights": "Luces de navegación",
+          "wash_kit": "Kit de lavado de cubierta",
+          "command_post": "Puesto de mando cerrado"
+        },
+        "videos": {
+          "launch": "Lanzamiento Pilot",
+          "pilot": "Lancha de práctico"
+        },
+        "share_text": "Conozca nuestro catamarán 8 XS"
+      },
+      "85cc": {
+        "title": "Nomad 8.5 CC",
+        "category_value": "Catamarán Center Console",
+        "description": {
+          "p1": "El catamarán NOMAD 8.5CC es una respuesta directa a las exigencias de los pescadores más exigentes. Con una <strong>gama de recursos y soluciones cuidadosamente integrados</strong>, este modelo está diseñado para adaptarse a una variedad de estilos y técnicas de pesca, garantizando una experiencia personalizada y eficiente.",
+          "p2": "Su ligereza no compromete su robustez, fruto de un diseño estructural meticuloso y del uso de los mejores materiales disponibles, garantizando una navegación fiable en todas las condiciones.",
+          "p3": "Capaz de alcanzar el planeo casi instantáneamente, proporciona una <strong>navegación suave y estable</strong>, incluso en mares agitados. Esta eficiencia no solo reduce el consumo de combustible, sino que también aumenta su autonomía, permitiendo jornadas más largas y seguras."
+        },
+        "items": {
+          "wash_kit": "Kit de lavado de cubierta",
+          "bilge_pumps": "6 Bombas de sentina automáticas",
+          "ladder": "Escalera de popa en acero inoxidable",
+          "upholstery": "Tapicería en courvin antimoho",
+          "wiring": "Cableado eléctrico estañado y codificado",
+          "nav_lights": "Luces de navegación",
+          "rod_holder": "Portacañas en el costado"
+        },
+        "videos": {
+          "presentation": "Nomad 8.5 CC (Diego Santiago)"
+        },
+        "share_text": "Conozca nuestro catamarán 8.5 CC"
+      },
+      "85xf": {
+        "title": "Nomad 8.5 XF",
+        "category_value": "Catamarán Nomad XF",
+        "description": {
+          "p1": "El NOMAD 8.5 XF es la elección definitiva para quien busca versatilidad y confort en un solo barco. Con su <strong>cabina espaciosa y una gran área de cockpit protegida</strong>, este modelo ofrece el equilibrio perfecto entre funcionalidad y comodidad, haciéndolo ideal tanto para pescas como para paseos en familia.",
+          "p2": "Además de su adaptabilidad excepcional, el NOMAD 8.5 XF ofrece un rendimiento impresionante. Ya sea explorando nuevos puntos de pesca o cruzando las aguas en un paseo relajante, el NOMAD 8.5 XF entregará una jornada suave y eficiente.",
+          "p3": "Con su combinación única de <strong>espacio, protección, rendimiento y versatilidad</strong>, este catamarán redefine el concepto de navegabilidad, garantizando experiencias memorables para usted en alta mar."
+        },
+        "items": {
+          "portholes": "Dos portillas laterales",
+          "bilge_pumps": "6 Bombas de sentina automáticas",
+          "ladder": "Escalera de popa en acero inoxidable",
+          "upholstery": "Tapicería en courvin antimoho",
+          "wiring": "Cableado eléctrico estañado y codificado",
+          "nav_lights": "Luces de navegación",
+          "wc": "Inodoro eléctrico",
+          "rod_holder": "Portacañas en el costado",
+          "hatch": "Escotilla de 19 pulgadas",
+          "targa": "Targa en fibra",
+          "rail": "Guardamancebo en acero inoxidable 316L",
+          "wash_kit": "Kit de lavado de cubierta"
+        },
+        "videos": {
+          "launch": "Nomad 8.5 XF",
+          "test": "Prueba en la 8.5 XF"
+        },
+        "share_text": "Conozca nuestro catamarán 8.5XF"
+      },
+      "85xs": {
+        "title": "Nomad 8.5 XS",
+        "category_value": "Catamarán de servicios práctico XS",
+        "description": {
+          "p1": "El Nomad 8.5 XS está listo para enfrentar cualquier desafío y entregar un <strong>rendimiento excepcional</strong>. Es un catamarán versátil y adaptable para una variedad de prácticas y servicios acuáticos.",
+          "p2": "Con un diseño inteligente y funcional, este modelo ofrece el <strong>espacio, seguridad y la flexibilidad</strong> necesarios para atender las demandas de diversas actividades y servicios.",
+          "p3": "Equipado con recursos especializados y una estructura robusta, el Nomad 8.5 XS es ideal para entrenamientos prácticos de navegación, proporcionando una experiencia de aprendizaje eficaz y segura. Además, su <strong>capacidad de respuesta y maniobrabilidad</strong> lo convierte en una opción confiable para diversos servicios en el mar."
+        },
+        "items": {
+          "bilge_pumps": "6 Bombas de sentina automáticas",
+          "ladder": "Escalera de popa en acero inoxidable",
+          "wiring": "Cableado eléctrico estañado y codificado",
+          "nav_lights": "Luces de navegación",
+          "rail": "Guardamancebo en acero inoxidable 316L",
+          "wash_kit": "Kit de lavado de cubierta",
+          "command_post": "Puesto de mando cerrado"
+        },
+        "videos": {
+          "launch": "Lanzamiento Pilot",
+          "pilot": "Lancha de práctico"
+        },
+        "share_text": "Conozca nuestro catamarán 8.5XS"
+      },
+      "cabin": {
+        "title": "Titan Cabin",
+        "category_value": "Catamarán XF",
+        "description": {
+          "p1": "La fusión definitiva para quienes buscan aventura y confort, este barco fue meticulosamente diseñado para los entusiastas de la pesca y el ocio.",
+          "p2": "Su diseño robusto y elegante ofrece una experiencia de navegación incomparable, mientras que la espaciosa cabina proporciona el <strong>refugio perfecto</strong> para escapar de las condiciones adversas o relajarse después de un día emocionante en el mar.",
+          "p3": "Con una variedad de opciones de <strong>personalización disponibles</strong>, puede adaptar el Titan Cabin a sus necesidades específicas, ya sea un pescador ávido o alguien que busca momentos tranquilos con amigos y familiares en el océano."
+        },
+        "items": {
+          "bilge_pumps": "6 Bombas de sentina automáticas",
+          "wash_kit": "Kit de lavado de cubierta",
+          "ladder": "Escalera de popa en acero inoxidable",
+          "upholstery": "Tapicería en courvin antimoho",
+          "wiring": "Cableado eléctrico estañado y codificado",
+          "nav_lights": "Luces de navegación",
+          "rail": "Guardamancebo en acero inoxidable 316L",
+          "wc": "Inodoro eléctrico"
+        },
+        "videos": {
+          "infusion": "Proceso de Infusión al Vacío",
+          "sky_sea": "Donde el cielo se encuentra con el mar"
+        },
+        "share_text": "Conozca nuestro catamarán Cabin"
+      },
+      "commuter": {
+        "title": "Titan Commuter",
+        "category_value": "Catamarán XF",
+        "description": {
+          "p1": "Con su cabina espaciosa y control central, este catamarán redefine el significado de <strong>navegar con estilo</strong> y entrega rendimiento en un ambiente lujoso y cómodo para los navegantes más exigentes.",
+          "p2": "Cada detalle del Titan Commuter fue cuidadosamente elaborado para proporcionar un viaje suave y emocionante. Su <strong>tamaño imponente y proyecto moderno</strong> garantizan protección contra cualquier adversidad, proporcionando una sensación de seguridad incomparable mientras navega por las aguas.",
+          "p3": "Combinando fuerza, confort y rendimiento, este catamarán es la elección acertada para explorar los mares con <strong>confianza</strong> hacia nuevos descubrimientos."
+        },
+        "items": {
+          "bilge_pumps": "6 Bombas de sentina automáticas",
+          "wash_kit": "Kit de lavado de cubierta",
+          "ladder": "Escalera de popa en acero inoxidable",
+          "upholstery": "Tapicería en courvin antimoho",
+          "wiring": "Cableado eléctrico estañado y codificado",
+          "nav_lights": "Luces de navegación",
+          "rail": "Guardamancebo en acero inoxidable 316L",
+          "wc": "Inodoro eléctrico"
+        },
+        "videos": {
+          "commuter_370": "Commuter 370",
+          "sky_sea": "Donde el cielo se encuentra con el mar",
+          "titan_commuter": "Titan Commuter",
+          "launch_drone": "Imágenes de dron en el Lanzamiento Commuter"
+        },
+        "share_text": "Conozca nuestro catamarán Commuter"
+      },
+      "titan_cc": {
+        "title": "Titan CC",
+        "category_value": "Catamarán Center Console",
+        "description": {
+          "p1": "Equipado con una consola central que ofrece más comodidad y practicidad, este catamarán entrega todo lo que se espera de un barco de pesca de <strong>alta calidad</strong>.",
+          "p2": "El Titan CC presenta equipos de última generación y un <strong>amplio espacio para pesca</strong>, proporcionando una experiencia completa y satisfactoria para los navegantes más exigentes. Su calidad y seguridad son incomparables, garantizando tranquilidad y autonomía para navegar lejos de la costa.",
+          "p3": "Prepárese para una aventura única y emocionante, donde cada momento está marcado por el <strong>confort, calidad y seguridad</strong> que solo el Titan CC puede ofrecer."
+        },
+        "items": {
+          "batteries": "Tres baterías náuticas",
+          "bilge_pumps": "6 Bombas de sentina automáticas",
+          "wash_kit": "Kit de lavado de cubierta",
+          "hydraulic_steering": "Dirección hidráulica",
+          "ladder": "Escalera de popa en acero inoxidable",
+          "upholstery": "Tapicería en courvin antimoho",
+          "wiring": "Cableado eléctrico estañado y codificado",
+          "nav_lights": "Luces de navegación",
+          "wc": "Inodoro eléctrico",
+          "rail": "Guardamancebo en acero inoxidable 316L"
+        },
+        "videos": {
+          "titan_cc": "Titan CC"
+        },
+        "share_text": "Conozca nuestro catamarán Titan CC"
+      }
+    }
+  }
+}

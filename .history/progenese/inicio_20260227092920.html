@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!--Codificação de caracteres e estrutura-->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- Meta tag de idioma-->
+  <meta http-equiv="Content-Language" content="pt-BR">
+
+  <!-- Tag para motores de busca -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Informações do autor -->
+  <meta name="author" content="Mastro D'Ascia Náutica">
+
+  <!-- Icone de favorito para usabilidade -->
+  <link href="../assets/img/favicon.png" rel="icon" type="image/png">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-------------------------------------------------------------------------------------->
+  <!-- Titulo da pagina -->
+  <title>Início do Sistema - Mastro D'Ascia</title>
+
+  <!-- Descrição da página -->
+  <meta name="description" content="Página inicial do sistema - Mastro D'Ascia.">
+
+  <!-- Tags para melhorar compartilhamento em redes sociais -->
+  <meta property="og:title" content="Mastro D'Ascia Náutica - Início do Sistema">
+  <meta property="og:description" content="Página inicial do sistema interno.">
+  <meta property="og:image" content="https://mastrodascia.com.br/assets/img/produtos/8.5XF/foto%20(21).jpg">
+  <meta property="og:url" content="https://mastrodascia.com.br/progenese/inicio.html">
+  <meta property="og:type" content="website">
+
+  <!-- Identificar o link com a versão principal -->
+  <link rel="canonical" href="https://mastrodascia.com.br/progenese/inicio.html">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/carrossel.css" rel="stylesheet">  
+  <link rel="stylesheet" href="./page/estaleiro.css">
+
+ <!-- Versionamento do arquivo CSS/JS para controle de cache -->
+  <script src="../assets/cachebuster.js"></script>
+</head>
+
+<body>
+
+<progenese-header></progenese-header>
+
+
+  <main id="main" class="main-inicio" style="background-color: #f0f0f0;">
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Anotações e atividades</h2>
+          <ol>
+            <li><a href="../index.html">Site Mastro D'Ascia</a></li>
+            <li>Início do Sistema</li>
+          </ol>
+        </div>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Painel Inicial ======= -->
+    <section id="inicio-dashboard" class="shipyard-management">
+      <div class="container" data-aos="fade-up">
+         <div class="section-title titleconsulta">
+          <div class="page-title-standard d-flex justify-content-between align-items-start">
+            <div class="title-block text-start">
+              <h2>Estaleiro Mastro D'Ascia</h2>
+              <p class="pmenos">Anotações e registro de atividades</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Coluna esquerda (40%): Bem-vindo + Quadro de Anotações -->
+          <div class="col-12 col-lg-5">
+            <!-- Boas-vindas -->
+            <div class="welcome-card card mb-4">
+              <div class="card-body d-flex align-items-center justify-content-between">
+                <h3>Bem vindo, <span id="userName">Usuário</span></h3>
+                <i class="bi bi-person-circle" style="font-size: 1.8rem; color: #004f91;"></i>
+              </div>
+            </div>
+
+            <!-- Quadro de Anotações -->
+            <div class="notes-card card mb-4">
+              <div class="card-body">
+                <div class="section-title">
+                  <h2>Quadro de Anotações</h2>
+                </div>
+
+                <div class="mb-3">
+                  
+                  <textarea class="form-control" id="newNoteText" rows="3" placeholder="Escreva uma nota ou lembrete..."></textarea>
+                </div>
+                <div class="d-flex justify-content-end mb-3 notes-actions">
+                  <button type="button " id="addNoteBtn" class="btn btn-primary btn_estaleiro">
+                    <i class="bi bi-card-checklist"></i> Salvar
+                  </button>
+                </div>
+
+                <ul class="list-group" id="notesList">
+                  <!-- Notas renderizadas via JS -->
+                </ul>
+              </div>
+          </div>
+          <div class="decoration1">
+            <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon1">
+            <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon2">
+            <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon3">
+            <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon4">
+          </div>
+
+          <div class="card mb-4 profile-card">
+            <div class="card-body">
+              <div class="section-title">
+                <h2>Dados de acesso</h2>
+              </div>
+              <form id="profileForm" autocomplete="off">
+                <div class="row g-2">
+                  <div class="col-12">
+                    <div class="row align-items-center">
+                      <div class="col-2"><label for="profileNome" class="form-label mb-0">Nome</label></div>
+                      <div class="col-10"><input type="text" class="form-control" id="profileNome" placeholder="Nome" autocomplete="off" autocapitalize="none" spellcheck="false"></div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="row align-items-center">
+                      <div class="col-2"><label for="profileUsuario" class="form-label mb-0">Usuário</label></div>
+                      <div class="col-10"><input type="text" class="form-control" id="profileUsuario" placeholder="Usuário" autocomplete="off" autocapitalize="none" spellcheck="false"></div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="row align-items-center">
+                      <div class="col-2"><label for="profileEmail" class="form-label mb-0">E-mail</label></div>
+                      <div class="col-10"><input type="email" class="form-control" id="profileEmail" placeholder="E-mail" autocomplete="off" autocapitalize="none" spellcheck="false"></div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="row align-items-center">
+                      <div class="col-2"><label for="profileSenha" class="form-label mb-0">Senha</label></div>
+                      <div class="col-10"><input type="password" class="form-control" id="profileSenha" placeholder="Nova senha" autocomplete="new-password"></div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="row align-items-center">
+                      <div class="col-2"><label for="profileCargo" class="form-label mb-0">Cargo</label></div>
+                      <div class="col-10"><input type="text" class="form-control" id="profileCargo" placeholder="Cargo" disabled></div>
+                    </div>
+                  </div>
+                </div>
+                <div id="profileAlert" class="mt-3" style="display:none;"></div>
+                <div class="d-flex justify-content-end mt-3">
+                  <button type="button" class="btn btn-primary btn_estaleirosave" id="profileSaveBtn"><i class="bi bi-person-vcard"></i> Salvar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          </div>
+          <!-- Coluna direita (60%): Registro de Atividades -->
+          <div class="col-12 col-lg-7">
+            <div class="activity-card card mb-4">
+              <div class="card-body">
+                <div class="section-title">
+                  <h2>Últimas ações executadas no sistema</h2>
+                </div>
+
+                <div class="alert alert-warning py-2" role="alert" style="font-size: 0.95rem;">
+                  Aviso: o sistema está em teste e algumas funcionalidades podem não estar 100% alinhadas ou ainda não estão habilitadas.
+                </div>
+
+                <div class="table-container">
+                  <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                      <tr>
+                        <th style="padding-left: 20px;">Usuário</th>
+                        <th style="padding-left: 20px;">Ação</th>
+                        <th style="padding-left: 20px;">Data/Hora</th>
+                      </tr>
+                    </thead>
+                    <tbody id="activityTableBody">
+                      <!-- Mantém vazio inicialmente -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Painel Inicial -->
+  </main>
+
+<!-- ======= Footer ======= -->
+<progenese-footer></progenese-footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+   <!-- Componentes dinâmicos de header/footer -->
+  <script src="./page/progenese-layout.js"></script>
+  
+<script src="./javascript/login.js" defer></script>
+  <!-- Script da página: boas-vindas e quadro de anotações -->
+  <script src="../assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  
+
+<script src="./javascript/controller.js"></script>
+<script src="./javascript/auxiliar.js"></script>
+  <script src="./javascript/activities.js"></script>
+  <script>
+    (function(){
+      function basePrefix(){ return window.location.pathname.startsWith('/website2/') ? '/website2' : ''; }
+      const API_URL = basePrefix() + '/progenese/api/usuarios.php';
+      let csrf = null;
+      let original = { nome:'', usuario:'', email:'', cargo:'' };
+      const nomeEl = document.getElementById('profileNome');
+      const usuarioEl = document.getElementById('profileUsuario');
+      const senhaEl = document.getElementById('profileSenha');
+      const emailEl = document.getElementById('profileEmail');
+      const cargoEl = document.getElementById('profileCargo');
+      const saveBtn = document.getElementById('profileSaveBtn');
+      const alertEl = document.getElementById('profileAlert');
+      async function fetchCsrf(){ try { const r = await fetch(API_URL + '?action=csrf', { credentials:'include' }); const j = await r.json(); if (j && j.ok && j.csrf) csrf = j.csrf; } catch(_){} }
+      function showAlert(type, msg){ if (!alertEl) return; alertEl.className = 'alert alert-' + type; alertEl.textContent = msg; alertEl.style.display = 'block'; }
+      function clearAlert(){ if (alertEl) { alertEl.style.display = 'none'; alertEl.textContent = ''; alertEl.className = ''; } }
+      function isEmail(v){ return /.+@.+\..+/.test(v); }
+      async function loadSession(){ try { const r = await fetch(API_URL + '?action=session', { credentials:'include' }); const j = await r.json(); if (j && j.ok && j.authenticated){ original.nome = (j.nome||''); original.usuario = (j.usuario||''); original.email = (j.email||''); original.cargo = (j.cargo||''); if (nomeEl) nomeEl.placeholder = original.nome || 'Nome'; if (usuarioEl) usuarioEl.placeholder = original.usuario || 'Usuário'; if (emailEl) emailEl.placeholder = original.email || 'E-mail'; if (cargoEl) { cargoEl.placeholder = original.cargo || 'Cargo'; } } } catch(_){} }
+      function resetProfileInputs(){ if (nomeEl) nomeEl.value = ''; if (usuarioEl) usuarioEl.value = ''; if (emailEl) emailEl.value = ''; if (senhaEl) senhaEl.value = ''; }
+      async function handleSave(){ clearAlert(); if (!saveBtn) return; saveBtn.disabled = true; saveBtn.textContent = 'Salvando...'; try { const payload = { action:'profile_update' }; const nome = (nomeEl && nomeEl.value.trim()) || ''; const usuario = (usuarioEl && usuarioEl.value.trim()) || ''; const senha = (senhaEl && senhaEl.value) || ''; const email = (emailEl && emailEl.value.trim()) || ''; if (usuario && (usuario.length < 3 || usuario.length > 64)) { showAlert('warning','Usuário inválido'); return; } if (email && !isEmail(email)) { showAlert('warning','E-mail inválido'); return; } if (senha && (senha.length < 8 || senha.length > 128)) { showAlert('warning','Senha inválida'); return; } if (nome) payload.nome = nome; if (usuario) payload.usuario = usuario; if (email) payload.email = email; if (senha) payload.senha = senha; if (!payload.nome && !payload.usuario && !payload.email && !payload.senha){ showAlert('info','Nenhuma alteração para salvar'); return; } if (!csrf) await fetchCsrf(); const r = await fetch(API_URL, { method:'POST', credentials:'include', headers:{ 'Content-Type':'application/json', 'X-CSRF-Token': csrf || '' }, body: JSON.stringify(payload) }); const j = await r.json(); if (!j || !j.ok){ showAlert('danger', (j && j.error) ? j.error : 'Falha ao salvar'); return; } await loadSession(); const welcome = document.getElementById('userName'); if (welcome) welcome.textContent = (original.nome || original.usuario || 'Usuário'); if (nomeEl) nomeEl.value = ''; if (usuarioEl) usuarioEl.value = ''; if (senhaEl) senhaEl.value = ''; if (emailEl) emailEl.value = ''; showAlert('success','Dados atualizados com sucesso'); } catch(_){ showAlert('danger','Erro de rede'); } finally { saveBtn.disabled = false; saveBtn.textContent = 'Salvar'; } }
+      document.addEventListener('DOMContentLoaded', async function(){ await fetchCsrf(); await loadSession(); resetProfileInputs(); setTimeout(resetProfileInputs, 300); if (saveBtn) saveBtn.addEventListener('click', handleSave); });
+    })();
+  </script>
+</body>
+</html>

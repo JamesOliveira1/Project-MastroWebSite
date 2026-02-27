@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="Content-Language" content="pt-BR">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Mastro D'Ascia Náutica">
+  <link href="../assets/img/favicon.png" rel="icon" type="image/png">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <title>Códigos de Produtos - Mastro D'Ascia</title>
+  <meta name="description" content="Tabela de códigos e produtos - Mastro D'ascia.">
+  <meta property="og:title" content="Mastro D'Ascia Náutica - Tabela de Códigos e Produtos">
+  <meta property="og:description" content="Tabela de códigos e produtos csv">
+  <meta property="og:image" content="https://mastrodascia.com.br/assets/img/produtos/8.5XF/foto%20(21).jpg">
+  
+  <meta property="og:type" content="website">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  <link href="./page/estaleiro.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/carrossel.css" rel="stylesheet">
+
+   <!-- Versionamento do arquivo CSS/JS para controle de cache -->
+  <script src="../assets/cachebuster.js"></script>
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6LfEIoYqAAAAAH-P0jb0mVzWDm4bkbmgXHpk7jsL"></script>
+
+</head>
+
+<body class="produtos-page">
+<progenese-header></progenese-header>
+
+  <main id="main" style="background-color: #f0f0f0;">
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Códigos de produtos</h2>
+          <ol>
+            <li><a href="inicio.html">Início</a></li>
+            <li>Códigos de produtos</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos" class="produtos-section" style="padding-top:40px;">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title titleconsulta">
+          <div class="title-header-row d-flex justify-content-between align-items-start">
+            <div class="title-block text-start">
+              <h2>Consulta ao banco de dados do sistema</h2>
+              <p class="pmenos">Tabela de códigos e produtos</p>
+            </div>
+            <div class="decoration1">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon1">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon2">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon3">
+               <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon4">
+           
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalPesquisarProdutos" tabindex="-1" aria-labelledby="modalPesquisarProdutosLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalPesquisarProdutosLabel">Pesquisar produtos</h5>
+                <button type="button" id="modal-close-btn" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-2">
+                  <label for="modal-codigo" class="form-label">Código</label>
+                  <input type="text" id="modal-codigo" class="form-control" inputmode="numeric" pattern="[0-9]*" placeholder="Ex: 12345">
+                </div>
+                <div class="mb-3">
+                  <label for="modal-item" class="form-label">Nome do item</label>
+                  <input type="text" id="modal-item" class="form-control" placeholder="Parte do nome">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" id="modal-btn-pesquisar" class="btn btn-primary btn_estaleiro"><i class="bi bi-search"></i> Pesquisar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <form method="post" id="form-btnbuttons" action="javascript/sync.php" class="text-center d-flex justify-content-center align-items-center gap-2" style="gap: 10px;">
+              <button type="button" id="botao-atualizarexcel" class="btn btn-secondary btn_estaleiro">
+                <i class="bi bi-arrow-clockwise"></i> Atualizar
+              </button>
+              <button type="button" id="botao-pesquisar-produtos" class="btn btn-secondary btn_estaleiro">
+                <i class="bi bi-search"></i> Pesquisar
+              </button>
+              <button type="submit" id="botao-gerarexcel-completo" name="gerar_excel_completo" class="btn btn-primary btn-export btn_estaleiro">
+                <i class="bi bi-file-text"></i> Salvar tabela completa
+              </button>
+              <button type="submit" id="botao-gerarexcel-simplificado" name="gerar_excel_simplificado" class="btn btn-outline-primary btn-export btn_estaleiro">
+                <i class="bi bi-file-text"></i> Salvar tabela simplificada
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="row tabeladark-row">
+          <div class="col-12">
+            <div class="table-container">
+              <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <th style="padding-left: 20px;">Código do Produto</th>
+                    <th style="padding-left: 20px;">Item</th>
+                    <th style="padding-left: 20px;">Quantidade em Estoque</th>
+                    <th style="padding-left: 20px;">Unidade de Medida</th>
+                    <th style="padding-left: 20px;">Categoria</th>
+                    <th style="padding-left: 20px;">Sub-categoria de</th>
+                  </tr>
+                </thead>
+                <tbody id="tabela-produtos-body">
+                  <!-- Carregado via JavaScript -->
+                </tbody>
+              </table>
+             
+              
+            </div>
+             <div id="produtos-pager" class="d-flex justify-content-end gap-2 mt-2">
+                <button type="button" id="produtos-prev" class="btn btn_estaleirooff btn-sm" title="Voltar" aria-label="Voltar">
+                  <i class="bi bi-chevron-left"></i>
+                </button>
+                <button type="button" id="produtos-next" class="btn btn_estaleirooff btn-sm" title="Próximo" aria-label="Próximo">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+              </div>
+          </div>
+        </div>
+<div class="text-center">
+                <p id="status-text"></p>
+              </div>
+        <div class="alert alert-info d-flex justify-content-center align-items-center mt-3" role="alert">
+          A tabela do inventário é atualizada pelo sistema Kaluma, sincronize após cadastrar novos produtos ou alterar o estoque.
+        </div>
+        <div class="d-flex gap-2">
+            <a href="http://mastrodascia.progenese.com.br/Cadastros" target="_blank" class="btn btn_estaleirooff">
+              <img src="./page/kalumaicon.png" alt="" class="me-1" style="height:20px; width:auto;"> Cadastrar produto
+            </a>
+            <button type="button" id="botao-sincronizar-inventario" class="btn btn-warning">
+              <i class="bi bi-arrow-repeat"></i> Sincronizar
+            </button>
+          </div>
+
+      </div>
+    </section>
+  </main>
+<progenese-footer></progenese-footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Componentes dinâmicos de header/footer -->
+  <script src="./page/progenese-layout.js"></script>
+  <script src="./javascript/login.js" defer></script>
+  
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <script>
+    let produtosPageSize = 10;
+    let produtosOffset = 0;
+    let produtosSearchResults = null;
+    let produtosSearchTotal = 0;
+    let produtosSearchTerms = '';
+
+    function atualizarPaginacao(count) {
+      const prevBtn = document.getElementById('produtos-prev');
+      const nextBtn = document.getElementById('produtos-next');
+      prevBtn.disabled = produtosOffset <= 0;
+      // Permite avançar enquanto houver qualquer item; desativa apenas quando não houver mais
+      nextBtn.disabled = count === 0;
+    }
+
+    function carregarProdutos(limite = 10, offset = 0) {
+      const tbody = document.getElementById('tabela-produtos-body');
+      const statusEl = document.getElementById('status-text');
+      tbody.innerHTML = '';
+      statusEl.textContent = 'Carregando...';
+
+      fetch('javascript/sync.php?listar=' + encodeURIComponent(limite) + '&offset=' + encodeURIComponent(offset), { credentials: 'include' })
+        .then(r => {
+          if (!r.ok) throw new Error('Erro ao listar: ' + r.status);
+          return r.json();
+        })
+        .then(data => {
+          const lista = Array.isArray(data.produtos) ? data.produtos : [];
+          const count = lista.length;
+          statusEl.textContent = (data.status || '');
+          lista.forEach(p => {
+            const tr = document.createElement('tr');
+            const c1 = document.createElement('td'); c1.textContent = p.codigo_produto || '';
+            const c2 = document.createElement('td'); c2.textContent = p.unidade_medida || '';
+            const c3 = document.createElement('td'); c3.textContent = p.item || '';
+            const c4 = document.createElement('td'); c4.textContent = p.quantidade_estoque || '';
+            const c5 = document.createElement('td'); c5.textContent = p.categoria || '';
+            const c6 = document.createElement('td'); c6.textContent = p.sub_categoria_de || '';
+            tr.append(c1, c3, c4, c2, c5, c6);
+            tbody.appendChild(tr);
+          });
+          atualizarPaginacao(count);
+        })
+        .catch(err => {
+          statusEl.textContent = '❌ ' + err.message;
+          // Em erro de conexão, desabilita avanço
+          try { atualizarPaginacao(0); } catch (_) {}
+        });
+    }
+
+    document.getElementById('botao-atualizarexcel').addEventListener('click', () => {
+      produtosOffset = 0;
+      produtosPageSize = 10;
+      produtosSearchResults = null;
+      produtosSearchTotal = 0;
+      produtosSearchTerms = '';
+      carregarProdutos(produtosPageSize, produtosOffset);
+    });
+    document.getElementById('botao-sincronizar-inventario').addEventListener('click', async () => {
+      const statusEl = document.getElementById('status-text');
+      statusEl.textContent = 'Sincronizando...';
+      try {
+        const r = await fetch('api/inventario.php?action=sincronizar', {
+          method: 'POST',
+          credentials: 'include',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ batch_size: 250 })
+        });
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        const j = await r.json();
+        if (j && j.ok) {
+          const novos = j.inserted || 0;
+          const atualiz = j.updated || 0;
+          const fetched = j.total ?? j.fetched ?? 0;
+          const skipped = j.skipped ?? 0;
+          statusEl.textContent = `Sincronização: ${fetched} lidos, ${novos} novos, ${atualiz} atualizados, ${skipped} ignorados`;
+        } else {
+          statusEl.textContent = 'Erro na sincronização';
+          console.error('Resposta inválida:', j);
+        }
+      } catch (e) {
+        statusEl.textContent = 'Erro na sincronização';
+        console.error('Falha ao sincronizar:', e);
+      }
+    });
+
+    let modalPesquisaInstance;
+    function getModalPesquisa() {
+      if (!modalPesquisaInstance) {
+        const el = document.getElementById('modalPesquisarProdutos');
+        modalPesquisaInstance = new bootstrap.Modal(el);
+      }
+      return modalPesquisaInstance;
+    }
+    function abrirModalPesquisa() {
+      getModalPesquisa().show();
+    }
+    function fecharModalPesquisa() {
+      try { getModalPesquisa().hide(); } catch (_) {}
+    }
+    function atualizarPaginacaoPesquisa(total) {
+      const prevBtn = document.getElementById('produtos-prev');
+      const nextBtn = document.getElementById('produtos-next');
+      prevBtn.disabled = produtosOffset <= 0;
+      nextBtn.disabled = (produtosOffset + produtosPageSize) >= total;
+    }
+    function renderResultadosPesquisaPagina() {
+      const tbody = document.getElementById('tabela-produtos-body');
+      const statusEl = document.getElementById('status-text');
+      tbody.innerHTML = '';
+      const slice = produtosSearchResults.slice(produtosOffset, produtosOffset + produtosPageSize);
+      slice.forEach(p => {
+        const tr = document.createElement('tr');
+        const c1 = document.createElement('td'); c1.textContent = p.codigo_produto || '';
+        const c2 = document.createElement('td'); c2.textContent = p.unidade_medida || '';
+        const c3 = document.createElement('td'); c3.textContent = p.item || '';
+        const c4 = document.createElement('td'); c4.textContent = p.quantidade_estoque || '';
+        const c5 = document.createElement('td'); c5.textContent = p.categoria || '';
+        const c6 = document.createElement('td'); c6.textContent = p.sub_categoria_de || '';
+        tr.append(c1, c3, c4, c2, c5, c6);
+        tbody.appendChild(tr);
+      });
+      atualizarPaginacaoPesquisa(produtosSearchTotal);
+      statusEl.innerHTML = '<i class="bi bi-box-seam me-2"></i>Exibindo ' + produtosSearchTotal + ' resultado(s)';
+    }
+    function renderResultadosPesquisa(lista, termosPesquisados) {
+      const tbody = document.getElementById('tabela-produtos-body');
+      const statusEl = document.getElementById('status-text');
+      tbody.innerHTML = '';
+      if (!lista || lista.length === 0) {
+        const tr = document.createElement('tr');
+        const td = document.createElement('td');
+        td.setAttribute('colspan','6');
+        td.textContent = 'Nenhum produto encontrado para o termo pesquisado';
+        if (termosPesquisados) {
+          td.append(' - ');
+          const strong = document.createElement('strong');
+          strong.textContent = termosPesquisados;
+          td.appendChild(strong);
+        }
+        td.append('.');
+        tr.appendChild(td);
+        tbody.appendChild(tr);
+        atualizarPaginacao(0);
+        statusEl.innerHTML = '<i class="bi bi-ban me-2"></i>Ajuste os termos da pesquisa e tente novamente.';
+        return;
+      }
+      produtosSearchResults = lista;
+      produtosSearchTotal = lista.length;
+      produtosSearchTerms = termosPesquisados || '';
+      produtosOffset = 0;
+      produtosPageSize = 10;
+      renderResultadosPesquisaPagina();
+    }
+    async function pesquisarProdutos() {
+      const statusEl = document.getElementById('status-text');
+      const codigo = document.getElementById('modal-codigo').value.trim();
+      const nome = document.getElementById('modal-item').value.trim();
+      statusEl.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Pesquisando...';
+      const btn = document.getElementById('modal-btn-pesquisar');
+      function showPreloader() {
+        let p = document.getElementById('preloader');
+        if (!p) {
+          p = document.createElement('div');
+          p.id = 'preloader';
+          document.body.appendChild(p);
+        }
+        p.style.background = '#ffffff96';
+      }
+      function hidePreloader() {
+        const p = document.getElementById('preloader');
+        if (p) p.remove();
+      }
+      btn.disabled = true;
+      showPreloader();
+      try {
+        const r = await fetch('javascript/sync.php?listar=' + encodeURIComponent(10000) + '&offset=0', { credentials: 'include' });
+        if (!r.ok) throw new Error('Erro ao listar: ' + r.status);
+        const data = await r.json();
+        const lista = Array.isArray(data.produtos) ? data.produtos : [];
+        let filtrados = lista.filter(p => {
+          let ok = true;
+          if (codigo) {
+            const cod = String(p.codigo_produto || '').replace(/\D+/g,'');
+            ok = ok && cod === codigo;
+          }
+          if (nome) {
+            const it = String(p.item || '').toLowerCase();
+            ok = ok && it.includes(nome.toLowerCase());
+          }
+          return ok;
+        });
+        if (!codigo && !nome) filtrados = [];
+        let termos = '';
+        if (codigo && nome) {
+          termos = 'código: ' + codigo + ', item: ' + nome;
+        } else if (codigo) {
+          termos = 'código: ' + codigo;
+        } else if (nome) {
+          termos = 'item: ' + nome;
+        }
+        renderResultadosPesquisa(filtrados, termos);
+        fecharModalPesquisa();
+      } catch (e) {
+        statusEl.textContent = '❌ ' + e.message;
+      } finally {
+        hidePreloader();
+        btn.disabled = false;
+      }
+    }
+
+    function mostrarIndicacaoInicial() {
+      const tbody = document.getElementById('tabela-produtos-body');
+      const statusEl = document.getElementById('status-text');
+      tbody.innerHTML = '';
+      const tr = document.createElement('tr');
+      const td = document.createElement('td');
+      td.setAttribute('colspan','6');
+      td.textContent = 'Clique em atualizar para conectar com o banco de dados de produtos.';
+      tr.appendChild(td);
+      tbody.appendChild(tr);
+      atualizarPaginacao(0);
+      statusEl.innerHTML = '<i class="bi bi-exclamation-triangle me-2 text-warning" aria-hidden="true"></i>Aguardando sincronização';
+    }
+    document.getElementById('botao-pesquisar-produtos').addEventListener('click', abrirModalPesquisa);
+    document.getElementById('modal-btn-pesquisar').addEventListener('click', pesquisarProdutos);
+    document.getElementById('modal-close-btn').addEventListener('click', fecharModalPesquisa);
+    document.getElementById('modal-codigo').addEventListener('input', function(e){ e.target.value = e.target.value.replace(/\D+/g,''); });
+    // Navegação
+    document.getElementById('produtos-prev').addEventListener('click', () => {
+      if (produtosOffset <= 0) return;
+      produtosOffset = Math.max(0, produtosOffset - produtosPageSize);
+      if (produtosSearchResults && produtosSearchResults.length > 0) {
+        renderResultadosPesquisaPagina();
+      } else {
+        carregarProdutos(produtosPageSize, produtosOffset);
+      }
+    });
+    document.getElementById('produtos-next').addEventListener('click', () => {
+      if (produtosSearchResults && produtosSearchResults.length > 0) {
+        if ((produtosOffset + produtosPageSize) < produtosSearchTotal) {
+          produtosOffset += produtosPageSize;
+          renderResultadosPesquisaPagina();
+        }
+      } else {
+        produtosOffset += produtosPageSize;
+        carregarProdutos(produtosPageSize, produtosOffset);
+      }
+    });
+
+    // Inicializa
+    mostrarIndicacaoInicial();
+  </script>
+</body>
+</html>

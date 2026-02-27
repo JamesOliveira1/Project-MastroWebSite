@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acesso área interna - Sistema de apoio ao estaleiro</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./page/estaleiro.css">
+
+   <!-- Versionamento do arquivo CSS/JS para controle de cache -->
+  <script src="../assets/cachebuster.js"></script>
+
+</head>
+
+<body class="login-page">
+  <div class="login-container">
+    <div class="login-header">
+      <div class="logo-container">
+        <img src="../assets/img/logo azul.png" alt="Mastro D'Ascia">
+      </div>
+      <h1>Acesso Área Interna</h1>
+      <p class="subtitle">Sistema de Apoio ao Estaleiro</p>
+    </div>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="usuario">Usuário/E-mail</label>
+        <input type="text" class="form-control" id="usuario" name="usuario" required placeholder="Digite seu usuário" autocomplete="username">
+      </div>
+
+      <div class="form-group">
+        <label for="senha">Senha</label>
+        <div class="input-group">
+          <input type="password" class="form-control" id="senha" name="senha" required placeholder="Digite sua senha" autocomplete="current-password">
+          
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="form-check m-0" style="padding-left: 0px;">
+          <input type="checkbox" id="manter-logado" name="manter-logado">
+          <label class="form-check-label" for="manter-logado" id="manter-logadotext" style="cursor:pointer;">Manter-se logado</label>
+        </div>
+        <a href="/index.html" class="d-flex align-items-center voltaraositetext" id="voltaraosite" style="cursor:pointer; text-decoration:none;">
+          <i class="bi bi-arrow-return-left voltaraositetext" style="margin-right: 6px; cursor: pointer; padding-top: 2px;"></i> <span class="voltaraositetext" style="cursor: pointer;"> Voltar ao site</span>
+        </a>
+      </div>
+
+      <button type="submit" class="btn-login">Entrar</button>
+      
+      
+      <a href="https://wa.me/5548988344166?text=Ol%C3%A1%2C%20preciso%20de%20suporte%20com%20meu%20acesso%20ao%20sistema%20do%20site%20mastro%20d%27ascia." class="btn-forgot" id="recuperar-senha" target="_blank" rel="noopener">
+        <i class="bi bi-headset"></i> Recuperar Senha / Suporte
+      </a>
+    </form>
+  </div>
+  <script src="./javascript/login.js" defer></script>
+</body>
+</html>

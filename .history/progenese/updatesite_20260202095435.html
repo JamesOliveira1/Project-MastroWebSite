@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="Content-Language" content="pt-BR">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Mastro D'Ascia Náutica">
+  <link href="../assets/img/favicon.png" rel="icon" type="image/png">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <title>Atualizações do Site - Mastro D'Ascia</title>
+  <meta name="description" content="Página destinada às futuras atualizações do site.">
+  <meta property="og:title" content="Mastro D'Ascia Náutica - Atualizações do Site">
+  <meta property="og:description" content="Página destinada às futuras atualizações do site.">
+  <meta property="og:type" content="website">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Versionamento do arquivo CSS para controle de cache -->
+<script src="../assets/css/cssversion.js"></script>
+
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/carrossel.css" rel="stylesheet">
+  <link href="./page/estaleiro.css" rel="stylesheet">
+</head>
+<body>
+  <progenese-header></progenese-header>
+
+  <main id="main" style="background-color: #f0f0f0;">
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Atualizações do Site</h2>
+          <ol>
+            <li><a href="inicio.html">Início</a></li>
+            <li>Atualizações do Site</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="updates" class="shipyard-management" style="padding-top: 40px;">
+      <div class="container" style="min-height: 500px;" data-aos="fade-up">
+        <div class="section-title titleconsulta">
+          <div class="page-title-standard d-flex justify-content-between align-items-start">
+            <div class="title-block text-start">
+              <h2>Estaleiro Mastro D'Ascia</h2>
+              <p class="pmenos">Página de atualização do site</p>
+            </div>
+            <div class="decoration1">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon1">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon2">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon3">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon4">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-lg-8 mx-auto">
+            <div class="card">
+              <div class="card-body">
+                <div class="row g-3 mb-3">
+                  <div class="col-6 col-lg-3">
+                    <button id="btn-modelo" class="btn btn-primary btn-large d-inline-flex align-items-center justify-content-center w-100 py-3" type="button">
+                      <i class="bi bi-gear me-2"></i>Editar dados do modelo
+                    </button>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <button id="btn-opcionais" class="btn btn-primary btn-large d-inline-flex align-items-center justify-content-center w-100 py-3" type="button">
+                      <i class="bi bi-ui-checks-grid me-2"></i>Editar opcionais
+                    </button>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <button id="btn-motores" class="btn btn-primary btn-large d-inline-flex align-items-center justify-content-center w-100 py-3" type="button">
+                      <i class="bi bi-speedometer2 me-2"></i>Editar motores
+                    </button>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <button id="btn-relacionar" class="btn btn-primary btn-large d-inline-flex align-items-center justify-content-center w-100 py-3" type="button">
+                      <i class="bi bi-link-45deg me-2"></i>Relacionar modelo com motores e opcionais
+                    </button>
+                  </div>
+                </div>
+
+                <div id="manage-content">
+                  <div id="panel-modelo" class="manage-panel">
+                    <h4 class="mb-3">Editar dados do modelo</h4>
+                    <p class="text-muted mb-4">Área destinada à edição dos dados principais do modelo. Estrutura preparada para formularios e validações.</p>
+                    <div class="border rounded p-3 bg-white">
+                      <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                          <label class="form-label">Nome do modelo</label>
+                          <input type="text" class="form-control" placeholder="Ex.: 8.5XF">
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label class="form-label">Categoria</label>
+                          <select class="form-select">
+                            <option value="">Selecione</option>
+                            <option>Catamarã</option>
+                            <option>Lancha</option>
+                          </select>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn btn-primary"><i class="bi bi-check2-circle me-2"></i>Salvar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="panel-opcionais" class="manage-panel" style="display:none;">
+                    <h4 class="mb-3">Editar opcionais</h4>
+                    <p class="text-muted mb-4">Área para gerenciamento de opcionais. Estrutura preparada para listas, filtros e ações.</p>
+                    <div class="border rounded p-3 bg-white">
+                      <div class="d-flex gap-2 mb-3">
+                        <input class="form-control" placeholder="Buscar opcional">
+                        <button class="btn btn-primary"><i class="bi bi-plus-lg me-2"></i>Novo opcional</button>
+                      </div>
+                      <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Guincho elétrico
+                          <span>
+                            <button class="btn btn-sm btn-outline-primary me-2"><i class="bi bi-pencil"></i></button>
+                            <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Toldo bimini
+                          <span>
+                            <button class="btn btn-sm btn-outline-primary me-2"><i class="bi bi-pencil"></i></button>
+                            <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div id="panel-motores" class="manage-panel" style="display:none;">
+                    <h4 class="mb-3">Editar motores</h4>
+                    <p class="text-muted mb-4">Área para cadastro e edição de motores. Estrutura preparada para tabelas e formulários.</p>
+                    <div class="border rounded p-3 bg-white">
+                      <div class="d-flex gap-2 mb-3">
+                        <input class="form-control" placeholder="Buscar motor">
+                        <button class="btn btn-primary"><i class="bi bi-plus-lg me-2"></i>Novo motor</button>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Marca</th>
+                              <th>Modelo</th>
+                              <th>Potência</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Mercury</td>
+                              <td>Verado 250</td>
+                              <td>250 HP</td>
+                              <td class="text-end">
+                                <button class="btn btn-sm btn-outline-primary me-2"><i class="bi bi-pencil"></i></button>
+                                <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Yanmar</td>
+                              <td>6LY2A-STP</td>
+                              <td>440 HP</td>
+                              <td class="text-end">
+                                <button class="btn btn-sm btn-outline-primary me-2"><i class="bi bi-pencil"></i></button>
+                                <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="panel-relacionar" class="manage-panel" style="display:none;">
+                    <h4 class="mb-3">Relacionar modelo com motores e opcionais</h4>
+                    <p class="text-muted mb-4">Área para criar relações entre modelos, motores e opcionais. Estrutura preparada para seleção e associação.</p>
+                    <div class="border rounded p-3 bg-white">
+                      <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                          <label class="form-label">Modelo</label>
+                          <select class="form-select">
+                            <option value="">Selecione</option>
+                            <option>8.5XF</option>
+                            <option>Titan Cuddy</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label class="form-label">Motor</label>
+                          <select class="form-select">
+                            <option value="">Selecione</option>
+                            <option>Mercury Verado 250</option>
+                            <option>Yanmar 6LY2A-STP</option>
+                          </select>
+                        </div>
+                        <div class="col-12">
+                          <label class="form-label">Opcionais</label>
+                          <div class="d-flex flex-wrap gap-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="opt1">
+                              <label class="form-check-label" for="opt1">Guincho elétrico</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="opt2">
+                              <label class="form-check-label" for="opt2">Toldo bimini</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn btn-primary"><i class="bi bi-link-45deg me-2"></i>Salvar relação</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <progenese-footer></progenese-footer>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="./page/progenese-layout.js"></script>
+  <script src="./javascript/login.js" defer></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
+    (function () {
+      var panels = Array.prototype.slice.call(document.querySelectorAll('.manage-panel'));
+      var buttons = [
+        { btn: document.getElementById('btn-modelo'), panel: 'panel-modelo' },
+        { btn: document.getElementById('btn-opcionais'), panel: 'panel-opcionais' },
+        { btn: document.getElementById('btn-motores'), panel: 'panel-motores' },
+        { btn: document.getElementById('btn-relacionar'), panel: 'panel-relacionar' }
+      ];
+
+      function showPanel(id) {
+        panels.forEach(function (p) {
+          if (p.id === id) {
+            p.style.display = 'block';
+            p.style.opacity = '0';
+            p.style.transform = 'translateY(6px)';
+            p.style.transition = 'opacity 250ms ease, transform 250ms ease';
+            requestAnimationFrame(function () {
+              p.style.opacity = '1';
+              p.style.transform = 'translateY(0)';
+            });
+          } else {
+            p.style.display = 'none';
+            p.style.transition = '';
+            p.style.opacity = '';
+            p.style.transform = '';
+          }
+        });
+
+        buttons.forEach(function (b) {
+          if (b.btn) {
+            if (b.panel === id) {
+              b.btn.classList.add('active');
+            } else {
+              b.btn.classList.remove('active');
+            }
+          }
+        });
+      }
+
+      buttons.forEach(function (b) {
+        if (b.btn) {
+          b.btn.addEventListener('click', function () { showPanel(b.panel); });
+        }
+      });
+
+      showPanel('panel-modelo');
+    })();
+  </script>
+</body>
+</html>

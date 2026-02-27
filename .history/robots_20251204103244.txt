@@ -1,0 +1,46 @@
+# robots.txt for mastrodascia.com.br
+
+# Permitir tudo por padrão
+Allow: /
+
+# Permitir indexação das páginas principais
+Allow: /$
+Allow: /index
+Allow: /artigos
+Allow: /orcamento
+Allow: /customizacao
+Allow: /videos
+
+# Permitir indexação das páginas de produtos e artigos
+Allow: /portfolio/
+Allow: /*?artigo=
+
+# Permitir para renderização
+Allow: /assets/
+
+# Permitir indexação das páginas de produtos
+Allow: /portfolio/7CC
+Allow: /portfolio/7XF
+Allow: /portfolio/7XS
+Allow: /portfolio/8XF
+Allow: /portfolio/8CC
+Allow: /portfolio/8XS
+Allow: /portfolio/85CC
+Allow: /portfolio/85XF
+Allow: /portfolio/85XS
+Allow: /portfolio/Commuter
+Allow: /portfolio/TitanCC
+Allow: /portfolio/Cabin
+
+# Bloquear indexação do conteúdo privado
+Disallow: /old/
+Disallow: /phpmailer/
+Disallow: /forms/
+Disallow: /logs/
+Disallow: /progenese/
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://mastrodascia.com.br/sitemap.xml
+
+

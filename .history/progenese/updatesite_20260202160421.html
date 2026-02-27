@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="Content-Language" content="pt-BR">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Mastro D'Ascia Náutica">
+  <link href="../assets/img/favicon.png" rel="icon" type="image/png">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <title>Atualizações do Site - Mastro D'Ascia</title>
+  <meta name="description" content="Página destinada às futuras atualizações do site.">
+  <meta property="og:title" content="Mastro D'Ascia Náutica - Atualizações do Site">
+  <meta property="og:description" content="Página destinada às futuras atualizações do site.">
+  <meta property="og:type" content="website">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Versionamento do arquivo CSS para controle de cache -->
+<script src="../assets/css/cssversion.js"></script>
+
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/carrossel.css" rel="stylesheet">
+  <link href="./page/estaleiro.css" rel="stylesheet">
+</head>
+<body>
+  <progenese-header></progenese-header>
+
+  <main id="main" style="background-color: #f0f0f0;">
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Atualizações do Site</h2>
+          <ol>
+            <li><a href="inicio.html">Início</a></li>
+            <li>Atualizações do Site</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="updates" class="shipyard-management" style="padding-top: 40px;">
+      <div class="container" style="min-height: 500px;" data-aos="fade-up">
+        <div class="section-title titleconsulta">
+          <div class="page-title-standard d-flex justify-content-between align-items-start">
+            <div class="title-block text-start">
+              <h2>Estaleiro Mastro D'Ascia</h2>
+              <p class="pmenos">Página de atualização do site</p>
+            </div>
+            <div class="decoration1">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon1">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon2">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon3">
+              <img src="./page/decoration-close1.svg" alt="Decoration Icon" class="decoration-icon icon4">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-12 d-flex justify-content-center gap-2 flex-wrap" id="updateMenu">
+            <button class="btn btn_estaleiro" onclick="showSection('editModel')">
+              <i class="bi bi-pencil-square me-2"></i> Editar modelo
+            </button>
+            <button class="btn btn_estaleiro" onclick="showSection('editOptionals')">
+              <i class="bi bi-list-check me-2"></i> Editar opcionais
+            </button>
+            <button class="btn btn_estaleiro" onclick="showSection('editMotors')">
+              <i class="bi bi-gear me-2"></i> Editar motores
+            </button>
+            <button class="btn btn_estaleiro" onclick="showSection('relate')">
+              <i class="bi bi-link-45deg me-2"></i> Relacionar
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            
+            <!-- Section: Editar Modelo -->
+            <div id="editModel" class="update-section warehouse-container" style="display:none;">
+              <div class="warehouse-header">
+                <h3 class="warehouse-title"><i class="bi bi-pencil-square me-2"></i> Editar Modelo</h3>
+              </div>
+              <div class="row g-3 mt-2">
+                <div class="col-12 col-lg-3">
+                  <label class="form-label">Modelos</label>
+                  <select class="form-select form-select-sm" id="modelSelect"></select>
+                  <div class="mt-2">
+                    <img id="modelPreviewImg" src="" alt="Imagem do modelo" class="img-fluid rounded">
+                  </div>
+                  <div class="mt-2">
+                    <button class="btn btn-primary btn_estaleiro" id="btnEditModel"><i class="bi bi-pencil-square me-2"></i> Editar dados</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                  <div class="table-container">
+                    <table class="table table-striped table-hover">
+                      <thead class="table-dark">
+                        <tr>
+                          <th style="padding-left: 20px;">Campo</th>
+                          <th style="padding-left: 20px;">Valor</th>
+                        </tr>
+                      </thead>
+                      <tbody id="modelDetailsBody"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal Editar Modelo -->
+            <div class="modal fade" id="modalEditModel" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Editar Modelo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="formEditModel">
+                      <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                          <label class="form-label">Categoria</label>
+                          <input type="text" class="form-control" id="modelCategoria">
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="form-label">Comprimento (m)</label>
+                          <input type="number" step="0.01" class="form-control" id="modelComprimento">
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="form-label">Largura (m)</label>
+                          <input type="number" step="0.01" class="form-control" id="modelLargura">
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="form-label">Calado (m)</label>
+                          <input type="number" step="0.01" class="form-control" id="modelCalado">
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="form-label">Peso (kg)</label>
+                          <input type="number" step="0.01" class="form-control" id="modelPeso">
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="form-label">Água (l)</label>
+                          <input type="number" step="0.01" class="form-control" id="modelAgua">
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="form-label">Combustível (l)</label>
+                          <input type="number" step="0.01" class="form-control" id="modelCombustivel">
+                        </div>
+                        <div class="col-12">
+                          <label class="form-label">Motorização</label>
+                          <input type="text" class="form-control" id="modelMotorizacao">
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="form-label">Passageiros</label>
+                          <input type="number" class="form-control" id="modelPassageiros">
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="form-label">Pernoite</label>
+                          <input type="number" class="form-control" id="modelPernoite">
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="form-label">Vel. Cruzeiro (nós)</label>
+                          <input type="number" step="0.01" class="form-control" id="modelVelCruzeiro">
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="form-label">Autonomia (milhas)</label>
+                          <input type="number" step="0.01" class="form-control" id="modelAutonomia">
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="form-label">Vel. Máxima (nós)</label>
+                          <input type="number" step="0.01" class="form-control" id="modelVelMaxima">
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="form-label">Valor Montagem (R$)</label>
+                          <input type="number" step="0.01" class="form-control" id="modelValorMontagem">
+                        </div>
+                        <div class="col-12">
+                          <label class="form-label">Descrição</label>
+                          <textarea class="form-control" id="modelDescricao" rows="3"></textarea>
+                        </div>
+                        <div class="col-12">
+                          <div></div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn_estaleirosavemodel">Salvar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section: Editar Opcionais -->
+            <div id="editOptionals" class="update-section warehouse-container" style="display:none;">
+              <div class="warehouse-header">
+                <h3 class="warehouse-title"><i class="bi bi-list-check me-2"></i> Editar Opcionais</h3>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="text-muted mb-0">Gerencie os opcionais disponíveis.</p>
+                <button type="button" class="btn btn_estaleiro" id="btnAddOptional">
+                  <i class="bi bi-plus-lg"></i> Adicionar
+                </button>
+              </div>
+              <div class="optional-grid" id="optionalsGrid"></div>
+            </div>
+
+            <!-- Section: Editar Motores -->
+            <div id="editMotors" class="update-section warehouse-container" style="display:none;">
+               <div class="warehouse-header">
+                <h3 class="warehouse-title"><i class="bi bi-gear me-2"></i> Editar Motores</h3>
+              </div>
+              
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="text-muted mb-0">Clique no card para editar as informações do motor.</p>
+                <button type="button" class="btn btn-outline-secondary btn-sm" id="btnOrganizarMotores" title="Organizar lista">
+                  <i class="bi bi-sort-alpha-down"></i> Organizar (Nome)
+                </button>
+              </div>
+
+              <div class="optional-grid" id="motorsGrid">
+              </div>
+
+            </div>
+
+            <!-- Modal Editar Motor -->
+            <div class="modal fade" id="modalEditMotor" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Editar Motor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="motorName" class="form-label">Nome do Motor</label>
+                        <input type="text" class="form-control" id="motorName">
+                      </div>
+                      <div class="mb-3">
+                        <label for="motorPrice" class="form-label">Valor (R$)</label>
+                        <input type="text" class="form-control" id="motorPrice" oninput="formatCurrency(this)">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn_estaleirosave">Salvar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Editar Opcional -->
+            <div class="modal fade" id="modalEditOptional" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Editar Opcional</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="optionalName" class="form-label">Nome do Opcional</label>
+                        <input type="text" class="form-control" id="optionalName">
+                      </div>
+                      <div class="mb-3">
+                        <label for="optionalPrice" class="form-label">Valor (R$)</label>
+                        <input type="text" class="form-control" id="optionalPrice" oninput="formatCurrency(this)">
+                      </div>
+                      <div class="mb-3">
+                        <label for="optionalEditImg" class="form-label">Substituir imagem (JPG ou PNG)</label>
+                        <div class="d-flex gap-2">
+                          <input type="file" class="form-control" id="optionalEditImg" accept=".jpg,.jpeg,.png">
+                          <button type="button" class="btn btn-outline-danger" id="btnDeleteOptionalImg" title="Excluir imagem">X</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger btn_estaleirodeleteoptional">Excluir</button>
+                    <button type="button" class="btn btn-primary btn_estaleirosaveoptional">Salvar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Adicionar Opcional -->
+            <div class="modal fade" id="modalAddOptional" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Adicionar Opcional</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="formAddOptional" enctype="multipart/form-data">
+                      <div class="mb-3">
+                        <label for="optionalAddName" class="form-label">Nome do Opcional</label>
+                        <input type="text" class="form-control" id="optionalAddName" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="optionalAddPrice" class="form-label">Valor (R$)</label>
+                        <input type="text" class="form-control" id="optionalAddPrice" oninput="formatCurrency(this)" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="optionalAddImg" class="form-label">Imagem (JPG ou PNG)</label>
+                        <input type="file" class="form-control" id="optionalAddImg" accept=".jpg,.jpeg,.png">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn_estaleirosaveoptionalnew">Salvar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section: Relacionar -->
+            <div id="relate" class="update-section warehouse-container" style="display:none;">
+               <div class="warehouse-header">
+                <h3 class="warehouse-title"><i class="bi bi-link-45deg me-2"></i> Relacionar</h3>
+              </div>
+              <p class="text-muted text-center">Defina os relacionamentos entre modelos e componentes.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <progenese-footer></progenese-footer>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="./page/progenese-layout.js"></script>
+  <script src="./javascript/login.js" defer></script>
+  <script src="./javascript/updatesite.js" defer></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "models": "Modelos",
+    "models_xs": "Modelos XS (Servicios)",
+    "all_models": "Todos los Modelos",
+    "media_articles": "Medios y Artículos",
+    "community_posts": "Publicaciones de la Comunidad",
+    "video_gallery": "Galería de Videos",
+    "vacuum_infusion": "Infusión al Vacío",
+    "hull_types": "Tipos de Cascos",
+    "maintenance_routine": "Rutina de Mantenimiento",
+    "technical_manuals": "Manuales Técnicos",
+    "all_articles": "Todos los Artículos",
+    "contact": "Contacto",
+    "quote": "Presupuesto"
+  },
+  "footer": {
+    "pages": "Páginas",
+    "home": "Inicio",
+    "models": "Modelos",
+    "articles": "Artículos",
+    "quote": "Presupuesto",
+    "rep_area": "Área del Representante",
+    "useful_links": "Enlaces Útiles",
+    "translate": "Traducir esta página",
+    "tide_table": "Tabla de mareas",
+    "maintenance_tips": "Consejos de mantenimiento",
+    "weather": "Pronóstico del Tiempo",
+    "bombarco": "Bombarco",
+    "rights": "All Rights Reserved.",
+    "protected": "Este sitio está protegido por",
+    "subject_to": "y está sujeto a la",
+    "privacy_policy": "Política de Privacidad",
+    "and": "y a los",
+    "terms": "Términos de Servicio",
+    "google": "de Google.",
+    "support_center": "Centro de soporte",
+    "send_whatsapp": "Enviar WhatsApp",
+    "email_contact": "Contacto por correo",
+    "quote_form": "Formulario de presupuesto",
+    "cookie_text": "Este sitio utiliza cookies para funcionar correctamente y mejorar su experiencia. Consulte nuestra",
+    "cookie_more_info": "para más información.",
+    "allow": "Permitir",
+    "deny": "Rechazar"
+  },
+  "404": {
+    "title": "Página no encontrada",
+    "description": "Lo sentimos, la página que está buscando no existe o ha sido eliminada. Verifique la dirección o use el menú.",
+    "back_home": "Haga clic aquí para volver a la página principal."
+  },
+  "videos": {
+    "title": "Galería de Videos",
+    "breadcrumb": "Videos",
+    "back": "Volver",
+    "request_quote": "Solicitar Presupuesto",
+    "share": "Compartir"
+  },
+  "budget": {
+    "title": "Presupuesto",
+    "breadcrumb": "Presupuesto",
+    "form_title": "Formulario de cotización",
+    "placeholders": {
+      "name": "Nombre",
+      "surname": "Apellido",
+      "email": "Su E-mail",
+      "phone": "Su Teléfono (Solo números)",
+      "message": "Mensaje (Opcional)"
+    },
+    "select": {
+      "default": "¿Sobre qué modelo vamos a tratar?",
+      "undecided": "Aún no he decidido..."
+    },
+    "return_contact": "Me gustaría recibir retorno por:",
+    "phone": "Teléfono",
+    "email": "E-mail",
+    "status": {
+      "sending": "Enviando...",
+      "recaptcha": " Estamos verificando la seguridad con <strong class=\"recaptchasending\">reCAPTCHA</strong>, lo que puede llevar unos segundos. Gracias por su paciencia.",
+      "success": "¡Formulario enviado, ahora solo espere nuestro contacto!",
+      "submit": "Enviar"
+    },
+    "description": {
+      "thanks": "<strong>Agradecemos</strong> sinceramente su interés en nuestros catamaranes.",
+      "commitment": "Estamos comprometidos en ofrecer una <strong>experiencia excepcional</strong>, adaptada a sus necesidades específicas encontrando la solución a medida para usted.",
+      "contact": "Después de recibir su formulario, nos pondremos en contacto para ofrecerle un <strong>presupuesto personalizado.</strong>"
+    },
+    "cards": {
+      "custom_budget": "Presupuesto con personalización",
+      "choose_options": "¡Elija los opcionales y configure su barco!",
+      "whatsapp_budget": "Presupuesto vía WhatsApp",
+      "click_here": "¡Clic aquí!"
+    }
+  },
+  "articles": {
+    "title": "Medios y Artículos",
+    "breadcrumb": "Artículos",
+    "welcome": {
+      "p1": "¡Bienvenido a nuestro espacio de conocimiento! Aquí encontrará una amplia variedad de artículos y textos cuidadosamente elaborados para satisfacer su curiosidad y ampliar sus horizontes.",
+      "p2": "El conocimiento está a su alcance. ¡Exploremos juntos!"
+    },
+    "instagram": {
+      "title": "Publicaciones destacadas",
+      "subtitle": "Inspírese en los registros de quienes navegan con nosotros",
+      "click_to_view": "Haga clic para ver en"
+    },
+    "manuals": {
+      "title": "Manuales Técnicos",
+      "description": "\"A continuación, proporcionamos los manuales técnicos suministrados por terceros, con información detallada sobre los principales equipos utilizados en el montaje de su catamarán NOMAD. Con esta información, podrá comprender y operar cada componente con precisión, asegurando la durabilidad y el rendimiento de los equipos instalados.\"",
+      "electronic_btn": "Manuales Electrónicos",
+      "hydraulic_btn": "Hidráulica",
+      "engines_btn": "Motores",
+      "winches_btn": "Cabrestantes",
+      "categories": {
+        "displays": "Pantallas Multifunción",
+        "vhf": "Radios VHF",
+        "sonar": "Módulos de Sonda",
+        "autopilot": "Piloto Automático",
+        "radar": "Radar",
+        "transducers": "Transductores",
+        "sound": "Sistema de Sonido",
+        "wireless": "Red Inalámbrica",
+        "fuel": "Gestión de Combustible"
+      }
+    },
+    "history": {
+      "title": "Historia del catamarán",
+      "p1": "<strong>Cómo surgió el catamarán:</strong> Los catamaranes surgieron en Micronesia y Polinesia por la necesidad de mejorar la estabilidad y la velocidad, como alternativa a los monocascos. Fue a través de estas embarcaciones que este pueblo ocupó las islas del Pacífico (incluida la colonización de Hawái). Los primeros occidentales en tener contacto con estas embarcaciones fueron los españoles, quienes quedaron muy impresionados con la velocidad de este tipo de barco.",
+      "p2": "<strong>Cómo se desarrolló:</strong> En la década de 1950 en Inglaterra se desarrollaron los primeros catamaranes modernos a vela para competición. Surgió la primera generación de diseñadores y constructores de multicascos modernos con una creciente variedad de embarcaciones a vela y a motor para deporte y ocio. Desde entonces, con el desarrollo de materiales y técnicas de construcción, los catamaranes se han convertido en una opción para diversas áreas de la ingeniería naval, con sus más variadas formas, ya sean cascos convencionales, simétricos o asimétricos.",
+      "p3": "<strong>El catamarán hoy en día:</strong> Con el desarrollo de materiales y conocimientos estructurales, cada día los catamaranes van ganando más espacio en los medios de navegación, ya sea para el transporte de pasajeros o carga, como en el caso de los transbordadores, o para el ocio, como veleros, lanchas de competición y de crucero. En el área de transporte, el catamarán ha demostrado ser una excelente solución para líneas cortas de hasta 1000 km (540 millas), con velocidades superiores a 30 nudos, convirtiéndose en un competidor efectivo de los ya saturados medios de transporte de los grandes centros de producción. El catamarán será siempre una opción cuando la economía, el confort y la estabilidad sean requisitos del proyecto."
+    },
+    "infusion": {
+      "title": "Proceso constructivo: Infusión al Vacío",
+      "p1": "<strong>Qué es:</strong> El proceso de infusión al vacío es uno de los procesos más innovadores en la industria náutica. Es un método que a menudo resulta ser más eficiente y práctico que el de laminación manual, por ejemplo. Cada caso es diferente; los barcos requieren procesos y métodos de construcción específicos dependiendo de su tamaño y uso.",
+      "p2": "<strong>Dónde se aplica:</strong> El método de infusión es el proceso utilizado para la construcción de barcos de alto rendimiento y calidad, pudiendo verse en la fabricación de barcos por grandes astilleros en todo el mundo. Es un método de escala industrial y, por lo tanto, requiere estructura y experiencia para realizarse.",
+      "p3": "<strong>Cómo funciona:</strong> En el proceso de infusión al vacío, todo el material, espumas de PVC y tejidos se colocan secos en el molde ya listo, y así envueltos por una bolsa de plástico de vacío. Al accionar la bomba de vacío, el aire saldrá del plástico y la resina será transferida, a través de mangueras conectadas a un cubo de resina, hacia el interior de las capas de fibra por la acción diferencial de presión interna y externa.",
+      "p4": "<strong>Características mecánicas:</strong> Los laminados fabricados por el proceso de infusión son más resistentes que los laminados convencionales fabricados manualmente, ya que su impregnación entre las fibras llega al 60%, mientras que en la laminación manual alcanza solo del 20 al 30% de contenido de fibra. Con el método de infusión, dejamos de lado problemas ambientales y de insalubridad, ya que no hay desperdicio de material y no hay contacto directo entre el constructor y las resinas.",
+      "p5": "<strong>Ventajas de la Infusión:</strong> Las construcciones de barcos mediante infusión al vacío utilizan invariablemente el sistema sándwich, lo que significa que presentarán un mayor aislamiento térmico, siendo económico cuando se piensa en el uso de aire acondicionado en el barco y la energía producida por el sistema de generadores para alimentarlos. Otra economía a observar es la de resina y fibras. Como no se toca la resina durante la laminación, solo durante la infusión hacia el interior del laminado, se evita el desperdicio. En el caso de las fibras, el hecho es que durante la laminación manual muchas fibras terminan cayendo al suelo, o quedan parcialmente impregnadas, sin poder ser reutilizadas; en el método de infusión, como la laminación se hace en seco, la fibra puede ser precortada y ajustada en el lugar con precisión.",
+      "p6": "<strong>Consideraciones:</strong> Las lanchas catamarán de alto rendimiento exigen un proceso constructivo que garantice mucha resistencia y bajo peso. Entre los procesos constructivos empleados en la industria náutica, el proceso de infusión al vacío mostró ser la mejor opción para garantizar los más altos estándares de calidad."
+    },
+    "hulls": {
+      "title": "Tipos de cascos en lancha catamarán",
+      "intro": "Actualmente existe una infinidad de formas de cascos de catamarán. Requisitos de proyecto como velocidad, comportamiento esperado, motorización y costos definirán qué tipo de casco es el más adecuado. Las lanchas catamarán generalmente se encuadran en tres tipos principales enumerados a continuación:",
+      "semi": "<strong>Cascos de semi-desplazamiento:</strong> Este tipo de casco posee un diseño de fondo más redondeado, generando un perfil más adecuado para la absorción de impacto con las olas. Estos tipos de casco presentan un rango de velocidad óptima de régimen bien definido, pero es menos eficiente para altas velocidades.",
+      "sym": "<strong>Planeo simétrico:</strong> Los catamaranes con casco de planeo son aquellos que presentan secciones de casco predominantemente planas. Geometría que promueve mayor sustentación y facilita el régimen de planeo. Siendo más indicado para los casos en que la velocidad y el bajo consumo de combustible sean requisitos del proyecto.",
+      "asym": "<strong>Cascos de planeo asimétricos:</strong> Este tipo de casco está dedicado a lanchas que navegarán a altas velocidades. Aunque necesite, por regla general, de motorización más potente, este tipo de casco gana eficiencia a altas velocidades."
+    },
+    "fishing": {
+      "title": "Lancha de pesca, cómo elegir...",
+      "intro": "Además de técnicas y equipos apropiados, el pescador de mar abierto necesita una lancha capaz de llevarlo de la mejor, más rápida y cómoda forma hasta su lugar de pesca preferido. Para ello es necesario el uso de lanchas que cumplan con requisitos de economía, navegabilidad, seguridad y autonomía mínimos. La elección correcta garantiza mucho más placer para el pescador y aumenta las posibilidades de peces en la línea. Mastro D'Ascia desarrolla lanchas catamarán homologadas para la navegación en mar abierto que ofrecen lo máximo en economía y navegabilidad.",
+      "bottom": "<strong>Pesca de fondo:</strong> Como su propio nombre indica, esta modalidad de pesca se realiza en lugares profundos. Consiste en la colocación del cebo, preferiblemente natural, en el fondo. El barco utilizado necesita tener espacio de circulación y trabajo con el pescado. Modelo indicado: NOMAD 7CC, TITAN CC.",
+      "offshore": "<strong>Pesca en alta mar u oceánica:</strong> Para esta modalidad se indican barcos con motores potentes para recorrer grandes distancias en pescas de larga duración. Modelos indicados: NOMAD 7XF, NOMAD 8XF y TITAN CC.",
+      "spear": "<strong>Pesca submarina:</strong> En esta modalidad, el pescador usa armas especiales para abatir los peces bajo el agua. Generalmente se recorren grandes distancias y se necesita mucho espacio para guardar todo el equipo. Modelos indicados: NOMAD 7CC y NOMAD 7XF."
+    },
+    "maintenance": {
+      "title": "Rutina de mantenimiento",
+      "intro": "Su embarcación necesita algunos cuidados para estar siempre como nueva. Establezca una rutina de verificación de algunos elementos fundamentales. A continuación sugerimos un estándar:",
+      "weekly": {
+        "btn": "Cada Semana",
+        "l1": "Lave toda la embarcación.",
+        "l2": "Retire la cubierta de protección para que circule el aire y tome sol.",
+        "l3": "Al volver del mar, endulce el motor fuera de borda (endulzar es funcionar con agua dulce para poder eliminar residuos de sal y evitar su acumulación en el interior del motor).",
+        "l4": "Jamás guarde la embarcación mojada y cubierta con la lona. Seque bien los compartimentos. Así evitará que tenga mal olor y moho en su interior.",
+        "l5": "Retire la cubierta de protección para que circule el aire y tome sol."
+      },
+      "monthly": {
+        "btn": "Una vez al mes",
+        "l1": "Encere el casco y herrajes de acero inoxidable.",
+        "l2": "Lave la caja (pañol) de ancla y los cabos, para evitar mal olor.",
+        "l3": "Limpie la nevera y siempre deje la puerta abierta para evitar que tenga moho."
+      },
+      "six_months": {
+        "btn": "Cada 6 meses",
+        "l1": "Limpiar los desagües y sifones del baño.",
+        "l2": "Lavar toda la sentina.",
+        "l3": "Lubrique bisagras y cerraduras.",
+        "l4": "Lubrique con Silicona la cremallera de la capota para evitar que se trabe.",
+        "l5": "Aplique Vaselina Sólida sobre el borne/terminal de la batería para evitar la oxidación del cobre.",
+        "l6": "Lave el tanque de aguas grises.",
+        "l7": "Lubrique la llave general.",
+        "l8": "Engrase el eje de la hélice con Grasa Náutica Azul."
+      },
+      "yearly": {
+        "btn": "Una vez al año",
+        "l1": "Lubrique los rodamientos y las ruedas del remolque. Esto evitará corrosión y atascamiento.",
+        "l2": "Actualice la carta náutica ante la Capitanía de Puertos.",
+        "l3": "Lubrique bisagras y cerraduras.",
+        "l4": "Cambie el extintor de incendios.",
+        "l5": "Verifique la validez de las bengalas (pirotécnicos). Para los catamaranes NOMAD se usan: 2 bengalas de mano estrella roja con paracaídas, 2 botes de humo flotantes naranja y 2 bengalas de mano luz roja.",
+        "l6": "Verifique los ánodos de sacrificio ubicados en la cola del motor fuera de borda."
+      }
+    },
+    "hydrofoils": {
+      "title": "La Revolución de los Hidrofoils",
+      "subtitle": "Primeras Pruebas en las Lanchas Catamarán del Astillero Mastro D’Ascia",
+      "p1": "<strong>Innovación y Tecnología en el Mundo Náutico:</strong> En el escenario náutico actual, la innovación y la tecnología son elementos cruciales para avanzar y mejorar el rendimiento de las embarcaciones. El Astillero Mastro D’Ascia, conocido por su tradición y calidad, dio un paso significativo al iniciar las primeras pruebas con el uso de hidrofoils en sus lanchas catamarán. Esta tecnología, ya utilizada en embarcaciones de regata y yates de alto rendimiento, promete revolucionar el mercado de lanchas de ocio, aportando beneficios considerables en términos de velocidad, eficiencia de combustible y estabilidad.",
+      "p2": "<strong>¿Qué Son los Hidrofoils?</strong> Los hidrofoils son estructuras similares a alas sumergidas que, cuando se instalan en el casco de una embarcación... Cuando la lancha alcanza cierta velocidad, estas alas crean sustentación, elevando el casco y reduciendo significativamente la resistencia al desplazamiento. Esta tecnología reduce drásticamente la fricción con el agua, aumentando la eficiencia y permitiendo alcanzar mayores velocidades con menor consumo de combustible. Además, la utilización de hidrofoils proporciona una navegación más suave, reduciendo el impacto de las olas y ofreciendo mayor confort a los ocupantes.",
+      "p3": "<strong>Primeras Pruebas y Resultados:</strong> Las primeras pruebas realizadas por el Astillero Mastro D'Ascia con sus lanchas catamarán equipadas con hidrofoils fueron extremadamente prometedoras. Los datos recogidos revelan:<br><strong>1. Aumento de Eficiencia y Reducción de Combustible hasta un 26%:</strong> La reducción de la fricción con el agua permitió un ahorro de combustible de hasta un 26%, haciendo las embarcaciones más ecológicas y económicas.<br><strong>2. Aumento de la Velocidad Final en 3 Nudos:</strong> Las lanchas equipadas con hidrofoils alcanzaron una velocidad final 3 nudos por encima de las versiones convencionales, destacándose en términos de rendimiento.<br><strong>3. Mayor Estabilidad y Confort:</strong> La navegación se volvió más estable y cómoda, incluso en aguas agitadas, proporcionando una experiencia superior para los ocupantes.",
+      "p4": "<strong>El Futuro de las Lanchas Catamarán:</strong> El éxito de las primeras pruebas abre el camino para una nueva era en las lanchas catamarán del Astillero Mastro D’Ascia. La introducción de hidrofoils no solo mejora el rendimiento y la eficiencia de las embarcaciones, sino que también redefine el estándar de confort y sostenibilidad en el segmento náutico. Con esta innovación, el astillero reafirma su compromiso con la excelencia y la vanguardia tecnológica, consolidando su posición siempre alineada con las más nuevas tecnologías del mercado.",
+      "p5": "<strong>Conclusión:</strong> La implementación de hidrofoils en las lanchas catamarán representa una gran evolución en el medio náutico. Las primeras pruebas muestran un futuro prometedor, donde velocidad, eficiencia y confort caminan lado a lado, elevando la experiencia de navegación a nuevos niveles. Estamos solo al comienzo de una jornada que promete transformar el modo en que vivimos el mar, y el Astillero Mastro D’Ascia está a la vanguardia de esta transformación."
+    },
+    "safety": {
+      "title": "Consejos de seguridad",
+      "intro": "Antes de salir a navegar, asegúrese de que se hayan tomado todos los procedimientos y cuidados en relación con la seguridad y el buen funcionamiento del barco. Consulte algunos consejos:",
+      "normam": {
+        "btn": "Conozca las Normas de la Autoridad Marítima",
+        "content": "Lea y conozca el RIPA (Reglamento Internacional para Prevenir Abordajes) y las Normas de la Autoridad Marítima que establecen los requisitos mínimos de seguridad para las embarcaciones, especialmente las <a class=\"downloadmarinha\" target=\"_blank\" href=\"https://www.marinha.mil.br/dpc/sites/www.marinha.mil.br.dpc/files/normam01_0.pdf\"><strong>NORMAM 01</strong></a>, <a class=\"downloadmarinha\" target=\"_blank\" href=\"https://www.marinha.mil.br/dpc/sites/www.marinha.mil.br.dpc/files/normam-02_dpc_mod18.pdf\"><strong>NORMAM 02</strong></a>, <a class=\"downloadmarinha\" target=\"_blank\" href=\"https://www.marinha.mil.br/cpap/sites/www.marinha.mil.br.cpap/files/normam03.pdf\"><strong>NORMAM 03</strong></a> y <a class=\"downloadmarinha\" target=\"_blank\" href=\"https://www.marinha.mil.br/dpc/sites/www.marinha.mil.br.dpc/files/normam05.pdf\"><strong>NORMAM 05</strong></a>."
+      },
+      "periodic": {
+        "btn": "Realice el mantenimiento periódico",
+        "content": "Efectúe un mantenimiento periódico de la embarcación, sin improvisaciones. Cualquier descuido podría comprometer la seguridad de los embarcados."
+      },
+      "salvage": {
+        "btn": "Verifique el salvamento",
+        "content": "Realice una inspección rigurosa de los equipos y utensilios de salvamento. Preste especial atención a los chalecos, que deberán ser en número suficiente para todos los que van a embarcar. Los chalecos utilizados en los catamaranes NOMAD son los CLASE II."
+      },
+      "fire": {
+        "btn": "Verifique extintores de incendio",
+        "content": "Inspeccione el material de combate contra incendios, preste especial atención al plazo de validez y estado de conservación de los extintores. Los extintores indicados son los de polvo ABC."
+      },
+      "inspect": {
+        "btn": "Inspeccione todo el barco",
+        "content": "Realice una inspección del casco, verifique el funcionamiento de las bombas de achique, de las luces de navegación, del equipo de radio VHF y la condición de carga de las baterías, además del nivel de aceite del cárter del motor para motores de 4 tiempos y nivel del depósito de aceite en los motores de 2 tiempos. Verifique también la integridad del nivel de combustible, y si no hay fugas en el compartimento de los motores."
+      },
+      "docs": {
+        "btn": "Verifique la documentación del conductor",
+        "content": "Tenga a bordo documentos que comprueben su habilitación, registro de la embarcación y seguro obligatorio dentro del plazo de validez."
+      },
+      "charts": {
+        "btn": "Tenga las cartas náuticas de la región",
+        "content": "Verifique si las cartas náuticas existentes a bordo son compatibles con la región donde pretende navegar, preste atención a los faros y la señalización náutica."
+      },
+      "docking": {
+        "btn": "Verifique el material de atraque",
+        "content": "Verifique si el ancla tiene suficiente cabo para un fondeo seguro. Recuerde que la longitud de cabo indicada para un anclaje seguro es de cinco a siete veces la profundidad del lugar donde se pretende fondear."
+      },
+      "weather": {
+        "btn": "Verifique el pronóstico del tiempo",
+        "content": "Infórmese sobre el pronóstico del tiempo divulgado por la autoridad marítima y otros órganos, y manténgase atento a la previsión de cambios para el período. Si todo está bien, haga la planificación de su travesía."
+      },
+      "plan": {
+        "btn": "Haga el plan de navegación",
+        "content": "Entregue el plan de navegación o aviso de salida a la marina o club responsable de la guarda de la embarcación; si no está en club o marina, deje a alguien en tierra enterado de a dónde planea ir con la embarcación y a qué hora pretende regresar."
+      }
+    }
+  }
+}

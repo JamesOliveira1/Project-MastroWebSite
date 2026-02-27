@@ -1,0 +1,10 @@
+# Force UTF-8 charset for all text content
+AddDefaultCharset UTF-8
+
+# Ensure correct charset for common types
+AddType 'text/html; charset=UTF-8' .html
+AddType 'text/css; charset=UTF-8' .css
+AddType 'application/javascript; charset=UTF-8' .js
+
+# Optional: prevent older proxies from rewriting charsets
+Header set Content-Type "text/html; charset=UTF-8" env=html_content

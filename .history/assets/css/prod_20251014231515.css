@@ -1,0 +1,48 @@
+/* Escopo de produção: layout de abas à esquerda e conteúdo à direita */
+
+#featuresprod .row {
+  align-items: flex-start;
+}
+
+/* Botões/abas à esquerda */
+#prod-buttons.nav-tabs {
+  border-bottom: 0;
+}
+
+#prod-buttons.nav-tabs.flex-column .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: #f7f7f7;
+  color: #15222b;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+#prod-buttons.nav-tabs.flex-column .nav-link i {
+  font-size: 18px;
+}
+
+#prod-buttons.nav-tabs.flex-column .nav-link.active {
+  background: #fff;
+  color: #004f91;
+  border-color: #004f91;
+}
+
+/* Conteúdo à direita */
+#featuresprod #prod-tab-content {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 320px;
+}
+
+@media (max-width: 991px) {
+  #featuresprod .col-lg-3 {
+    margin-bottom: 15px;
+  }
+}

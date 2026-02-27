@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "models": "Models",
+    "models_xs": "XS Models (Service)",
+    "all_models": "All Models",
+    "media_articles": "Media & Articles",
+    "community_posts": "Community Posts",
+    "video_gallery": "Video Gallery",
+    "vacuum_infusion": "Vacuum Infusion",
+    "hull_types": "Hull Types",
+    "maintenance_routine": "Maintenance Routine",
+    "technical_manuals": "Technical Manuals",
+    "all_articles": "All Articles",
+    "contact": "Contact",
+    "quote": "Quote"
+  }
+}

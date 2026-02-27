@@ -1,0 +1,390 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "models": "Models",
+    "models_xs": "XS Models (Service)",
+    "all_models": "All Models",
+    "media_articles": "Media & Articles",
+    "community_posts": "Community Posts",
+    "video_gallery": "Video Gallery",
+    "vacuum_infusion": "Vacuum Infusion",
+    "hull_types": "Hull Types",
+    "maintenance_routine": "Maintenance Routine",
+    "technical_manuals": "Technical Manuals",
+    "all_articles": "All Articles",
+    "contact": "Contact",
+    "quote": "Quote"
+  },
+  "footer": {
+    "pages": "Pages",
+    "home": "Home",
+    "models": "Models",
+    "articles": "Articles",
+    "quote": "Quote",
+    "rep_area": "Representative Area",
+    "useful_links": "Useful Links",
+    "translate": "Translate this page",
+    "tide_table": "Tide Table",
+    "maintenance_tips": "Maintenance Tips",
+    "weather": "Weather Forecast",
+    "bombarco": "Bombarco",
+    "rights": "All Rights Reserved.",
+    "protected": "This site is protected by",
+    "subject_to": "and is subject to the",
+    "privacy_policy": "Privacy Policy",
+    "and": "and",
+    "terms": "Terms of Service",
+    "google": "of Google.",
+    "support_center": "Support Center",
+    "send_whatsapp": "Send WhatsApp",
+    "email_contact": "Email Contact",
+    "quote_form": "Quote Form",
+    "cookie_text": "This site uses cookies to function properly and improve your experience. See our",
+    "cookie_more_info": "for more information.",
+    "allow": "Allow",
+    "deny": "Deny"
+  },
+  "404": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist or has been removed. Please check the address or use the menu.",
+    "back_home": "Click here to return to the home page."
+  },
+  "videos": {
+    "title": "Video Gallery",
+    "breadcrumb": "Videos",
+    "back": "Back",
+    "request_quote": "Request Quote",
+    "share": "Share"
+  },
+  "budget": {
+    "title": "Quote",
+    "breadcrumb": "Quote",
+    "form_title": "Quote Form",
+    "placeholders": {
+      "name": "Name",
+      "surname": "Surname",
+      "email": "Your Email",
+      "phone": "Your Phone (Numbers only)",
+      "message": "Message (Optional)"
+    },
+    "select": {
+      "default": "Which model are we discussing?",
+      "undecided": "I haven't decided yet..."
+    },
+    "return_contact": "I would like to be contacted via:",
+    "phone": "Phone",
+    "email": "Email",
+    "status": {
+      "sending": "Sending...",
+      "recaptcha": " We are verifying security with <strong class=\"recaptchasending\">reCAPTCHA</strong>, which may take a few seconds. Thank you for your patience.",
+      "success": "Form sent, now just wait for our contact!",
+      "submit": "Send"
+    },
+    "description": {
+      "thanks": "We sincerely <strong>thank you</strong> for your interest in our catamarans.",
+      "commitment": "We are committed to offering an <strong>exceptional experience</strong>, adapted to your specific needs, finding the tailored solution for you.",
+      "contact": "After receiving your form, we will contact you to offer a <strong>customized quote.</strong>"
+    },
+    "cards": {
+      "custom_budget": "Custom Quote",
+      "choose_options": "Choose options and configure your boat!",
+      "whatsapp_budget": "Quote via WhatsApp",
+      "click_here": "Click here!"
+    }
+  },
+  "articles": {
+    "title": "Media & Articles",
+    "breadcrumb": "Articles",
+    "welcome": {
+      "p1": "Welcome to our knowledge space! Here you will find a wide variety of articles and texts carefully crafted to satisfy your curiosity and expand your horizons.",
+      "p2": "Knowledge is within your reach. Let's explore together!"
+    },
+    "instagram": {
+      "title": "Featured Posts",
+      "subtitle": "Get inspired by the records of those who sail with us",
+      "click_to_view": "Click to view on"
+    },
+    "manuals": {
+      "title": "Technical Manuals",
+      "description": "\"Below, we provide technical manuals provided by third parties, with detailed information on the main equipment used in the assembly of your NOMAD catamaran. With this information, you can understand and operate each component with precision, ensuring the durability and performance of the installed equipment.\"",
+      "electronic_btn": "Electronic Manuals",
+      "hydraulic_btn": "Hydraulics",
+      "engines_btn": "Engines",
+      "winches_btn": "Winches",
+      "categories": {
+        "displays": "Multifunction Displays",
+        "vhf": "VHF Radios",
+        "sonar": "Sonar Modules",
+        "autopilot": "Autopilot",
+        "radar": "Radar",
+        "transducers": "Transducers",
+        "sound": "Sound System",
+        "wireless": "Wireless Network",
+        "fuel": "Fuel Management"
+      },
+      "items": {
+        "lowrance_hds_gen2": "LOWRANCE HDS Gen2 Monitor",
+        "lowrance_hds_gen3": "LOWRANCE HDS Gen3 Monitor",
+        "simrad_go_xse": "SIMRAD GO XSE Monitor",
+        "simrad_nss": "SIMRAD NSS Monitor",
+        "simrad_nss_evo2": "SIMRAD NSS evo2 Monitor",
+        "simrad_nss_evo3": "SIMRAD NSS evo3 Monitor",
+        "simrad_nso_evo2": "SIMRAD NSO evo2 Monitor",
+        "simrad_s2009": "S2009 Monitor",
+        "simrad_rs12": "SIMRAD RS12 VHF Radio",
+        "simrad_rs35": "SIMRAD RS35 VHF Radio",
+        "simrad_rs40": "SIMRAD RS40 VHF Radio",
+        "lowranced_lvr880": "LOWRANCE LVR 880 VHF Radio",
+        "ais_camino108": "Class B AIS CAMINO-108",
+        "structurescan_3d_manual": "SIMRAD Structurescan 3D - Manual",
+        "structurescan_lowrance_hd": "LOWRANCE Structurescan HD",
+        "simrad_ac12_install": "SIMRAD AC12 Autopilot CPU - Installation",
+        "simrad_ap44": "SIMRAD AP44 Autopilot Monitor",
+        "lowrance_autopilot_install": "LOWRANCE Autopilot - Installation",
+        "radar_broadband": "Radar - BroadBand",
+        "radar_halo": "Radar - Halo",
+        "structurescan_3d_install": "SIMRAD Structurescan 3D - Installation",
+        "totalscan_install": "SIMRAD Totalscan - Installation",
+        "transducer_p66": "AIRMAR P66 Transducer",
+        "transducer_tm260": "AIRMAR TM260 Transducer",
+        "sonichub": "LOWRANCE SonicHub",
+        "gofree": "GOFREE",
+        "tipintel": "TipIntel",
+        "rule_bilge_pumps": "RULE Bilge Pumps",
+        "jabsco_pressurizers": "JABSCO Pressure Pumps",
+        "jabsco_toilet": "JABSCO Toilet",
+        "yanmar_manual": "YANMAR 6LY2A-STP Operation Manual",
+        "mercury_sc1000": "MERCURY SmartCraft SC1000 Monitor",
+        "mercury_tach_speed": "MERCURY SmartCraft TACHOMETER - SPEEDOMETER Monitor",
+        "tie_bar_evinrude": "Tie Bar Assembly - EVINRUDE ETEC 200 to 300hp",
+        "tie_bar_hydraulic": "Hydraulic Tie Bar Assembly",
+        "evinrude_install": "EVINRUDE ETEC 200 to 300hp Engine - Installation",
+        "evinrude_manual": "EVINRUDE ETEC 200 to 300hp Engine",
+        "mercury_115": "MERCURY 115hp 4T Engine",
+        "mercury_150": "MERCURY 150hp 4T Engine",
+        "mercury_v6_v8": "MERCURY V6 (175-225) V8 (200-300) CMS DTS Engine",
+        "yamaha_115": "YAMAHA 115 4T Engine",
+        "yamaha_150": "YAMAHA 150 4T Engine",
+        "lewmar_cpx0": "LEWMAR CPX0 500W Windlass",
+        "lewmar_cpx1": "LEWMAR CPX1 700W Windlass",
+        "fish_700": "Fish 700 Windlass"
+      }
+    },
+    "history": {
+      "title": "Catamaran History",
+      "p1": "<strong>How the catamaran emerged:</strong> Catamarans emerged in Micronesia and Polynesia out of a need to improve stability and speed, as an alternative to monohulls. It was through these vessels that these people occupied the Pacific islands (including the colonization of Hawaii). The first Westerners to come into contact with these vessels were the Spanish, who were very impressed with the speed of this type of boat.",
+      "p2": "<strong>How it developed:</strong> In the 1950s in England, the first modern sailing catamarans for competition were developed. The first generation of designers and builders of modern multihulls emerged with a growing variety of sailing and motor vessels for sport and leisure. Since then, with the development of materials and construction techniques, catamarans have become an option for various areas of naval engineering, with their most varied forms, whether conventional, symmetrical, or asymmetrical hulls.",
+      "p3": "<strong>The catamaran today:</strong> With the development of materials and structural knowledge, catamarans are gaining more space in navigation every day, whether for passenger or cargo transport, as in the case of ferry boats, or for leisure, such as sailboats, racing boats, and cruisers. In the transport area, the catamaran has proven to be an excellent solution for short lines of up to 1000 km (540 miles), with speeds exceeding 30 knots, becoming an effective competitor to the already saturated means of transport in large production centers. The catamaran will always be an option whenever economy, comfort, and stability are project requirements."
+    },
+    "infusion": {
+      "title": "Construction Process: Vacuum Infusion",
+      "p1": "<strong>What it is:</strong> The vacuum infusion process is one of the most innovative processes in the nautical industry. It is a method that often ends up being more efficient and practical than manual lamination, for example. Each case is different; boats require specific construction processes and methods depending on their size and use.",
+      "p2": "<strong>Where it applies:</strong> The infusion method is the process used for the construction of high-performance and quality boats, seen in the manufacture of boats by large shipyards around the world. It is an industrial-scale method, and thus requires structure and experience to be performed.",
+      "p3": "<strong>How it works:</strong> In the vacuum infusion process, all material, PVC foams, and fabrics are placed dry in the ready mold, and thus wrapped in a plastic vacuum bag. When the vacuum pump is activated, the air will leave the plastic and the resin will be transferred, through hoses connected to a resin bucket, into the fiber layers by the differential action of internal and external pressure.",
+      "p4": "<strong>Mechanical characteristics:</strong> Laminates manufactured by the infusion process are stronger than conventional manually manufactured laminates, as their impregnation between the fibers reaches 60%, while manual lamination reaches only 20 to 30% fiber content. With the infusion method, we leave aside environmental and unhealthiness problems, as there is no waste of material and there is no direct contact between the builder and the resins.",
+      "p5": "<strong>Advantages of Infusion:</strong> Boat constructions using vacuum infusion invariably use the sandwich system, which means they will present greater thermal insulation, making it economical when thinking about the use of air conditioning on the boat and the energy produced by the generator system to power them. Another economy to be observed is that of resin and fibers. Since the resin is not touched during lamination, only during infusion into the laminate, waste is avoided. In the case of fibers, the fact is that during manual lamination many fibers end up falling on the floor, or are partially impregnated, without being able to be reused; in the infusion method, since lamination is done dry, the fiber can be pre-cut and adjusted in place with precision.",
+      "p6": "<strong>Considerations:</strong> High-performance catamaran boats require a construction process that ensures high strength and low weight. Among the construction processes employed in the nautical industry, the vacuum infusion process has shown to be the best option to ensure the highest quality standards."
+    },
+    "hulls": {
+      "title": "Types of Catamaran Hulls",
+      "intro": "Currently, there is an infinity of catamaran hull shapes. Project requirements such as speed, expected behavior, motorization, and costs will define which type of hull is most suitable. Catamaran boats generally fall into three main types listed below:",
+      "semi": "<strong>Semi-displacement hulls:</strong> This type of hull has a rounder bottom design, generating a profile more suitable for absorbing impact with waves. These types of hulls present a well-defined optimal speed range, but are less efficient for high speeds.",
+      "sym": "<strong>Symmetrical planing hulls:</strong> Planing catamarans are those that feature predominantly flat hull sections. Geometry that promotes greater lift and facilitates the planing regime. Being more indicated for cases where speed and low fuel consumption are project requirements.",
+      "asym": "<strong>Asymmetrical planing hulls:</strong> This type of hull is dedicated to boats that will navigate at high speeds. Although it generally requires more powerful motorization, this type of hull gains efficiency at high speeds."
+    },
+    "fishing": {
+      "title": "Fishing Boat, How to Choose...",
+      "intro": "In addition to appropriate techniques and equipment, the open sea fisherman needs a boat capable of taking him in the best, fastest, and most comfortable way to his favorite fishing spot. For this, it is necessary to use boats that meet minimum requirements of economy, seaworthiness, safety, and autonomy. The correct choice guarantees much more pleasure for the fisherman and increases the chances of fish on the line. Mastro D'Ascia develops catamaran boats approved for open sea navigation that offer the maximum in economy and seaworthiness.",
+      "bottom": "<strong>Bottom fishing:</strong> As the name implies, this type of fishing is carried out in deep places. It consists of placing the bait, preferably natural ones, at the bottom. The boat used needs to have circulation space and work with the fish. Indicated model: NOMAD 7CC, TITAN CC.",
+      "offshore": "<strong>Offshore or ocean fishing:</strong> For this modality, boats with powerful engines are indicated to cover long distances in long-duration fishing trips. Indicated models: NOMAD 7XF, NOMAD 8XF, and TITAN CC.",
+      "spear": "<strong>Spearfishing:</strong> In this modality, the fisherman uses special guns to shoot fish underwater. Generally, long distances are covered and a lot of space is needed to store all equipment. Indicated models: NOMAD 7CC and NOMAD 7XF."
+    },
+    "maintenance": {
+      "title": "Maintenance Routine",
+      "intro": "Your vessel needs some care to always be like new. Establish a verification routine for some fundamental items. Below we suggest a standard:",
+      "weekly": {
+        "btn": "Every Week",
+        "l1": "Wash the entire vessel.",
+        "l2": "Remove the protective cover to circulate air and take sun.",
+        "l3": "When returning from the sea, flush the outboard motor (flushing is running with fresh water to remove salt residue and prevent its accumulation inside the motor).",
+        "l4": "Never store the vessel wet and cover with the canvas. Dry the compartments well. This will prevent it from smelling bad and getting mold inside.",
+        "l5": "Remove the protective cover to circulate air and take sun."
+      },
+      "monthly": {
+        "btn": "Once a Month",
+        "l1": "Wax the hull and stainless steel hardware.",
+        "l2": "Wash the anchor locker (bilge) and ropes, to avoid bad smell.",
+        "l3": "Clean the refrigerator and always leave the door open to prevent mold."
+      },
+      "six_months": {
+        "btn": "Every 6 Months",
+        "l1": "Clean the bathroom drains and siphons.",
+        "l2": "Wash the entire bilge.",
+        "l3": "Lubricate hinges and locks.",
+        "l4": "Lubricate the canopy zipper with Silicone to prevent jamming.",
+        "l5": "Apply Solid Vaseline on the battery terminal/post to prevent copper oxidation.",
+        "l6": "Wash the gray water tank.",
+        "l7": "Lubricate the battery switch.",
+        "l8": "Grease the propeller shaft with Blue Nautical Grease."
+      },
+      "yearly": {
+        "btn": "Once a Year",
+        "l1": "Lubricate the trailer bearings and wheels. This will prevent corrosion and seizing.",
+        "l2": "Update the nautical chart with the Port Authority.",
+        "l3": "Lubricate hinges and locks.",
+        "l4": "Replace the fire extinguisher.",
+        "l5": "Check the validity of the flares (pyrotechnics). For NOMAD catamarans are used: 2 red star hand flares with parachute, 2 orange floating smoke signals, and 2 red hand flares.",
+        "l6": "Check the sacrificial anodes located on the lower unit of the outboard motor."
+      }
+    },
+    "hydrofoils": {
+      "title": "The Hydrofoil Revolution",
+      "subtitle": "First Tests on Mastro D’Ascia Shipyard Catamarans",
+      "p1": "<strong>Innovation and Technology in the Nautical World:</strong> In the current nautical scenario, innovation and technology are crucial elements to advance and improve vessel performance. Mastro D’Ascia Shipyard, known for its tradition and quality, took a significant step by initiating the first tests with the use of hydrofoils on its catamaran boats. This technology, already used in racing vessels and high-performance yachts, promises to revolutionize the leisure boat market, bringing considerable benefits in terms of speed, fuel efficiency, and stability.",
+      "p2": "<strong>What Are Hydrofoils?</strong> Hydrofoils are structures similar to submerged wings that, when installed on the hull of a vessel... When the boat reaches a certain speed, these wings create lift, raising the hull and significantly reducing resistance to displacement. This technology drastically reduces friction with water, increasing efficiency and allowing higher speeds with lower fuel consumption. In addition, the use of hydrofoils provides smoother navigation, reducing the impact of waves and offering greater comfort to occupants.",
+      "p3": "<strong>First Tests and Results:</strong> The first tests carried out by Mastro D'Ascia Shipyard with its catamaran boats equipped with hydrofoils were extremely promising. The data collected reveal:<br><strong>1. Efficiency Increase and Fuel Reduction up to 26%:</strong> The reduction of friction with water allowed a fuel saving of up to 26%, making the vessels more ecological and economical.<br><strong>2. Top Speed Increase by 3 Knots:</strong> Boats equipped with hydrofoils reached a top speed 3 knots above conventional versions, standing out in terms of performance.<br><strong>3. Greater Stability and Comfort:</strong> Navigation became more stable and comfortable, even in rough waters, providing a superior experience for occupants.",
+      "p4": "<strong>The Future of Catamaran Boats:</strong> The success of the first tests opens the way for a new era in Mastro D’Ascia Shipyard's catamaran boats. The introduction of hydrofoils not only improves the performance and efficiency of the vessels but also redefines the standard of comfort and sustainability in the nautical segment. With this innovation, the shipyard reaffirms its commitment to excellence and technological vanguard, consolidating its position always aligned with the newest technologies in the market.",
+      "p5": "<strong>Conclusion:</strong> The implementation of hydrofoils on catamaran boats represents a major evolution in the nautical environment. The first tests show a promising future, where speed, efficiency, and comfort walk side by side, raising the navigation experience to new levels. We are just at the beginning of a journey that promises to transform the way we live the sea, and Mastro D’Ascia Shipyard is at the forefront of this transformation."
+    },
+    "safety": {
+      "title": "Safety Tips",
+      "intro": "Before going out to sail, make sure that all procedures and care regarding safety and the proper functioning of the boat have been taken. Check out some tips:",
+      "normam": {
+        "btn": "Know Maritime Authority Standards",
+        "content": "Read and know the COLREGs (International Regulations for Preventing Collisions at Sea) and the Maritime Authority Standards that establish the minimum safety requirements for vessels, especially <a class=\"downloadmarinha\" target=\"_blank\" href=\"https://www.marinha.mil.br/dpc/sites/www.marinha.mil.br.dpc/files/normam01_0.pdf\"><strong>NORMAM 01</strong></a>, <a class=\"downloadmarinha\" target=\"_blank\" href=\"https://www.marinha.mil.br/dpc/sites/www.marinha.mil.br.dpc/files/normam-02_dpc_mod18.pdf\"><strong>NORMAM 02</strong></a>, <a class=\"downloadmarinha\" target=\"_blank\" href=\"https://www.marinha.mil.br/cpap/sites/www.marinha.mil.br.cpap/files/normam03.pdf\"><strong>NORMAM 03</strong></a> and <a class=\"downloadmarinha\" target=\"_blank\" href=\"https://www.marinha.mil.br/dpc/sites/www.marinha.mil.br.dpc/files/normam05.pdf\"><strong>NORMAM 05</strong></a>."
+      },
+      "periodic": {
+        "btn": "Perform periodic maintenance",
+        "content": "Perform periodic maintenance of the vessel, without improvisation. Any carelessness could compromise the safety of those on board."
+      },
+      "salvage": {
+        "btn": "Check safety equipment",
+        "content": "Perform a rigorous inspection of safety equipment and utensils. Pay special attention to life jackets, which must be in sufficient number for everyone who will embark. The jackets used on NOMAD catamarans are CLASS II."
+      },
+      "fire": {
+        "btn": "Check fire extinguishers",
+        "content": "Inspect firefighting material, pay special attention to the expiration date and condition of the extinguishers. The indicated extinguishers are ABC powder."
+      },
+      "inspect": {
+        "btn": "Inspect the entire boat",
+        "content": "Perform a hull survey, check the operation of bilge pumps, navigation lights, VHF radio equipment, and battery charge condition, as well as the engine crankcase oil level for 4-stroke engines and oil reservoir level in 2-stroke engines. Also check the integrity of the fuel level, and if there are no leaks in the engine compartment."
+      },
+      "docs": {
+        "btn": "Check driver's documentation",
+        "content": "Have documents on board proving your license, vessel registration, and mandatory insurance within the validity period."
+      },
+      "charts": {
+        "btn": "Have nautical charts of the region",
+        "content": "Check if the nautical charts on board are compatible with the region where you intend to navigate, pay attention to lighthouses and nautical signaling."
+      },
+      "docking": {
+        "btn": "Check docking material",
+        "content": "Check if the anchor has enough rope for safe anchoring. Remember that the indicated rope length for safe anchoring is five to seven times the depth of the place where you intend to anchor."
+      },
+      "weather": {
+        "btn": "Check the weather forecast",
+        "content": "Find out about the weather forecast released by the CHM and other agencies, and stay alert to the forecast of changes for the period. If everything is fine, plan your passage."
+      },
+      "plan": {
+        "btn": "Make the navigation plan",
+        "content": "Deliver the navigation plan or departure notice to the marina or club responsible for guarding the vessel; if not in a club or marina, let someone on land know where you plan to go with the vessel and what time you intend to return."
+      }
+    },
+    "sidebar": {
+      "featured_posts": "Featured Posts",
+      "all_articles": "All Articles",
+      "maintenance": "Maintenance Routine",
+      "fishing": "Choosing the Ideal Boat",
+      "hulls": "Hull Types",
+      "infusion": "Vacuum Infusion",
+      "history": "Catamaran History",
+      "hydrofoils": "The Hydrofoil Revolution",
+      "safety": "Safety Tips",
+      "manuals": "Third-party Manuals",
+      "models": "Meet our Models",
+      "share": "Share",
+      "back": "Back"
+    },
+    "slider": {
+      "btn_view": "View Article",
+      "history": {
+        "title": "Catamaran History",
+        "desc": "How the catamaran emerged and its development over time."
+      },
+      "infusion": {
+        "title": "Vacuum Infusion",
+        "desc": "Learn more about the catamaran construction process."
+      },
+      "hulls": {
+        "title": "Hull Types",
+        "desc": "How catamaran boats are classified."
+      },
+      "fishing": {
+        "title": "Choosing the Ideal Boat",
+        "desc": "Correct choice = <br> + fish on the line."
+      },
+      "maintenance": {
+        "title": "Maintenance Routine",
+        "desc": "Know the necessary care to avoid problems."
+      },
+      "hydrofoils": {
+        "title": "The Hydrofoil Revolution",
+        "desc": "First Tests on Mastro D’Ascia Shipyard Catamarans."
+      },
+      "safety": {
+        "title": "Safety Tips",
+        "desc": "Check and remember some tips before leaving."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "<strong>Mastro D’Ascia</strong>, accessible at <strong>https://www.mastrodascia.com.br</strong>, respects the privacy of its users and is committed to protecting personal data, in compliance with the <strong>General Data Protection Law (LGPD – Law No. 13.709/2018)</strong>.",
+    "description": "This Privacy Policy describes how we collect, use, and protect information when browsing our site.",
+    "s1": {
+      "title": "1. Information Collection",
+      "content": "We may collect information voluntarily provided by the user, as well as data collected automatically during navigation, such as IP address, browser type, pages accessed, and time spent on the site."
+    },
+    "s2": {
+      "title": "2. Use of Cookies",
+      "content": "We use cookies to ensure the proper functioning of the site, improve your browsing experience, and analyze page performance and usage.",
+      "note": "Cookies are small files stored in your browser. You can manage or disable cookies in your browser settings at any time, aware that this may impact some site functionalities."
+    },
+    "s3": {
+      "title": "3. Google Analytics",
+      "content": "This site uses <strong>Google Analytics</strong>, an analysis service provided by Google LLC, which uses cookies to collect information anonymously about how users interact with the site.",
+      "content2": "The information generated by Google Analytics cookies includes data such as pages visited, time spent, and origin of access, being used exclusively for statistical analysis and improvement of the user experience.",
+      "content3": "These data may be stored on servers located outside Brazil, in accordance with Google's privacy practices."
+    },
+    "s4": {
+      "title": "4. Purpose of Data Use",
+      "content": "• Ensure site functioning<br>• Improve browsing experience<br>• Analyze access and performance metrics<br>• Comply with legal and regulatory obligations"
+    },
+    "s5": {
+      "title": "5. Data Sharing",
+      "content": "<strong>Mastro D’Ascia</strong> does not sell, rent, or share personal data with third parties, except when necessary for site operation, compliance with legal obligations, or by court order."
+    },
+    "s6": {
+      "title": "6. Storage and Security",
+      "content": "We adopt appropriate technical and organizational measures to protect personal data against unauthorized access, loss, alteration, or improper disclosure.",
+      "content2": "Data is stored only for the time necessary to fulfill the purposes described in this policy, unless required by law."
+    },
+    "s7": {
+      "title": "7. Data Subject Rights",
+      "content": "• Access to your personal data<br>• Correction of incomplete or outdated data<br>• Deletion of data, when applicable<br>• Revocation of consent"
+    },
+    "s8": {
+      "title": "8. Links to Third-Party Sites",
+      "content": "Our site may contain links to external sites. <strong>Mastro D’Ascia</strong> is not responsible for the privacy practices or content of these sites."
+    },
+    "s9": {
+      "title": "9. Changes to this Policy",
+      "content": "This Privacy Policy may be updated periodically. We recommend that the user review this content regularly."
+    },
+    "s10": {
+      "title": "10. Contact",
+      "content": "In case of doubts about this Privacy Policy or the processing of personal data, contact us through the channels available on the site <strong>mastrodascia.com.br</strong>."
+    }
+  }
+}
