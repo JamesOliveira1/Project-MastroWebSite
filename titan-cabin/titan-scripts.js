@@ -1,18 +1,186 @@
 /**
  * Titan Cabin Scripts
- * Initializes AOS and Swiper plugins
+ * Initializes GSAP ScrollTrigger and Swiper plugins
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
-  // Initialize AOS
-  AOS.init({
-    duration: 1000,
-    easing: 'ease-in-out',
-    once: true,
-    mirror: false
+  // Register GSAP Plugins
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+  // Initialize ScrollSmoother
+  const smoother = ScrollSmoother.create({
+    wrapper: '#smooth-wrapper',
+    content: '#smooth-content',
+    smooth: 1.5,
+    effects: true, // Enables data-speed and data-lag
+    smoothTouch: 0.1
   });
+
+  // 1. Smooth Fade & Slide for single [data-aos] elements
+  // We'll use scrub: 1 for a more connected, professional feel
+  const aosElements = document.querySelectorAll('[data-aos]:not(.stagger-item)');
+  aosElements.forEach(el => {
+    const animation = el.getAttribute('data-aos');
+    const delay = el.getAttribute('data-aos-delay') / 1000 || 0;
+    const duration = el.getAttribute('data-aos-duration') / 1000 || 1.5;
+
+    let vars = {
+      opacity: 0,
+      duration: duration,
+      delay: delay,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 90%",
+        end: "top 60%",
+        scrub: 1, // Smooth scrub as requested
+        toggleActions: "play reverse play reverse"
+      }
+    };
+
+    if (animation === 'fade-up') vars.y = 60;
+    else if (animation === 'fade-down') vars.y = -60;
+    else if (animation === 'fade-left') vars.x = 60;
+    else if (animation === 'fade-right') vars.x = -60;
+    else if (animation === 'zoom-in') vars.scale = 0.9;
+    else if (animation === 'zoom-out') vars.scale = 1.1;
+
+    gsap.from(el, vars);
+  });
+
+  // 2. Staggered Reveals for Grid Containers
+  const staggerContainers = [
+    { container: '.dna-section .row', items: '.col-md-4' },
+    { container: '.perf-boxes-container', items: '.col-lg-4' },
+    { container: '.options-list', items: '.chalk-checkbox' }
+  ];
+
+  staggerContainers.forEach(group => {
+    const trigger = document.querySelector(group.container);
+    if (!trigger) return;
+
+    gsap.from(trigger.querySelectorAll(group.items), {
+      y: 50,
+      opacity: 0,
+      duration: 1.2,
+      stagger: 0.2,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: trigger,
+        start: "top 85%",
+        end: "bottom 80%",
+        scrub: 1,
+        toggleActions: "play reverse play reverse"
+      }
+    });
+  });
+
+  // 3. Hero Image Cross-fade Reveal (Sticky/Pinned)
+  const heroRevealSection = document.querySelector('#hero-titan');
+  const heroImgs = document.querySelectorAll('.hero-reveal-img');
+  
+  if (heroRevealSection && heroImgs.length > 0) {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: heroRevealSection,
+        start: "top top",
+        end: "+=2000", // Increased scroll distance to accommodate text reveal
+        scrub: true,
+        pin: true,
+        anticipatePin: 1
+      }
+    });
+
+    // 1. Text Reveal (First step of scroll)
+    tl.from('.hero-text-col', { 
+      x: -100, 
+      opacity: 0, 
+      duration: 1, 
+      ease: "power2.out" 
+    })
+    
+    // 2. Pause/Hold text for a bit
+    tl.to({}, { duration: 0.5 }) 
+
+    // 3. Animate from Img 1 to Img 2
+    tl.to('.hero-reveal-img.img-1', { opacity: 0, ease: "none", duration: 1 }, "crossfade1")
+      .to('.hero-reveal-img.img-2', { opacity: 1, ease: "none", duration: 1 }, "crossfade1")
+      
+    // 4. Animate from Img 2 to Img 3
+    tl.to('.hero-reveal-img.img-2', { opacity: 0, ease: "none", duration: 1 }, "crossfade2")
+      .to('.hero-reveal-img.img-3', { opacity: 1, ease: "none", duration: 1 }, "crossfade2");
+  }
+
+  // 4. Subtle scale reveal for section titles
+  const sectionTitles = document.querySelectorAll('.section-title h2');
+  sectionTitles.forEach(title => {
+    gsap.from(title, {
+      letterSpacing: "10px",
+      opacity: 0,
+      duration: 2,
+      ease: "power4.out",
+      scrollTrigger: {
+        trigger: title,
+        start: "top 90%",
+        end: "top 70%",
+        scrub: 1
+      }
+    });
+  });
+
+  // 5. Technical Engineering Details
+  // Draw tech lines in DNA section
+  const techLines = document.querySelectorAll('.tech-line');
+  techLines.forEach(line => {
+    gsap.fromTo(line, 
+      { width: "0%" },
+      {
+        width: "100%",
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: line.closest('.tech-card'),
+          start: "top 80%",
+          end: "bottom 80%",
+          scrub: 1
+        }
+      }
+    );
+  });
+
+  // Pop hotspots in Performance section
+  const hotspots = document.querySelectorAll('.perf-hotspot');
+  if(hotspots.length > 0) {
+    gsap.from(hotspots, {
+      scale: 0,
+      opacity: 0,
+      stagger: 0.3,
+      ease: "back.out(1.7)",
+      scrollTrigger: {
+        trigger: ".performance-scanner",
+        start: "top 75%",
+        end: "top 30%",
+        scrub: 1
+      }
+    });
+  }
+
+  // Dynamic Border Animation for Performance Image
+  const perfBorderTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".perf-featured-container",
+      start: "top 90%",
+      end: "top 20%",
+      scrub: 1
+    }
+  });
+
+  perfBorderTl
+    .to(".pt-top", { width: "100%", ease: "none" })
+    .to(".pt-right", { height: "100%", ease: "none" })
+    .to(".pt-bottom", { width: "100%", ease: "none" })
+    .to(".pt-left", { height: "100%", ease: "none" });
 
   // Initialize PureCounter
   new PureCounter();
@@ -32,16 +200,63 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Initialize Swiper for Personalization Section
+  const personalizationSwiper = new Swiper('.personalizationSwiper', {
+    grabCursor: true,
+    speed: 1000,
+    mousewheel: false, // Controlled manually via window wheel event
+    pagination: {
+      el: '.personalization-progress',
+      type: 'progressbar',
+    },
+    touchStartPreventDefault: false,
+    simulateTouch: true,
+    allowTouchMove: true,
+  });
+
+  // Locked Scroll Logic: Intercept global wheel to advance slides
+  let isTransitioning = false;
+  const pSection = document.getElementById('personalization');
+
+  window.addEventListener('wheel', (e) => {
+    if (!pSection) return;
+
+    const rect = pSection.getBoundingClientRect();
+    const viewHeight = window.innerHeight;
+    
+    // Check if the section is largely visible in the viewport
+    const sectionTopInView = rect.top >= -100 && rect.top <= 100;
+    
+    if (sectionTopInView) {
+      // If scrolling down and not at the last slide
+      if (e.deltaY > 0 && !personalizationSwiper.isEnd) {
+        if (!isTransitioning) {
+          isTransitioning = true;
+          personalizationSwiper.slideNext();
+          setTimeout(() => { isTransitioning = false; }, 1000);
+        }
+        e.preventDefault();
+        return false;
+      } 
+      // If scrolling up and not at the first slide
+      else if (e.deltaY < 0 && !personalizationSwiper.isBeginning) {
+        if (!isTransitioning) {
+          isTransitioning = true;
+          personalizationSwiper.slidePrev();
+          setTimeout(() => { isTransitioning = false; }, 1000);
+        }
+        e.preventDefault();
+        return false;
+      }
+    }
+  }, { passive: false });
+
   // Initialize Swiper for Social Section (Effect Cards)
   new Swiper('.social-swiper', {
     effect: 'cards',
     grabCursor: true,
     speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false
-    }
+    loop: true
   });
 
   // Initialize Swiper for Engine Selection — continuous marquee, never stops
@@ -144,6 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
 
   // Dynamic year for footer legal text
   const currentYear = document.getElementById('current-year');
@@ -262,4 +478,30 @@ document.addEventListener('DOMContentLoaded', () => {
       box.addEventListener('click', () => toggleState(box.id));
     });
   }
+
+  // Language Selector Interaction
+  const langFlags = document.querySelectorAll('.lang-flag');
+  const langMsg = document.querySelector('.lang-message');
+  let langTimeout;
+
+  langFlags.forEach(flag => {
+    flag.addEventListener('click', () => {
+      // Toggle active class
+      langFlags.forEach(f => f.classList.remove('active'));
+      flag.classList.add('active');
+
+      // Show message
+      if (langMsg) {
+        langMsg.classList.add('show');
+        
+        // Reset timeout if already running
+        clearTimeout(langTimeout);
+        
+        // Hide message after 3 seconds
+        langTimeout = setTimeout(() => {
+          langMsg.classList.remove('show');
+        }, 3000);
+      }
+    });
+  });
 });

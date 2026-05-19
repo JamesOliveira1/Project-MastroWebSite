@@ -17,7 +17,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
@@ -26,35 +25,41 @@
   <link href="titan-style.css" rel="stylesheet">
 </head>
 <body class="titan-page">
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
   
   <div class="titan-bg-gradient-1">
-    <!-- Header Minimalista (Botão de Voltar) -->
-    <header class="titan-header">
-      <div class="container d-flex align-items-center justify-content-between">
-        <a href="../index.html" class="logo"><img src="../assets/img/logo branco 2.png" alt="Mastro D'Ascia"></a> --- Site em desenvolvimento, imagens genéricas ilustrativas
-        <div class="lang-selector" data-aos="fade-left">
-          <img src="../assets/img/icons/flagbr.png" alt="Português" class="lang-flag active">
-          <img src="../assets/img/icons/flagen.png" alt="English" class="lang-flag">
-          <img src="../assets/img/icons/flages.png" alt="Español" class="lang-flag">
-        </div>
-      </div>
-    </header>
-
     <!-- 1. Hero Section -->
     <section id="hero-titan" class="hero-titan dark-blueprint">
-      <div class="blueprint-grid"></div>
+      <!-- Header moved inside to stay visible during pin -->
+      <header class="titan-header">
+        <div class="container d-flex align-items-center justify-content-between">
+          <a href="../index.html" class="logo"><img src="../assets/img/logo branco 2.png" alt="Mastro D'Ascia"></a> --- Site em desenvolvimento, imagens genéricas ilustrativas
+          <div class="lang-selector-wrapper">
+            <div class="lang-selector">
+              <img src="../assets/img/icons/flagbr.png" alt="Português" class="lang-flag active" data-lang="pt">
+              <img src="../assets/img/icons/flagen.png" alt="English" class="lang-flag" data-lang="en">
+              <img src="../assets/img/icons/flages.png" alt="Español" class="lang-flag" data-lang="es">
+            </div>
+            <div class="lang-message">Tradução será implementada após revisão final do texto</div>
+          </div>
+        </div>
+      </header>
+      
       <div class="container hero-content">
         <div class="row align-items-center">
-          <div class="col-lg-6" data-aos="fade-right">
+          <div class="col-lg-6 hero-text-col">
             <div class="subtitle-tech"><span>PROJETO #TC-001</span> // ENGENHARIA NAVAL</div>
             <h1 class="titan-title">TITAN CABIN</h1>
             <p class="titan-desc">Engenharia naval de alta performance traduzida em embarcações exclusivas e personalizadas.</p>
             <a href="#dna" class="btn-tech scrollto">EXPLORAR O PROJETO <i class="bi bi-arrow-down-right"></i></a>
           </div>
-          <div class="col-lg-6 position-relative" data-aos="zoom-in" data-aos-delay="200">
-            <img src="img/titan_blueprint_hero_1776873403383.png" alt="Titan Cabin Blueprint" class="img-fluid hero-image">
-            <div class="handwritten-note note-1" data-aos="fade-up" data-aos-delay="500">Design Hidrodinâmico Otimizado</div>
-            <div class="handwritten-note note-2" data-aos="fade-up" data-aos-delay="700">Cabine Panorâmica</div>
+          <div class="col-lg-6 hero-media-col">
+            <div class="hero-reveal-container">
+              <img src="img/titan_blueprint_hero_1776873403383.png" alt="Titan Blueprint" class="img-fluid hero-reveal-img img-1">
+              <img src="img/titan_performance_1776873424061.png" alt="Titan Performance" class="img-fluid hero-reveal-img img-2">
+              <img src="img/foto (12).jpeg" alt="Titan Real" class="img-fluid hero-reveal-img img-3">
+            </div>
           </div>
         </div>
       </div>
@@ -63,6 +68,7 @@
 
   <!-- 2. DNA Mastro D'Ascia -->
   <section id="dna" class="dna-section light-paper">
+    <div class="section-parallax-bg" data-speed="0.6"></div>
     <div class="container">
       <div class="section-title text-center" data-aos="fade-up">
         <h2>DNA Mastro D'Ascia</h2>
@@ -70,7 +76,7 @@
       </div>
 
       <div class="row mt-5">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-4 stagger-item" data-aos="fade-up" data-aos-delay="100">
           <div class="tech-card">
             <div class="tech-icon"><i class="bi bi-layers"></i></div>
             <h3>Infusão a Vácuo</h3>
@@ -78,7 +84,7 @@
             <div class="tech-line"></div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-md-4 stagger-item" data-aos="fade-up" data-aos-delay="200">
           <div class="tech-card">
             <div class="tech-icon"><i class="bi bi-shield-check"></i></div>
             <h3>Wood-Free</h3>
@@ -86,7 +92,7 @@
             <div class="tech-line"></div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-md-4 stagger-item" data-aos="fade-up" data-aos-delay="300">
           <div class="tech-card">
             <div class="tech-icon"><i class="bi bi-water"></i></div>
             <h3>Eficiência Hidrodinâmica</h3>
@@ -101,8 +107,7 @@
   <div class="titan-bg-gradient-2">
     <!-- Wrapper para Grid Unificado (Seções 2.1 e 3) -->
     <div class="unified-grid-wrapper position-relative">
-      <!-- O Elemento Inteiro do Grid -->
-      <div class="blueprint-grid" style="z-index: 2; pointer-events: none;"></div>
+      
 
       <!-- 2.1 Background de fotos -->
       <section class="photo-bg-section" style="z-index: auto;">
@@ -135,13 +140,13 @@
         <div class="swiper photoBgSwiper h-100 w-100 position-absolute top-0 start-0">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="slide-bg" style="background-image: url('img/foto (12).jpeg');"></div>
+              <div class="slide-bg" style="background-image: url('img/tecnicas_1.jpeg');"></div>
             </div>
             <div class="swiper-slide">
-              <div class="slide-bg" style="background-image: url('img/foto (1).jpeg');"></div>
+              <div class="slide-bg" style="background-image: url('img/tecnicas_2.jpeg');"></div>
             </div>
             <div class="swiper-slide">
-              <div class="slide-bg" style="background-image: url('img/foto (4).jpeg');"></div>
+              <div class="slide-bg" style="background-image: url('img/tecnicas_3.jpeg');"></div>
             </div>
           </div>
         </div>
@@ -158,7 +163,13 @@
             <!-- Featured Technical Image -->
             <div class="perf-featured-container mb-4">
               <div class="performance-scanner">
-                <img src="img/titan_performance_1776873424061.png" alt="Titan Cabin Performance" class="img-fluid perf-main-img">
+                <!-- Border lines for GSAP animation -->
+                <div class="perf-border-line pt-top"></div>
+                <div class="perf-border-line pt-right"></div>
+                <div class="perf-border-line pt-bottom"></div>
+                <div class="perf-border-line pt-left"></div>
+
+                <img src="img/desempenho.png" alt="Titan Cabin Performance" class="img-fluid perf-main-img">
                 <div class="perf-image-overlay"></div>
                 <div class="scan-line"></div>
                 
@@ -189,7 +200,7 @@
             <!-- Data Blocks Horizontal -->
             <div class="row g-4 perf-boxes-container">
               <!-- Block 1 -->
-              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-md-4 stagger-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="perf-callout-box" id="perf-box-1">
                   <div class="box-header">
                     <span class="box-id">TC-PERF // 01</span>
@@ -205,7 +216,7 @@
               </div>
 
               <!-- Block 2 -->
-              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="col-md-4 stagger-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="perf-callout-box" id="perf-box-2">
                   <div class="box-header">
                     <span class="box-id">TC-PERF // 02</span>
@@ -221,7 +232,7 @@
               </div>
 
               <!-- Block 3 -->
-              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="col-md-4 stagger-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="perf-callout-box highlight" id="perf-box-3">
                   <div class="box-header">
                     <span class="box-id">TC-PERF // 03</span>
@@ -244,6 +255,7 @@
 
     <!-- 4. Personalização -->
     <section id="personalization" class="personalization-section light-paper">
+      <div class="parallax-bg-element parallax-bg-1" data-speed="0.6"></div>
       <div class="container">
         <div class="section-title text-light text-center" data-aos="fade-up">
           <h2>Personalização Exclusiva</h2>
@@ -253,28 +265,23 @@
         <div class="row position-relative mt-5">
           <div class="col-lg-10">
             <div class="hotspot-container" data-aos="zoom-in">
-              <img src="img/titan_performance_1776873424061.png" alt="Titan Cabin Personalização" class="img-fluid performance-img">
-              
-              <!-- <div class="hotspot hs-mat" data-aos="fade-up" data-aos-delay="300">
-                <div class="hotspot-marker"></div>
-                <div class="hotspot-tooltip">
-                  <strong>Acabamentos em materiais premium</strong>
+              <div class="swiper personalizationSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/titan_performance_1776873424061.png" alt="Titan Cabin 1" class="img-fluid performance-img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/foto (1).jpeg" alt="Titan Cabin 2" class="img-fluid performance-img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/foto (2).jpeg" alt="Titan Cabin 3" class="img-fluid performance-img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/foto (3).jpeg" alt="Titan Cabin 4" class="img-fluid performance-img">
+                  </div>
                 </div>
+                <div class="swiper-pagination personalization-progress"></div>
               </div>
-
-              <div class="hotspot hs-layout" data-aos="fade-up" data-aos-delay="400">
-                <div class="hotspot-marker"></div>
-                <div class="hotspot-tooltip">
-                  <strong>Layouts adaptáveis (Lounge vs Pesca)</strong>
-                </div>
-              </div>
-
-              <div class="hotspot hs-elec" data-aos="fade-up" data-aos-delay="500">
-                <div class="hotspot-marker"></div>
-                <div class="hotspot-tooltip">
-                  <strong>Eletrônica de navegação sob medida</strong>
-                </div>
-              </div>-->
             </div>
           </div>
 
@@ -282,23 +289,23 @@
           <div class="col-lg-4 position-absolute end-0 top-50 translate-middle-y d-none d-lg-block" style="z-index: 5;">
             <div class="options-panel w-100" data-aos="fade-left">
               <div class="options-list">
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Ar condicionado</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Capa de Proteção modelo 8</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Carreta de encalhe TITAN</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Corrimão de popa</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Geladeira Elétrica</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Geladeira INOX 56l</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Guincho elétrico</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Kit painel solar</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Luz de proa</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Luz subaquática (par)</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Mesa de cabine</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Pintura de casco</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Piso em madeira TECA</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Piso sintético em EVA</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Salvatagem completa</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Tenda de proa</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Viveiros de popa</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Ar condicionado</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Capa de Proteção modelo 8</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Carreta de encalhe TITAN</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Corrimão de popa</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Geladeira Elétrica</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Geladeira INOX 56l</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Guincho elétrico</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Kit painel solar</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Luz de proa</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Luz subaquática (par)</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Mesa de cabine</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Pintura de casco</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Piso em madeira TECA</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Piso sintético em EVA</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Salvatagem completa</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Tenda de proa</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Viveiros de popa</label>
               </div>
             </div>
           </div>
@@ -307,20 +314,20 @@
           <div class="col-12 d-block d-lg-none mt-5">
             <div class="options-panel w-100 mx-auto" data-aos="fade-up">
               <div class="options-list">
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Ar condicionado</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Capa de proteção</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Carreta de encalhe</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Geladeira </label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Guincho elétrico</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Kit painel solar</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Luz de proa</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Luz subaquática</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Mesa de cabine</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Pintura de casco</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Piso em madeira </label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Piso em EVA</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Salvatagem completa</label>
-                <label class="chalk-checkbox"><input type="checkbox"><span class="chalk-checkmark"></span>Tenda de proa</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Ar condicionado</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Capa de proteção</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Carreta de encalhe</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Geladeira </label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Guincho elétrico</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Kit painel solar</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Luz de proa</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Luz subaquática</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Mesa de cabine</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Pintura de casco</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Piso em madeira </label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Piso em EVA</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Salvatagem completa</label>
+                <label class="chalk-checkbox stagger-item"><input type="checkbox"><span class="chalk-checkmark"></span>Tenda de proa</label>
               </div>
             </div>
           </div>
@@ -477,7 +484,8 @@
 
     <!-- 5. Prova Social (Carrossel Instagram) -->
     <section id="social" class="social-section dark-blueprint">
-      <div class="blueprint-grid"></div>
+      <div class="parallax-bg-element parallax-bg-2" data-speed="0.8"></div>
+      
       <div class="container">
         <div class="row align-items-center">
           <!-- Título na Esquerda (Desktop) -->
@@ -495,27 +503,63 @@
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
                   <div class="insta-card">
-                    <div class="insta-img"><img src="../assets/img/produtos/Titan CC/foto (2).jpg" alt="Insta 1"></div>
+                    <div class="insta-img"><img src="img/subdep/depoimento_1.png" alt="Depoimento 1"></div>
                     <div class="insta-content">
-                      <p><i class="bi bi-instagram"></i> "A estabilidade dessa embarcação é algo de outro mundo! Mesmo no mar agitado, a navegação é seca e firme."</p>
+                      <p><i class="bi bi-instagram"></i> "Grandes conquistas são feitas em parceria. <br>Respeito, visão e compromisso com o melhor."</p>
                     </div>
                   </div>
                 </div>
                 <!-- Slide 2 -->
                 <div class="swiper-slide">
                   <div class="insta-card">
-                    <div class="insta-img"><img src="../assets/img/produtos/Titan CC/foto (3).jpg" alt="Insta 2"></div>
+                    <div class="insta-img vertical-mode"><img src="img/subdep/depoimento_2.png" alt="Depoimento 2"></div>
                     <div class="insta-content">
-                      <p><i class="bi bi-instagram"></i> "Melhor aquisição para pesca esportiva. Espaço de sobra e uma hidrodinâmica perfeita."</p>
+                      <p><i class="bi bi-instagram"></i> "Uauuu….. essa é um show de barco! Parabéns a toda equipe Mastro Dascia por estar sempre se aperfeiçoando para realizar nossos sonhos" </p>
                     </div>
                   </div>
                 </div>
                 <!-- Slide 3 -->
                 <div class="swiper-slide">
                   <div class="insta-card">
-                    <div class="insta-img"><img src="../assets/img/produtos/Titan CC/foto (7).jpg" alt="Insta 3"></div>
+                    <div class="insta-img vertical-mode"><img src="img/subdep/depoimento_3.png" alt="Depoimento 3"></div>
                     <div class="insta-content">
-                      <p><i class="bi bi-instagram"></i> "O conforto da cabine e os acabamentos são de altíssimo nível. Recomendo o estaleiro!"</p>
+                      <p><i class="bi bi-instagram"></i> "Se me pedissem uma palavra para definir essa embarcação eu diria: Espetáculo."</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                  <div class="insta-card">
+                    <div class="insta-img"><img src="img/subdep/depoimento_4.png" alt="Depoimento 4"></div>
+                    <div class="insta-content">
+                      <p><i class="bi bi-instagram"></i> "Ficou linda 👏👏... Parabéns para equipe mastrodascia "</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                  <div class="insta-card">
+                    <div class="insta-img"><img src="img/subdep/depoimento_5.png" alt="Depoimento 5"></div>
+                    <div class="insta-content">
+                      <p><i class="bi bi-instagram"></i> "Mastro D’acia e algo fora da realidade do mercado quem conhece sabe."</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                  <div class="insta-card">
+                    <div class="insta-img vertical-mode"><img src="img/subdep/depoimento_6.png" alt="Depoimento 6"></div>
+                    <div class="insta-content">
+                      <p><i class="bi bi-instagram"></i>"Pronto para escrever novas histórias no mar." </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 7 -->
+                <div class="swiper-slide">
+                  <div class="insta-card">
+                    <div class="insta-img vertical-mode"><img src="img/subdep/depoimento_7.png" alt="Depoimento 7"></div>
+                    <div class="insta-content">
+                      <p><i class="bi bi-instagram"></i> "Barco fantástico, pura tecnologia embarcada !!!"</p>
                     </div>
                   </div>
                 </div>
@@ -529,6 +573,7 @@
 
   <!-- 6. FAQ -->
   <section id="faq" class="faq-section light-paper pt-5 pb-5">
+    <div class="section-parallax-bg" data-speed="0.6"></div>
     <div class="container" data-aos="fade-up">
       <div class="section-title text-center">
         <h2>Dúvidas Comuns</h2>
@@ -608,7 +653,9 @@
   <div class="titan-bg-gradient-3">
     <!-- 7. Lead Gen (Orçamento) -->
     <section id="lead-gen" class="lead-section dark-blueprint py-5">
-      <div class="blueprint-grid"></div>
+      <!-- Parallax Background Element -->
+      <div class="parallax-bg-element parallax-bg-3" data-speed="0.8"></div>
+      
       <div class="container" data-aos="zoom-in">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
@@ -733,6 +780,9 @@
     </footer>
   </div>
 
+  </div> <!-- smooth-content -->
+  </div> <!-- smooth-wrapper -->
+
   <a
     href="https://api.whatsapp.com/send?phone=5548991466864&text=Ol%C3%A1%2C%20vim%20pela%20landing%20da%20Titan%20Cabin"
     class="titan-whatsapp-float"
@@ -746,9 +796,11 @@
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/gsap/gsap.min.js"></script>
+  <script src="../assets/vendor/gsap/ScrollTrigger.min.js"></script>
+  <script src="../assets/vendor/gsap/ScrollSmoother.min.js"></script>
 
   <!-- Main JS -->
   <script src="titan-scripts.js"></script>
